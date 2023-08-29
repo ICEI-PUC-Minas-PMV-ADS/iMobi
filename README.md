@@ -14,7 +14,7 @@ ou disponíveis para locação.
 * Lucia
 * Rafael Alves de Souza
 * Rafael
-* Warlen
+* Warlen do Carmo Alves
 
 ## Orientador
 
