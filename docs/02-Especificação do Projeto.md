@@ -11,26 +11,26 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 |    Lucas Oliveira | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/iMobi/issues/2#issue-1872676770" width = 250>| **Idade:** 28 anos <br> **Ocupação:** Corretor de Imóveis Iniciante|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
+|<img src="Lucas oliveira.jpg" width = 250>| **Idade:** 28 anos <br> **Ocupação:** Corretor de Imóveis Iniciante|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
 |**Motivações:**<br><ul>● Aprender a utilizar a plataforma eficazmente.  <br><br>● Ganho tempo. </ul>|**Frustrações:**<br><ul>● Muito tempo é perdido; <br><br>● Levo muito tempo buscando exercícios e escrevendo-os a mão.   |**Hobbies/Histórias:**<br><ul>●Estou ansioso para crescer na carreira de corretor. <br>●  Quero aproveitar as oportunidades do mercado imobiliário.  <br>● Gosto de praticar esportes e estar ao ar livre<br></ul>|
 
 
 |    Carolina Martins | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/iMobi/issues/5#issue-1872686650" width = 250>| **Idade:**  35 anos <br> **Ocupação:** Personal traine|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
+|<img src="carolina martins.jpg" width = 250>| **Idade:**  35 anos <br> **Ocupação:** Personal traine|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
 |**Motivações:**<br><ul>● Criação treino facilitado. <br><br>● Criar um portfólio sólido de empreendimentos para ganhar confiança dos clientes. </ul>|**Frustrações:**<br><ul>● Limitações na plataforma para apresentar detalhes sofisticados dos imóveis <br><br>● Dificuldade em criar anúncios que transmitam o valor agregado dos imóveis.   |**Hobbies/Histórias:**<br><ul>● Sou apaixonada por arquitetura e design de interiores<br>●  Adoro viajar e me inspirar em estilos de diferentes lugares <br>● Meu objetivo é criar conexões duradouras com meus clientes. <br></ul>|
 
 
 |   Rafael Oliveira | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/iMobi/issues/4#issue-1872686035" width = 250>| **Idade:** 40 anos <br> **Ocupação:** Gestor de Equipe de Corretores|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
+|<img src="rafael oliveira.jpg" width = 250>| **Idade:** 40 anos <br> **Ocupação:** Gestor de Equipe de Corretores|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
 |**Motivações:**<br><ul>● Monitorar o desempenho de sua equipe e atingir metas de vendas.  <br><br>● Garantir um controle eficaz sobre todos os empreendimentos cadastrados.  </ul>|**Frustrações:**<br><ul>● Falta de visibilidade completa sobre os detalhes dos empreendimentos cadastrados;  <br><br>● DDificuldade em acompanhar as atividades individuais dos corretores.  |**Hobbies/Histórias:**<br><ul>●Adoro liderar equipes e alcançar resultados <br>● Sempre em busca de maneiras de otimizar processos <br>● Gosto de praticar esportes e relaxar ao ar livre  <br></ul>|
 
 
 |    
 Maria Santos | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/iMobi/issues/6#issue-1872687735" width = 250>| **Idade:** 31 anos <br> **Ocupação:** Corretora de Imóveis Autônoma|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
+|<img src="roberto mendes.jpg" width = 250>| **Idade:** 31 anos <br> **Ocupação:** Corretora de Imóveis Autônoma|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
 |**Motivações:**<br><ul>● Construir uma marca pessoal forte e aumentar sua base de clientes.  <br><br>● Oferecer um atendimento personalizado e eficaz.  </ul>|**Frustrações:**<br><ul>● Dificuldade em se destacar entre os muitos corretores do mercado; <<br><br>● Falta de ferramentas para compartilhar depoimentos de clientes e histórias de sucesso.  |**Hobbies/Histórias:**<br><ul>● Adoro interagir com as pessoas e entender suas necessidades <br>●Gosto de fotografia e sempre compartilho minhas experiências  <br>●  Meu objetivo é oferecer uma experiência excepcional aos meus clientes <br></ul>|
 
 
