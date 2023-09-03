@@ -7,9 +7,7 @@ O projeto do iMobi visa resolver um problema central no mercado imobiliário: a 
 
 ## Objetivos
 
-O objetivo primordial da aplicação iMobi é revolucionar a experiência dos usuários no mercado imobiliário, tornando-a mais acessível, transparente e eficiente. Esta plataforma busca proporcionar aos compradores, vendedores, locatários e corretores de imóveis uma solução completa e inteligente para suas necessidades. Através de recursos avançados, como pesquisa aprimorada, comunicação facilitada entre as partes e recomendações personalizadas, o aplicativo visa simplificar o processo de busca e transação de imóveis, economizando tempo, mitigando surpresas desagradáveis e melhorando a qualidade das decisões tomadas pelos usuários.
-
-Além disso, o iMobi pretende ser uma referência no mercado, reunindo dados abrangentes sobre propriedades e tornando-os facilmente acessíveis aos usuários. Isso não apenas promove uma maior transparência no setor, mas também permite que compradores e locatários tomem decisões informadas com base em informações atualizadas e precisas.
+O objetivo primordial da aplicação é revolucionar a experiência dos usuários no mercado imobiliário, tornando-a mais acessível, transparente e eficiente. Esta plataforma busca proporcionar aos compradores, vendedores, locatários e corretores de imóveis uma solução completa e inteligente para suas necessidades. Através de recursos avançados, como pesquisa aprimorada, comunicação facilitada entre as partes e recomendações personalizadas, o aplicativo visa simplificar o processo de busca e transação de imóveis, economizando tempo, mitigando surpresas desagradáveis e melhorando a qualidade das decisões tomadas pelos usuários.
 
 ## Justificativa
 
