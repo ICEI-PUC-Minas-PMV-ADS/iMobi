@@ -41,7 +41,7 @@ As ferramentas utilizadas nesta etapa do projeto estão especificadas abaixo, al
     <tr>
         <td>Gerenciamento de Projeto</td>
         <td>Trello</td>
-        <td></td>
+        <td>https://trello.com/b/pIB0ygTd/imobi</td>
     </tr>
 </table>
 
