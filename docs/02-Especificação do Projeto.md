@@ -12,7 +12,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 |    Lucas Oliveira | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
 |<img <img src="img/Lucas oliveira.jpg" width = 250>| **Idade:** 28 anos <br> **Ocupação:** Corretor de Imóveis Iniciante|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
-|**Motivações:**<br><ul>● Aprender a utilizar a plataforma eficazmente.  <br><br>● Ganho tempo. </ul>|**Frustrações:**<br><ul>● Muito tempo é perdido; <br><br>● Levo muito tempo buscando exercícios e escrevendo-os a mão.   |**Hobbies/Histórias:**<br><ul>●Estou ansioso para crescer na carreira de corretor. <br>●  Quero aproveitar as oportunidades do mercado imobiliário.  <br>● Gosto de praticar esportes e estar ao ar livre<br></ul>|
+|**Motivações:**<br><ul>● Aprender a utilizar a plataforma de modo eficaz, prático e objetivo.<br><br>● Conquistar a satisfação dos meus clientes<br>● Otimizar meu tempo<br></ul>|**Frustrações:**<br><ul>● Tenho dificuldades para divulgar todas as informações do imóvel aos clientes de modo satisfatório; <br><br>● Gasto muito tempo para organizar e juntar toda documentação necessária do imóvel e do clinete.<br>● Perco muito tempo para obter uma resposta do cliente com relaçao ao seu interesse pelo imóvel.<br></ul>|**Hobbies/Histórias:**<br><ul>●Estou ansioso para crescer na carreira de corretor.<br>●  Quero aproveitar as oportunidades do mercado imobiliário.<br>● Gosto de praticar esportes e estar ao ar livre<br></ul>|
 
 
 |    Carolina Martins | Informações:                       |                                        |
@@ -30,7 +30,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 |    
 Maria Santos | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|<img src="img/roberto mendes.jpg" width = 250>| **Idade:** 31 anos <br> **Ocupação:** Corretora de Imóveis Autônoma|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
+|<img src="img/maria santos 31 anos.jpg" width = 250>| **Idade:** 31 anos <br> **Ocupação:** Corretora de Imóveis Autônoma|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
 |**Motivações:**<br><ul>● Construir uma marca pessoal forte e aumentar sua base de clientes.  <br><br>● Oferecer um atendimento personalizado e eficaz.  </ul>|**Frustrações:**<br><ul>● Dificuldade em se destacar entre os muitos corretores do mercado; <<br><br>● Falta de ferramentas para compartilhar depoimentos de clientes e histórias de sucesso.  |**Hobbies/Histórias:**<br><ul>● Adoro interagir com as pessoas e entender suas necessidades <br>●Gosto de fotografia e sempre compartilho minhas experiências  <br>●  Meu objetivo é oferecer uma experiência excepcional aos meus clientes <br></ul>|
 
 
