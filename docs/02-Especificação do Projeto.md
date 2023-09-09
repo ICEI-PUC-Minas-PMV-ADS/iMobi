@@ -46,16 +46,6 @@ Maria Santos | Informações:                       |                           
 |**Motivações:**<br><ul>● Encontrar produtos e serviços de qualidade na internet de modo fácil, rápido e confiável<br><br>● Aproveitar o máximo do tempo livre com atividades de lazer </ul>|**Frustrações:**<br><ul>●  Ter dificuldades em encontrar o que preciso na internet<br>● Enfrentar muitos processos burocráticos na compra ou locação de um imóvel<br>|**Hobbies/Histórias:**<br><ul>● Gosto de investir na compra de imóveis para posterior ganho de capital alugando-os <br>● Estou sempre em busca de investimentos promissores no mercado imobiliário <br>●  Adoro viajar para conhecer novos lugares<br></ul>|
 
 
-
-
-
-
-
-
-
-
-
-
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
 > - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
@@ -68,12 +58,16 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Lucas Oliveira   | Criar meu perfil online de Corretor de Imóveis com as informações que desejo | Conquistar mais clientes. |
+|Carolina Martins | Poder receber comentários e sugestões dos clientes sobre o meu trabalho.| Avaliar a qualidade do meu serviço.|
+|Rafael Oliveira | Monitorar os cadastros dos imóveis feitos pelos funcionários.| Avaliar a eficiência da minha equipe de corretores.|
+|Maria Santos    | Registrar imóveis com todas as informações necessárias.| Atrair o máximo de clientes para negociar imóveis.|
+|Roberto Mendes  | Negociar com meus clientes a distância de modo rápido e prático.| Reduzir o tempo gasto com deslocamentos  e encontros presenciais com cliente para assinatura de contratos|
+|Patrícia Maia   | Encontrar imóveis com todas as informações necessárias. | Evitar perder tempo visitando um imóvel com características que não desejo, sendo que estas não foram divulgadas pelo corretor previamente na internet.|
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
@@ -88,11 +82,13 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Nossa proposta é a criação de uma plataforma que possibilite ao corretor, com ou sem experiência, cadastrar os imóveis para venda e/ou locação, incluíndo todas as informações necessárias para atrair a atenção do cliente; assim como, oferecer ao clinete um meio confiável, prático e rápido para encontrar o imóvel que deseja; com facilidade de comunicação entre corretor e cliente. Cada vez mais as pessoas não tem tempo suficiente para realizar pesquisas na internet, em diversos sites, muito menos tem condições de negociar presencialmente com um corretor ou imobiliária, ou se deslocar para vistar o imóvel do seu interesse; além disso, o corretor precisa divulgar o mais amplamente possível o seu trabalho para vencer a concorrência e o cliente precisa de informações sobre o corretor e sobre o imóvel para ter mais segurança e poder concluir a negociação. Desse modo, criamos a ideia de tornar mais dinâmica a comunicação entre cliente-corretor; mais rápida e prática a busca e escolha por um imóvel com informações completas sobre localização, estrutura, fotos e vídeos; e mais confiável a escolha do corretor porque irá oferecer ao cliente o acesso a comentários sobre trabalhos já realizados por este profissional para outros clientes, por exemplo.
 
 ### Descrição Geral da Proposta
 
 Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+
+A proposta desenvolvida pretende oferecer um espaço para que o corretor divulgue seu trabalho e seu histórico de atendimento com comentários de clientes; e também visa facilitar a procura do imóvel ideial pelo cliente, além de oferecer a chance do mesmo alugar ou comprar um imóvel a distância. As possíveis melhorias são economizar o tempo do cliente e do corretor para fechar um negócio, evitando encontros presenciais, deslocamentos até a imobiliária; e agregar imóveis oferecidos por diferentes corretores e imobiliárias em uma mesma plataforma online.
 
 ### Processo 1 – NOME DO PROCESSO
 
