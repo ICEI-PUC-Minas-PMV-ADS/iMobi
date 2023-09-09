@@ -12,32 +12,39 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 |    Lucas Oliveira | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
 |<img <img src="img/Lucas oliveira.jpg" width = 250>| **Idade:** 28 anos <br> **Ocupação:** Corretor de Imóveis Iniciante|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
-|**Motivações:**<br><ul>● Aprender a utilizar a plataforma eficazmente.  <br><br>● Ganho tempo. </ul>|**Frustrações:**<br><ul>● Muito tempo é perdido; <br><br>● Levo muito tempo buscando exercícios e escrevendo-os a mão.   |**Hobbies/Histórias:**<br><ul>●Estou ansioso para crescer na carreira de corretor. <br>●  Quero aproveitar as oportunidades do mercado imobiliário.  <br>● Gosto de praticar esportes e estar ao ar livre<br></ul>|
+|**Motivações:**<br><ul>● Aprender a utilizar a plataforma de modo eficaz, prático e objetivo.<br><br>● Conquistar a satisfação dos meus clientes<br>● Otimizar meu tempo<br></ul>|**Frustrações:**<br><ul>● Tenho dificuldades para divulgar todas as informações do imóvel aos clientes de modo satisfatório; <br><br>● Gasto muito tempo para organizar e juntar toda documentação necessária do imóvel e do clinete.<br>● Perco muito tempo para obter uma resposta do cliente com relaçao ao seu interesse pelo imóvel.<br></ul>|**Hobbies/Histórias:**<br><ul>●Estou ansioso para crescer na carreira de corretor.<br>●  Quero aproveitar as oportunidades do mercado imobiliário.<br>● Gosto de praticar esportes e estar ao ar livre<br></ul>|
 
 
 |    Carolina Martins | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|<img src="img/carolina martins.jpg" width = 250>| **Idade:**  35 anos <br> **Ocupação:** Personal traine|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
-|**Motivações:**<br><ul>● Criação treino facilitado. <br><br>● Criar um portfólio sólido de empreendimentos para ganhar confiança dos clientes. </ul>|**Frustrações:**<br><ul>● Limitações na plataforma para apresentar detalhes sofisticados dos imóveis <br><br>● Dificuldade em criar anúncios que transmitam o valor agregado dos imóveis.   |**Hobbies/Histórias:**<br><ul>● Sou apaixonada por arquitetura e design de interiores<br>●  Adoro viajar e me inspirar em estilos de diferentes lugares <br>● Meu objetivo é criar conexões duradouras com meus clientes. <br></ul>|
+|<img src="img/carolina martins.jpg" width = 250>| **Idade:**  35 anos <br> **Ocupação:** Corretora da imóveis|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
+|**Motivações:**<br><ul>● Obter comentários positivos dos meus clientes quando estão satisfeitos com meu atendimento. <br><br>● Criar um portfólio sólido de empreendimentos para ganhar a confiança dos clientes. </ul>|**Frustrações:**<br><ul>● Limitações na plataforma para apresentar detalhes sofisticados dos imóveis <br><br>● Dificuldade em criar anúncios que transmitam o valor agregado dos imóveis.   |**Hobbies/Histórias:**<br><ul>● Sou apaixonada por arquitetura e design de interiores<br>●  Adoro viajar e me inspirar em estilos de diferentes lugares <br>● Meu objetivo é criar conexões duradouras com meus clientes. <br></ul>|
 
 
 |   Rafael Oliveira | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
 |<img src="img/rafael oliveira.jpg" width = 250>| **Idade:** 40 anos <br> **Ocupação:** Gestor de Equipe de Corretores|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
-|**Motivações:**<br><ul>● Monitorar o desempenho de sua equipe e atingir metas de vendas.  <br><br>● Garantir um controle eficaz sobre todos os empreendimentos cadastrados.  </ul>|**Frustrações:**<br><ul>● Falta de visibilidade completa sobre os detalhes dos empreendimentos cadastrados;  <br><br>● DDificuldade em acompanhar as atividades individuais dos corretores.  |**Hobbies/Histórias:**<br><ul>●Adoro liderar equipes e alcançar resultados <br>● Sempre em busca de maneiras de otimizar processos <br>● Gosto de praticar esportes e relaxar ao ar livre  <br></ul>|
+|**Motivações:**<br><ul>● Monitorar o desempenho de sua equipe e atingir metas de vendas.  <br><br>● Garantir um controle eficaz sobre todos os empreendimentos cadastrados.  </ul>|**Frustrações:**<br><ul>● Falta de visibilidade completa sobre os detalhes dos empreendimentos cadastrados.<br><br>● Dificuldade em acompanhar as atividades individuais dos corretores.  |**Hobbies/Histórias:**<br><ul>●Adoro liderar equipes e alcançar resultados <br>● Sempre em busca de maneiras para otimizar processos <br>● Gosto de praticar esportes e relaxar ao ar livre  <br></ul>|
 
 
 |    
 Maria Santos | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|<img src="img/roberto mendes.jpg" width = 250>| **Idade:** 31 anos <br> **Ocupação:** Corretora de Imóveis Autônoma|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
+|<img src="img/maria santos.jpg" width = 250>| **Idade:** 31 anos <br> **Ocupação:** Corretora de Imóveis Autônoma|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
 |**Motivações:**<br><ul>● Construir uma marca pessoal forte e aumentar sua base de clientes.  <br><br>● Oferecer um atendimento personalizado e eficaz.  </ul>|**Frustrações:**<br><ul>● Dificuldade em se destacar entre os muitos corretores do mercado; <<br><br>● Falta de ferramentas para compartilhar depoimentos de clientes e histórias de sucesso.  |**Hobbies/Histórias:**<br><ul>● Adoro interagir com as pessoas e entender suas necessidades <br>●Gosto de fotografia e sempre compartilho minhas experiências  <br>●  Meu objetivo é oferecer uma experiência excepcional aos meus clientes <br></ul>|
 
 
 |    Roberto Mendes | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
 |<img src="img/roberto mendes.jpg" width = 250>| **Idade:** 45 anos <br> **Ocupação:** Corretor de Imóveis Experiente|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
-|**Motivações:**<br><ul>● Aumentar suas vendas e continuar sendo uma referência no mercado.  <br><br>● Encontrar maneiras de otimizar suas atividades e acompanhar os leads.  </ul>|**Frustrações:**<br><ul>●  Perda de tempo procurando informações específicas sobre empreendimentos;  <br><br>● idar com um grande volume de consultas sem um sistema de acompanhamento eficaz.   |**Hobbies/Histórias:**<br><ul>● PGosto de compartilhar minhas experiências para ajudar outros corretores. <br>● Estou sempre em busca de atualizações no mercado imobiliário <br>●  Adoro passar tempo com a família nos fins de semana  <br></ul>|
+|**Motivações:**<br><ul>● Aumentar suas vendas e continuar sendo uma referência no mercado.  <br><br>● Encontrar maneiras de otimizar suas atividades e acompanhar os leads.  </ul>|**Frustrações:**<br><ul>●  Perda de tempo procurando informações específicas sobre empreendimentos;  <br><br>● Lidar com um grande volume de consultas sem um sistema de acompanhamento eficaz.   |**Hobbies/Histórias:**<br><ul>● Gosto de compartilhar minhas experiências para ajudar outros corretores. <br>● Estou sempre em busca de atualizações no mercado imobiliário <br>●  Adoro passar tempo com a família nos fins de semana  <br></ul>|
+
+
+|    Patrícia Maia | Informações:                       |                                        |
+|--------------------|------------------------------------|----------------------------------------|
+|<img src="img/Patricia Maia.jpg" width = 250>| **Idade:** 40 anos <br> **Ocupação:** Empreendedora |**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
+|**Motivações:**<br><ul>● Encontrar produtos e serviços de qualidade na internet de modo fácil, rápido e confiável<br><br>● Aproveitar o máximo do tempo livre com atividades de lazer </ul>|**Frustrações:**<br><ul>●  Ter dificuldades em encontrar o que preciso na internet<br>● Enfrentar muitos processos burocráticos na compra ou locação de um imóvel<br>|**Hobbies/Histórias:**<br><ul>● Gosto de investir na compra de imóveis para posterior ganho de capital alugando-os <br>● Estou sempre em busca de investimentos promissores no mercado imobiliário <br>●  Adoro viajar para conhecer novos lugares<br></ul>|
+
 
 > **Links Úteis**:
 >
@@ -52,12 +59,16 @@ Maria Santos | Informações:                       |                           
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
-| EU COMO... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE` | PARA ... `MOTIVO/VALOR`                |
-| -------------------- | ---------------------------------- | -------------------------------------- |
-| Usuário do sistema   | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-| Administrador        | Alterar permissões                 | Permitir que possam administrar contas |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+|Lucas Oliveira   | Criar meu perfil online de Corretor de Imóveis com as informações que desejo | Conquistar mais clientes. |
+|Carolina Martins | Poder receber comentários e sugestões dos clientes sobre o meu trabalho.| Avaliar a qualidade do meu serviço.|
+|Rafael Oliveira | Monitorar os cadastros dos imóveis feitos pelos funcionários.| Avaliar a eficiência da minha equipe de corretores.|
+|Maria Santos    | Registrar imóveis com todas as informações necessárias.| Atrair o máximo de clientes para negociar imóveis.|
+|Roberto Mendes  | Negociar com meus clientes a distância de modo rápido e prático.| Reduzir o tempo gasto com deslocamentos  e encontros presenciais com cliente para assinatura de contratos|
+|Patrícia Maia   | Encontrar imóveis com todas as informações necessárias. | Evitar perder tempo visitando um imóvel com características que não desejo, sendo que estas não foram divulgadas pelo corretor previamente na internet.|
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
@@ -73,11 +84,13 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional.
+Nossa proposta é a criação de uma plataforma que possibilite ao corretor, com ou sem experiência, cadastrar os imóveis para venda e/ou locação, incluíndo todas as informações necessárias para atrair a atenção do cliente; assim como, oferecer ao clinete um meio confiável, prático e rápido para encontrar o imóvel que deseja; com facilidade de comunicação entre corretor e cliente. Cada vez mais as pessoas não tem tempo suficiente para realizar pesquisas na internet, em diversos sites, muito menos tem condições de negociar presencialmente com um corretor ou imobiliária, ou se deslocar para vistar o imóvel do seu interesse; além disso, o corretor precisa divulgar o mais amplamente possível o seu trabalho para vencer a concorrência e o cliente precisa de informações sobre o corretor e sobre o imóvel para ter mais segurança e poder concluir a negociação. Desse modo, criamos a ideia de tornar mais dinâmica a comunicação entre cliente-corretor; mais rápida e prática a busca e escolha por um imóvel com informações completas sobre localização, estrutura, fotos e vídeos; e mais confiável a escolha do corretor porque irá oferecer ao cliente o acesso a comentários sobre trabalhos já realizados por este profissional para outros clientes, por exemplo.
 
 ### Descrição Geral da Proposta
 
 Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+
+A proposta desenvolvida pretende oferecer um espaço para que o corretor divulgue seu trabalho e seu histórico de atendimento com comentários de clientes; e também visa facilitar a procura do imóvel ideial pelo cliente, além de oferecer a chance do mesmo alugar ou comprar um imóvel a distância. As possíveis melhorias são economizar o tempo do cliente e do corretor para fechar um negócio, evitando encontros presenciais, deslocamentos até a imobiliária; e agregar imóveis oferecidos por diferentes corretores e imobiliárias em uma mesma plataforma online.
 
 ### Processo 1 – NOME DO PROCESSO
 
