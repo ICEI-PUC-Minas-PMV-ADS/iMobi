@@ -8,12 +8,12 @@ ou disponíveis para locação.
 
 ## Integrantes
 
-* Bruno
+* Bruno Roberto Olympio Ferreira
 * Guilherme Henrique Monteiro Cal
 * Gustavo Augusto Ferreira de Lira
-* Lucia
+* Lúcia Raquel Ramos Berger
 * Rafael Alves de Souza
-* Rafael
+* Rafael Jordão de Noronha Picado
 * Warlen do Carmo Alves
 
 ## Orientador
