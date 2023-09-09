@@ -122,28 +122,28 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | ID  | Descrição do Requisito                                                                                                                                                      | Prioridade |
 | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | RF1 | Registro de Usuário: Os usuários devem criar uma conta com informações pessoais e de contato.                                                                               | ALTA       |
-| RF2 | Autenticação: Os usuários registrados devem fazer login de forma segura no aplicativo.                                                                                      | ALTA       |
-| RF3 | Pesquisa de Propriedades: Os usuários devem buscar propriedades com base em critérios como localização, tipo, preço, etc.                                                   | ALTA       |
-| RF4 | Detalhes da Propriedade: Os usuários devem visualizar informações detalhadas sobre uma propriedade, incluindo fotos, descrição, preço e informações de contato do corretor. | ALTA       |
-| RF5 | Favoritos: Os usuários podem marcar propriedades como favoritas para acessá-las facilmente mais tarde.                                                                      | MÉDIA      |
-| RF6 | Agendamento de Visitas: Os usuários podem solicitar agendamentos de visitas para propriedades de interesse.                                                                 | ALTA       |
-| RF7 | Mensagens: Os usuários podem enviar mensagens para corretores e outros usuários interessados em propriedades.                                                               | MÉDIA      |
-| RF8 | Gerenciamento de Perfil: Os usuários podem editar e atualizar suas informações de perfil, incluindo foto e informações de contato.                                          | MÉDIA      |
-| RF9 | Compartilhamento Social: Os usuários podem compartilhar propriedades em suas redes sociais.                                                                                 | BAIXA      |
+| RF2 | Pesquisa de Propriedades: Os usuários devem buscar propriedades com base em critérios como localização, tipo, preço, etc.                                                   | ALTA       |
+| RF3 | Detalhes da Propriedade: Os usuários devem visualizar informações detalhadas sobre uma propriedade, incluindo fotos, descrição, preço e informações de contato do corretor. | ALTA       |
+| RF4 | Favoritos: Os usuários podem marcar propriedades como favoritas para acessá-las facilmente mais tarde.                                                                      | MÉDIA      |
+| RF5 | Agendamento de Visitas: Os usuários podem solicitar agendamentos de visitas para propriedades de interesse.                                                                 | ALTA       |
+| RF6 | Mensagens: Os usuários podem enviar mensagens para corretores e outros usuários interessados em propriedades.                                                               | MÉDIA      |
+| RF7 | Gerenciamento de Perfil: Os usuários podem editar e atualizar suas informações de perfil, incluindo foto e informações de contato.                                          | MÉDIA      |
+| RF8 | Compartilhamento Social: Os usuários podem compartilhar propriedades em suas redes sociais.                                                                                 | BAIXA      |
 
 ### Requisitos não Funcionais
 
 | ID   | Descrição do Requisito                                                                                                   | Prioridade |
 | ---- | ------------------------------------------------------------------------------------------------------------------------ | ---------- |
-| RNF1 | Segurança: Proteger informações dos usuários e propriedades com medidas robustas de segurança.                           | ALTA       |
-| RNF2 | Desempenho: Garantir que o aplicativo seja rápido e responsivo, mesmo em conexões lentas.                                | ALTA       |
-| RNF3 | Compatibilidade: Assegurar compatibilidade com os principais navegadores e sistemas operacionais móveis.                 | ALTA       |
-| RNF4 | Escalabilidade: Planejar escalabilidade para acomodar um aumento no número de usuários e propriedades.                   | MÉDIA      |
-| RNF5 | Usabilidade: Projetar uma interface de usuário intuitiva e amigável para facilitar a navegação.                          | MÉDIA      |
-| RNF6 | Disponibilidade: Manter o aplicativo disponível 24/7, com tempo de inatividade mínimo para manutenção.                   | ALTA       |
-| RNF7 | Backup e Recuperação: Implementar um sistema de backup e recuperação de dados para evitar perda de informações críticas. | ALTA       |
-| RNF8 | Localização: Oferecer suporte à detecção de localização para resultados de pesquisa relevantes.                          | MÉDIA      |
-| RNF9 | Multilinguagem: Suportar vários idiomas para atender a uma audiência global.                                             | BAIXA      |
+| RNF1 | Autenticação: Os usuários registrados devem fazer login de forma segura no aplicativo.                                                                                      | ALTA       |
+| RNF2 | Segurança: Proteger informações dos usuários e propriedades com medidas robustas de segurança.                           | ALTA       |
+| RNF3 | Desempenho: Garantir que o aplicativo seja rápido e responsivo, mesmo em conexões lentas.                                | ALTA       |
+| RNF4 | Compatibilidade: Assegurar compatibilidade com os principais navegadores e sistemas operacionais móveis.                 | ALTA       |
+| RNF5 | Escalabilidade: Planejar escalabilidade para acomodar um aumento no número de usuários e propriedades.                   | MÉDIA      |
+| RNF6 | Usabilidade: Projetar uma interface de usuário intuitiva e amigável para facilitar a navegação.                          | MÉDIA      |
+| RNF7 | Disponibilidade: Manter o aplicativo disponível 24/7, com tempo de inatividade mínimo para manutenção.                   | ALTA       |
+| RNF8 | Backup e Recuperação: Implementar um sistema de backup e recuperação de dados para evitar perda de informações críticas. | ALTA       |
+| RNF9 | Localização: Oferecer suporte à detecção de localização para resultados de pesquisa relevantes.                          | MÉDIA      |
+| RNF10 | Multilinguagem: Suportar vários idiomas para atender a uma audiência global.                                             | BAIXA      |
 
 ## Restrições
 
@@ -163,17 +163,7 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos.
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
->
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+<img src="./img/Diagrama Caso de Uso - iMobi.drawio.png">
 
 # Matriz de Rastreabilidade
 
