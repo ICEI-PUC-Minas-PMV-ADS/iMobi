@@ -42,7 +42,7 @@ Maria Santos | Informações:                       |                           
 
 |    Patrícia Maia | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|<img src="img/roberto mendes.jpg" width = 250>| **Idade:** 40 anos <br> **Ocupação:** Empreendedora |**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
+|<img src="img/patricia maia.jpg" width = 250>| **Idade:** 40 anos <br> **Ocupação:** Empreendedora |**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
 |**Motivações:**<br><ul>● Encontrar produtos e serviços de qualidade na internet de modo fácil, rápido e confiável<br><br>● Aproveitar o máximo do tempo livre com atividades de lazer </ul>|**Frustrações:**<br><ul>●  Ter dificuldades em encontrar o que preciso na internet<br>● Enfrentar muitos processos burocráticos na compra ou locação de um imóvel<br>|**Hobbies/Histórias:**<br><ul>● Gosto de investir na compra de imóveis para posterior ganho de capital alugando-os <br>● Estou sempre em busca de investimentos promissores no mercado imobiliário <br>●  Adoro viajar para conhecer novos lugares<br></ul>|
 
 
