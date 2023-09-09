@@ -17,27 +17,44 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 |    Carolina Martins | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|<img src="img/carolina martins.jpg" width = 250>| **Idade:**  35 anos <br> **Ocupação:** Personal traine|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
-|**Motivações:**<br><ul>● Criação treino facilitado. <br><br>● Criar um portfólio sólido de empreendimentos para ganhar confiança dos clientes. </ul>|**Frustrações:**<br><ul>● Limitações na plataforma para apresentar detalhes sofisticados dos imóveis <br><br>● Dificuldade em criar anúncios que transmitam o valor agregado dos imóveis.   |**Hobbies/Histórias:**<br><ul>● Sou apaixonada por arquitetura e design de interiores<br>●  Adoro viajar e me inspirar em estilos de diferentes lugares <br>● Meu objetivo é criar conexões duradouras com meus clientes. <br></ul>|
+|<img src="img/carolina martins.jpg" width = 250>| **Idade:**  35 anos <br> **Ocupação:** Corretora da imóveis|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
+|**Motivações:**<br><ul>● Obter comentários positivos dos meus clientes quando estão satisfeitos com meu atendimento. <br><br>● Criar um portfólio sólido de empreendimentos para ganhar a confiança dos clientes. </ul>|**Frustrações:**<br><ul>● Limitações na plataforma para apresentar detalhes sofisticados dos imóveis <br><br>● Dificuldade em criar anúncios que transmitam o valor agregado dos imóveis.   |**Hobbies/Histórias:**<br><ul>● Sou apaixonada por arquitetura e design de interiores<br>●  Adoro viajar e me inspirar em estilos de diferentes lugares <br>● Meu objetivo é criar conexões duradouras com meus clientes. <br></ul>|
 
 
 |   Rafael Oliveira | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
 |<img src="img/rafael oliveira.jpg" width = 250>| **Idade:** 40 anos <br> **Ocupação:** Gestor de Equipe de Corretores|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
-|**Motivações:**<br><ul>● Monitorar o desempenho de sua equipe e atingir metas de vendas.  <br><br>● Garantir um controle eficaz sobre todos os empreendimentos cadastrados.  </ul>|**Frustrações:**<br><ul>● Falta de visibilidade completa sobre os detalhes dos empreendimentos cadastrados;  <br><br>● DDificuldade em acompanhar as atividades individuais dos corretores.  |**Hobbies/Histórias:**<br><ul>●Adoro liderar equipes e alcançar resultados <br>● Sempre em busca de maneiras de otimizar processos <br>● Gosto de praticar esportes e relaxar ao ar livre  <br></ul>|
+|**Motivações:**<br><ul>● Monitorar o desempenho de sua equipe e atingir metas de vendas.  <br><br>● Garantir um controle eficaz sobre todos os empreendimentos cadastrados.  </ul>|**Frustrações:**<br><ul>● Falta de visibilidade completa sobre os detalhes dos empreendimentos cadastrados.<br><br>● Dificuldade em acompanhar as atividades individuais dos corretores.  |**Hobbies/Histórias:**<br><ul>●Adoro liderar equipes e alcançar resultados <br>● Sempre em busca de maneiras para otimizar processos <br>● Gosto de praticar esportes e relaxar ao ar livre  <br></ul>|
 
 
 |    
 Maria Santos | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|<img src="img/maria santos 31 anos.jpg" width = 250>| **Idade:** 31 anos <br> **Ocupação:** Corretora de Imóveis Autônoma|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
+|<img src="img/maria santos.jpg" width = 250>| **Idade:** 31 anos <br> **Ocupação:** Corretora de Imóveis Autônoma|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
 |**Motivações:**<br><ul>● Construir uma marca pessoal forte e aumentar sua base de clientes.  <br><br>● Oferecer um atendimento personalizado e eficaz.  </ul>|**Frustrações:**<br><ul>● Dificuldade em se destacar entre os muitos corretores do mercado; <<br><br>● Falta de ferramentas para compartilhar depoimentos de clientes e histórias de sucesso.  |**Hobbies/Histórias:**<br><ul>● Adoro interagir com as pessoas e entender suas necessidades <br>●Gosto de fotografia e sempre compartilho minhas experiências  <br>●  Meu objetivo é oferecer uma experiência excepcional aos meus clientes <br></ul>|
 
 
 |    Roberto Mendes | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
 |<img src="img/roberto mendes.jpg" width = 250>| **Idade:** 45 anos <br> **Ocupação:** Corretor de Imóveis Experiente|**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
-|**Motivações:**<br><ul>● Aumentar suas vendas e continuar sendo uma referência no mercado.  <br><br>● Encontrar maneiras de otimizar suas atividades e acompanhar os leads.  </ul>|**Frustrações:**<br><ul>●  Perda de tempo procurando informações específicas sobre empreendimentos;  <br><br>● idar com um grande volume de consultas sem um sistema de acompanhamento eficaz.   |**Hobbies/Histórias:**<br><ul>● PGosto de compartilhar minhas experiências para ajudar outros corretores. <br>● Estou sempre em busca de atualizações no mercado imobiliário <br>●  Adoro passar tempo com a família nos fins de semana  <br></ul>|
+|**Motivações:**<br><ul>● Aumentar suas vendas e continuar sendo uma referência no mercado.  <br><br>● Encontrar maneiras de otimizar suas atividades e acompanhar os leads.  </ul>|**Frustrações:**<br><ul>●  Perda de tempo procurando informações específicas sobre empreendimentos;  <br><br>● Lidar com um grande volume de consultas sem um sistema de acompanhamento eficaz.   |**Hobbies/Histórias:**<br><ul>● Gosto de compartilhar minhas experiências para ajudar outros corretores. <br>● Estou sempre em busca de atualizações no mercado imobiliário <br>●  Adoro passar tempo com a família nos fins de semana  <br></ul>|
+
+
+|    Patrícia Maia | Informações:                       |                                        |
+|--------------------|------------------------------------|----------------------------------------|
+|<img src="img/roberto mendes.jpg" width = 250>| **Idade:** 40 anos <br> **Ocupação:** Empreendedora |**Aplicativos:**<br><ul>● Instagram <br>● Linkedin <br>● Telegram<br>● WhatsApp <br></ul>|
+|**Motivações:**<br><ul>● Encontrar produtos e serviços de qualidade na internet de modo fácil, rápido e confiável<br><br>● Aproveitar o máximo do tempo livre com atividades de lazer </ul>|**Frustrações:**<br><ul>●  Ter dificuldades em encontrar o que preciso na internet<br>● Enfrentar muitos processos burocráticos na compra ou locação de um imóvel<br>|**Hobbies/Histórias:**<br><ul>● Gosto de investir na compra de imóveis para posterior ganho de capital alugando-os <br>● Estou sempre em busca de investimentos promissores no mercado imobiliário <br>●  Adoro viajar para conhecer novos lugares<br></ul>|
+
+
+
+
+
+
+
+
+
+
+
 
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
