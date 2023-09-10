@@ -108,9 +108,6 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 ![Indicadores de Desempenho](./img/Indicador%20de%20Desempenho%20-%20iMobi.png)
 
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori.
-
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
