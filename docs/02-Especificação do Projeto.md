@@ -166,23 +166,8 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 <img src="./img/Diagrama Caso de Uso - iMobi.drawio.png">
 
 # Matriz de Rastreabilidade
-
-| Requisito |     RF1     |     RF2     |     RF3     |     RF4     |     RF5     |     RF6     |     RF7     |     RNF1     |     RNF2     |     RNF3     |     RNF4     |     RNF9     |     RNF10     |
-|-----------|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:------------:|:------------:|:------------:|:------------:|:------------:|:-------------:|
-|    RF1    |      -      |             |      X      |             |             |             |             |      X       |              |              |              |      X       |               |
-|    RF2    |             |      -      |      X      |      X      |             |             |             |              |      X       |      X       |      X       |              |               |
-|    RF3    |      X      |      X      |      -      |             |      X      |      X      |             |              |              |              |              |              |               |
-|    RF4    |             |      X      |             |      -      |             |             |             |              |              |              |              |              |               |
-|    RF5    |             |             |      X      |             |      -      |      X      |             |              |              |              |              |      X       |               |
-|    RF6    |             |             |      X      |             |      X      |      -      |             |              |              |              |              |      X       |               |
-|    RF7    |             |             |             |             |             |             |      -      |              |              |              |              |              |      X        |
-|   RNF1    |      X      |             |             |             |             |             |             |      -       |              |      X       |      X       |              |               |
-|   RNF2    |             |      X      |             |             |             |             |             |              |      -       |              |      X       |              |               |
-|   RNF3    |             |             |             |             |             |             |             |      X       |              |      -       |              |      X       |               |
-|   RNF4    |             |             |             |             |             |             |             |      X       |      X       |              |      -       |      X       |      X        |
-|   RNF9    |      X      |             |             |             |      X      |      X      |             |              |              |      X       |      X       |      -       |               |
-|   RNF10   |             |             |             |             |             |             |      X      |              |              |              |      X       |              |      -        |
-
+A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio.
+<img src="img/Matriz Rastreabilidade etapa 1.jpg" width = 1000>
 # Gerenciamento de Projeto
 
 De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
