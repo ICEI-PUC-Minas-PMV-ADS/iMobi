@@ -11,7 +11,7 @@ ou disponíveis para locação.
 * Bruno
 * Guilherme Henrique Monteiro Cal
 * Gustavo Augusto Ferreira de Lira
-* Lucia
+* Lucia Raquel Ramos Berger
 * Rafael Alves de Souza
 * Rafael
 * Warlen do Carmo Alves
