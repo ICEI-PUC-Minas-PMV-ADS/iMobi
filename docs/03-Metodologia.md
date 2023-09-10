@@ -31,7 +31,7 @@ As ferramentas utilizadas nesta etapa do projeto estão especificadas abaixo, al
      <tr>
         <td>Elaboração dos Wireframes</td>
         <td>Figma</td>
-        <td></td>
+        <td>https://www.figma.com/file/M1Vv0b2uczchXVCOibZ7mo/iMobi?type=design&node-id=0%3A1&mode=design&t=D7kDE8y73d6FOa9o-1</td>
     </tr>
      <tr>
         <td>Ferramenta para Comunicação do Grupo</td>
