@@ -11,7 +11,7 @@ ou disponíveis para locação.
 * Bruno Roberto Olympio Ferreira
 * Guilherme Henrique Monteiro Cal
 * Gustavo Augusto Ferreira de Lira
-* Lúcia Raquel Ramos Berger
+* Lucia Raquel Ramos Berger
 * Rafael Alves de Souza
 * Rafael Jordão de Noronha Picado
 * Warlen do Carmo Alves

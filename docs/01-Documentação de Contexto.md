@@ -1,7 +1,7 @@
 # Introdução
 
-## Problema
-
+Nos últimos tempos, as mudanças que vêem ocorrendo na sociedade, e consequentemente no mundo do trabalho, impulsionaram o surgimento de vários motivos pelos quais as pessoas são impulsionadas a buscar o aluguel ou compra de imóveis, seja para uso pessoal ou comercial. Por outro lado, a alta demanda de atividades e compromissos que as pessoas enfrentam no seu cotidiano, além das dificuldades de locomoção devido ao tráfico cada vez mais intenso, resulta em desgaste físico e psicológico e escassez de tempo disponível para resolver problemas, como a busca por propriedades para locação ou compra. 
+Nesse contexto, a internet torna-se um recurso facilitador ao acesso de informações referentes as necessiadades da pessoa que procura alugar ou comprar um imóvel, como também proporciona um instrumento de trabalho para o corretor de imóveis executar suas tarefas. Assim, é importante que este recurso favoreça a acessibilidade tanto do cliente quanto do corretor.
 
 O projeto do iMobi visa resolver um problema central no mercado imobiliário: a falta de transparência e a grande dificuldade em encontrar informações de imóveis para compra, venda e locação. Atualmente, os compradores e locatários muitas vezes enfrentam dificuldades para acessar informações detalhadas sobre propriedades, suas condições, preços justos e históricos de transações. Isso leva a decisões muitas vezes mal informadas e a surpresas desagradáveis durante as negociações. Além disso, a comunicação entre as partes interessadas, como compradores, vendedores e corretores, pode ser morosa e ineficiente, tornando o processo ainda mais desafiador.
 
