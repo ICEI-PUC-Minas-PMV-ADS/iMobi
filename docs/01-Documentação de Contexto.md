@@ -3,45 +3,20 @@
 Nos últimos tempos, as mudanças que vêem ocorrendo na sociedade, e consequentemente no mundo do trabalho, impulsionaram o surgimento de vários motivos pelos quais as pessoas são impulsionadas a buscar o aluguel ou compra de imóveis, seja para uso pessoal ou comercial. Por outro lado, a alta demanda de atividades e compromissos que as pessoas enfrentam no seu cotidiano, além das dificuldades de locomoção devido ao tráfico cada vez mais intenso, resulta em desgaste físico e psicológico e escassez de tempo disponível para resolver problemas, como a busca por propriedades para locação ou compra. 
 Nesse contexto, a internet torna-se um recurso facilitador ao acesso de informações referentes as necessiadades da pessoa que procura alugar ou comprar um imóvel, como também proporciona um instrumento de trabalho para o corretor de imóveis executar suas tarefas. Assim, é importante que este recurso favoreça a acessibilidade tanto do cliente quanto do corretor.
 
-## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O projeto do iMobi visa resolver um problema central no mercado imobiliário: a falta de transparência e a grande dificuldade em encontrar informações de imóveis para compra, venda e locação. Atualmente, os compradores e locatários muitas vezes enfrentam dificuldades para acessar informações detalhadas sobre propriedades, suas condições, preços justos e históricos de transações. Isso leva a decisões muitas vezes mal informadas e a surpresas desagradáveis durante as negociações. Além disso, a comunicação entre as partes interessadas, como compradores, vendedores e corretores, pode ser morosa e ineficiente, tornando o processo ainda mais desafiador.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O objetivo primordial da aplicação é revolucionar a experiência dos usuários no mercado imobiliário, tornando-a mais acessível, transparente e eficiente. Esta plataforma busca proporcionar aos compradores, vendedores, locatários e corretores de imóveis uma solução completa e inteligente para suas necessidades. Através de recursos avançados, como pesquisa aprimorada, comunicação facilitada entre as partes e recomendações personalizadas, o aplicativo visa simplificar o processo de busca e transação de imóveis, economizando tempo, mitigando surpresas desagradáveis e melhorando a qualidade das decisões tomadas pelos usuários.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A criação do iMobi é justificada pela necessidade premente de melhorar significativamente a experiência dos envolvidos no mercado imobiliário. Atualmente, os compradores, vendedores, locatários e corretores frequentemente enfrentam obstáculos significativos, como falta de informações claras sobre imóveis, processos demorados e comunicação ineficaz. Esta aplicação visa mitigar esses problemas, proporcionando um ambiente centralizado e altamente funcional, onde os usuários podem acessar informações detalhadas sobre propriedades e se comunicar de forma eficaz e receber recomendações personalizadas, simplificando assim todo o processo.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Além disso, a aplicação aborda a crescente demanda por soluções tecnológicas no setor imobiliário. Com a digitalização contínua de diversos setores, o mercado imobiliário não pode mais se dar ao luxo de ficar para trás. Em última análise, essa aplicação tem o potencial de transformar a maneira como as pessoas compram, vendem e alugam imóveis, tornando o processo mais transparente, conveniente e eficaz para todos os envolvidos.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O público-alvo é diversificado e abrange várias partes interessadas no mercado imobiliário. Isso inclui, em primeiro lugar, compradores em busca de residências ou investimentos imobiliários, que desejam acessar informações detalhadas sobre propriedades, realizar visitas virtuais, comparar opções e tomar decisões informadas. Além disso, vendedores de imóveis também fazem parte do público-alvo, pois podem usar a aplicação para listar suas propriedades de maneira eficaz, atrair compradores e facilitar o processo de venda. Locatários em busca de aluguéis de curto ou longo prazo também se beneficiarão dessa plataforma, encontrando opções adequadas às suas necessidades. Por último, corretores de imóveis e profissionais do setor podem utilizar a aplicação como uma ferramenta de trabalho, ajudando-os a encontrar propriedades para seus clientes e facilitando a comunicação durante o processo de negociação.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+É importante notar que nossa aplicação é projetado para atender a diversos perfis de usuários, desde compradores em busca de residências para uso pessoal até investidores buscando oportunidades de negócios imobiliários. Isso reflete a abrangência do mercado imobiliário e a necessidade de uma solução inclusiva que atenda às diferentes necessidades e objetivos de todas as partes envolvidas.
