@@ -106,9 +106,7 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores.
-
-Usar o seguinte modelo:
+![Indicadores de Desempenho](./img/Indicador%20de%20Desempenho%20-%20iMobi.png)
 
 ![Indicadores de Desempenho](img/02-indic-desemp.png)
 Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori.
@@ -167,17 +165,21 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 # Matriz de Rastreabilidade
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio.
-
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
-
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
-
-> **Links Úteis**:
->
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
+| Requisito |     RF1     |     RF2     |     RF3     |     RF4     |     RF5     |     RF6     |     RF7     |     RNF1     |     RNF2     |     RNF3     |     RNF4     |     RNF9     |     RNF10     |
+|-----------|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:------------:|:------------:|:------------:|:------------:|:------------:|:-------------:|
+|    RF1    |      -      |             |      X      |             |             |             |             |      X       |              |              |              |      X       |               |
+|    RF2    |             |      -      |      X      |      X      |             |             |             |              |      X       |      X       |      X       |              |               |
+|    RF3    |      X      |      X      |      -      |             |      X      |      X      |             |              |              |              |              |              |               |
+|    RF4    |             |      X      |             |      -      |             |             |             |              |              |              |              |              |               |
+|    RF5    |             |             |      X      |             |      -      |      X      |             |              |              |              |              |      X       |               |
+|    RF6    |             |             |      X      |             |      X      |      -      |             |              |              |              |              |      X       |               |
+|    RF7    |             |             |             |             |             |             |      -      |              |              |              |              |              |      X        |
+|   RNF1    |      X      |             |             |             |             |             |             |      -       |              |      X       |      X       |              |               |
+|   RNF2    |             |      X      |             |             |             |             |             |              |      -       |              |      X       |              |               |
+|   RNF3    |             |             |             |             |             |             |             |      X       |              |      -       |              |      X       |               |
+|   RNF4    |             |             |             |             |             |             |             |      X       |      X       |              |      -       |      X       |      X        |
+|   RNF9    |      X      |             |             |             |      X      |      X      |             |              |              |      X       |      X       |      -       |               |
+|   RNF10   |             |             |             |             |             |             |      X      |              |              |              |      X       |              |      -        |
 
 # Gerenciamento de Projeto
 
