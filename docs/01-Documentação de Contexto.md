@@ -1,6 +1,7 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Nos últimos tempos, as mudanças que vêem ocorrendo na sociedade, e consequentemente no mundo do trabalho, impulsionaram o surgimento de vários motivos pelos quais as pessoas são impulsionadas a buscar o aluguel ou compra de imóveis, seja para uso pessoal ou comercial. Por outro lado, a alta demanda de atividades e compromissos que as pessoas enfrentam no seu cotidiano, além das dificuldades de locomoção devido ao tráfico cada vez mais intenso, resulta em desgaste físico e psicológico e escassez de tempo disponível para resolver problemas, como a busca por propriedades para locação ou compra. 
+Nesse contexto, a internet torna-se um recurso facilitador ao acesso de informações referentes as necessiadades da pessoa que procura alugar ou comprar um imóvel, como também proporciona um instrumento de trabalho para o corretor de imóveis executar suas tarefas. Assim, é importante que este recurso favoreça a acessibilidade tanto do cliente quanto do corretor.
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
