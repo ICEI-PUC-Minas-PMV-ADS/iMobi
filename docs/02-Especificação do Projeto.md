@@ -121,15 +121,19 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 | ID  | Descrição do Requisito                                                                                                                                                      | Prioridade |
 | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| RF1 | Registro de Usuário: Os usuários devem criar uma conta com informações pessoais e de contato.                                                                               | ALTA       |
+| RF1 | Registro de Usuário: O clinete deve criar uma conta com informações pessoais e de contato.                                                                                  | ALTA       |
 | RF2 | Autenticação: Os usuários registrados devem fazer login de forma segura no aplicativo.                                                                                      | ALTA       |
 | RF3 | Pesquisa de Propriedades: Os usuários devem buscar propriedades com base em critérios como localização, tipo, preço, etc.                                                   | ALTA       |
-| RF4 | Detalhes da Propriedade: Os usuários devem visualizar informações detalhadas sobre uma propriedade, incluindo fotos, descrição, preço e informações de contato do corretor. | ALTA       |
+| RF4 | Detalhes da Propriedade: Os usuários podem visualizar informações detalhadas sobre uma propriedade, incluindo fotos, descrição, preço e informações de contato do corretor. | ALTA       |
 | RF5 | Favoritos: Os usuários podem marcar propriedades como favoritas para acessá-las facilmente mais tarde.                                                                      | MÉDIA      |
 | RF6 | Agendamento de Visitas: Os usuários podem solicitar agendamentos de visitas para propriedades de interesse.                                                                 | ALTA       |
 | RF7 | Mensagens: Os usuários podem enviar mensagens para corretores e outros usuários interessados em propriedades.                                                               | MÉDIA      |
-| RF8 | Gerenciamento de Perfil: Os usuários podem editar e atualizar suas informações de perfil, incluindo foto e informações de contato.                                          | MÉDIA      |
+| RF8 | Gerenciamento de Perfil: Os usuários podem editar e atualizar suas informações de perfil, incluindo foto e informações de contato.                                   | MÉDIA      |
 | RF9 | Compartilhamento Social: Os usuários podem compartilhar propriedades em suas redes sociais.                                                                                 | BAIXA      |
+| RF10 | Cadastrar Imóvel: O corretor pode cadastrar um imóvel para venda e/ou aluguel com informações detalhadas, incluindo fotos, descrição, localização, preço e informações de contato do corretor.                                                                                                                  | ALTA     |
+| RF11 | Editar  Imóvel: O corretor pode editar um imóvel para venda e/ou aluguel, mudando as informações detalhadas, fotos, descrição, localização, preço e informações de contato do corretor.                                                                                                                              | ALTA     |
+| RF12 | Avaliar o seriço do corretor: O cliente pode inserir comentários sobre o serviço prestado pelo corretor no perfil do corretor.                                                | MÉDIA    |
+
 
 ### Requisitos não Funcionais
 
