@@ -1,27 +1,24 @@
-# TÍTULO DO PROJETO
+# iMobi
+Analise de Desenvolvimento de Sistemas
+EAD
+2ª Semetre de 2023
 
-`CURSO`
-
-`DISCIPLINA`
-
-`SEMESTRE`
-
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O foco desse projeto está em desenvolver uma aplicação com integração entre mobile e web com a finalidade de facilitar o acesso das pessoas a imóveis e terrenos que possam estar a venda
+ou disponíveis para locação.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Bruno Roberto Olympio Ferreira
+* Guilherme Henrique Monteiro Cal
+* Gustavo Augusto Ferreira de Lira
+* Lucia Raquel Ramos Berger
+* Rafael Alves de Souza
+* Rafael Jordão de Noronha Picado
+* Warlen do Carmo Alves
 
 ## Orientador
 
-* Nome completo do professor 1
-
-## Instruções de utilização
-
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+* Leonardo Vilela Cardoso
 
 # Documentação
 
