@@ -79,15 +79,28 @@ Apresente aqui uma descrição da sua proposta abordando seus limites e suas lig
 
 ### Processo 1 – NOME DO PROCESSO
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+No processo 01 descrevemos as etapas utilizadas pela corretora.
 
-![Processo 1](img/02-bpmn-proc1.png)
+01-Início do Processo: O processo começa com o cadasro na plataforma.
+
+02-Cadastro de Corretores: Corretores, com ou sem experiência, se registram na plataforma.
+
+03-Cadastro de Imóveis: Corretores cadastram os imóveis para venda ou locação, incluindo detalhes como preço, tipo, localização, imagens, etc.
+
+![Processo 1](img/UML corretora.jpeg)
 
 ### Processo 2 – NOME DO PROCESSO
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
+No processo 02 descrevemos as etapas utilizadas pela corretora.
 
-![Processo 2](img/02-bpmn-proc2.png)
+01-Busca de Imóveis: Clientes utilizam a plataforma para buscar imóveis de acordo com suas preferências.
+
+02-Comunicação Cliente-Corretor: Quando um cliente encontra um imóvel de interesse, ele inicia uma comunicação direta com o corretor responsável.
+
+03-Conclusão do Negócio: Quando um acordo é alcançado, o imóvel é vendido ou alugado.
+
+
+![Processo 2](img/UML class diagram corretora (3).jpeg)
 
 ## Indicadores de Desempenho
 
