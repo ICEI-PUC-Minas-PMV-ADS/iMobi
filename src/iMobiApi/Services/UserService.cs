@@ -7,7 +7,6 @@ using iMobiApi.Repositories;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 
-
 namespace iMobiApi.Services
 {
     public class UserService
@@ -29,11 +28,10 @@ namespace iMobiApi.Services
                 // If we get here, no user with this email exists.
                 var user = new ApplicationUser
                 {
-                    Username = request.Username,
                     Email = request.Email,
+                    UserName = request.Username,
                     ConcurrencyStamp = Guid.NewGuid().ToString(),
-                    UserName = request.Email,
-                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password)
+                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password, 12),
                 };
 
                 var createUserResult = await _userRepository.CreateUser(user, request.Password);
@@ -53,10 +51,11 @@ namespace iMobiApi.Services
         {
             try
             {
-                var user = await _userRepository.FindByEmail(request.Email);
+                var user = await _userRepository.AuthenticateUser(request.Email, request.Password);
+
                 if (user == null)
                 {
-                    return new LoginResponse { Message = "Email inválido", Success = false };
+                    return new LoginResponse { Message = "Credenciais inválidas.", Success = false };
                 }
 
                 var claims = new List<Claim>
@@ -65,7 +64,7 @@ namespace iMobiApi.Services
                     new Claim(ClaimTypes.Name, user.UserName),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                     new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
-        };
+                };
 
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("1swek3u4uo2u4a6e"));
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -90,7 +89,6 @@ namespace iMobiApi.Services
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
                 return new LoginResponse { Success = false, Message = ex.Message };
             }
         }

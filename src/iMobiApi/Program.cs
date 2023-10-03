@@ -73,6 +73,7 @@ builder.Services.AddAuthentication(x =>
 builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<UserController>();
+builder.Services.AddScoped<PasswordHasher<ApplicationUser>>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

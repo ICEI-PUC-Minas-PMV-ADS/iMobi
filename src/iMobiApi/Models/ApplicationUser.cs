@@ -8,5 +8,6 @@ namespace IMobiApi.Models;
 [CollectionName("users")]
 public class ApplicationUser : MongoIdentityUser<Guid>
 {
-    public string Username { get; set; } = string.Empty;
+    public string Username;
+    public ICollection<Property> Property;
 }
