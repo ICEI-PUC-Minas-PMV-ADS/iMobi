@@ -9,9 +9,9 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Diagrama de Fluxo
 
-Ao desenvolver nossos wireframes, elaboramos cuidadosamente as principais telas que compõem a experiência do usuário. Este conjunto abrange desde as fases iniciais, como cadastro e login, até as interações diárias, representadas pela página inicial, o perfil do usuário e o feed contendo os imóveis em anúncio. Essa estruturação visa proporcionar uma jornada fluida e intuitiva, garantindo uma navegação eficiente e agradável aos usuários que exploram nossa plataforma.
+O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
 
-![Exemplo de Diagrama de Fluxo](img/diagramafluxo2.jpg)
+![Exemplo de Diagrama de Fluxo](img/class diagram.jpg)
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
 
@@ -19,6 +19,9 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 > - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
 
 ## Wireframes
+
+Ao desenvolver nossos wireframes, elaboramos cuidadosamente as principais telas que compõem a experiência do usuário. Este conjunto abrange desde as fases iniciais, como cadastro e login, até as interações diárias, representadas pela página inicial, o perfil do usuário e o feed contendo os imóveis em anúncio. Essa estruturação visa proporcionar uma jornada fluida e intuitiva, garantindo uma navegação eficiente e agradável aos usuários que exploram nossa plataforma.
+
 `Tela início`
 ![Tela início](img/w1.jpg)
 
@@ -32,7 +35,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 ![Tela usúario logado](img/w3.jpg)
 
 `Feed anúncios`
-![Fees anúncios](img/w4.jpg)
+![Feed anúncios](img/w4.jpg)
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
