@@ -56,15 +56,56 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 
 ## Qualidade de Software
 
-Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como um método gerencial que através de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+O conceito de Qualidade de Software é um conjunto de fatores que precisam ser atendidos, isso representa que a aplicação deve estar em conformidade com as especificações de requisitos que foram combinadas junto ao cliente e também deve seguir os padrões de qualidade da empresa.
 
-No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem satisfeitas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, tal nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
+Cada ferramenta terá funções específicas, necessidades e também objetivos diversos, por isso a Qualidade de Software é medida pelo atendimento às necessidades do usuário e através da realização de testes torna-se muito mais assertiva, sendo os resultados condizentes ao que o cliente espera da aplicação.
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
-Com base nessas características e nas respectivas sub-características, identifique as sub-características que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
+Existem normas internacionais a serem seguidas pelo setor de software. A International Organization Standardization (ISO) e a International Electrotechnical Commission (IEC) são órgãos reconhecidos pela comunidade e regulam estas normas e padrões, contam com a finalidade de estabelecer um alinhamento aos membros de uma equipe para que superem suas barreiras de comunicação. 
+Podemos citar como referência a ISO/IEC 25010 para Qualidade de Software que é uma atualização da ISO/IEC 9126(NBR13596).
 
-> **Links Úteis**:
->
-> - [ISO/IEC 25010:2011 - Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models](https://www.iso.org/standard/35733.html/)
-> - [Análise sobre a ISO 9126 – NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
-> - [Qualidade de Software - Engenharia de Software 29](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209/)
+Compreende então as oito características de qualidade que serão levadas em consideração ao avaliar as propriedades de um produto de software no quadro abaixo:
+
+
+ | Característica de qualidade | Subcaracteristicas  |     Justificativa     | 
+|-----------------------------|--------------------------------------------|-----------------------|
+| Adequação Funcional | Completude funcional; Correção funcional; Adequação funcional | Essa característica representa o grau em que um produto ou sistema fornece funções que atendem às necessidades declaradas e implícitas quando usado sob condições especificadas. | 
+| Eficiência de Desempenho | Comportamento do tempo; Utilização de Recursos; Capacidade | Essa característica representa o desempenho em relação à quantidade de recursos utilizados nas condições estabelecidas. | 
+| Compatibilidade | Coexistência; Interoperabilidade | Grau em que um produto, sistema ou componente pode trocar informações com outros produtos, sistemas ou componentes e/ou desempenhar suas funções necessárias enquanto compartilha o mesmo ambiente de hardware ou software  |
+| Usabilidade | Reconhecimento de adequação; Aprendizagem; Operabilidade; Proteção contra erros do usuário; Estética da interface de usuário; Acessibilidade | Grau em que um produto ou sistema pode ser usado por usuários específicos para atingir objetivos específicos com eficácia, eficiência e satisfação em um contexto de uso específico. | 
+| Confiabilidade | Maturidade; Disponibilidade; Tolerância a falhas; Recuperação | Grau em que um sistema, produto ou componente executa funções especificadas sob condições especificadas por um período de tempo especificado. |
+| Segurança | Confidencialidade; Integridade; Não repúdio; Autenticidade | Grau em que um produto ou sistema protege informações e dados para que pessoas ou outros produtos ou sistemas tenham o grau de acesso a dados adequado aos seus tipos e níveis de autorização. |
+| Manutenibilidade| Modularidade; Reutilização; Analisabilidade; Modificabilidade; Testabilidade | Essa característica representa o grau de eficácia e eficiência com que um produto ou sistema pode ser modificado para melhorá-lo, corrigi-lo ou adaptá-lo às mudanças no ambiente e nos requisitos. |
+| Portabilidade | Adaptabilidade; Instabilidade; Substituibilidade | Grau de eficácia e eficiência com que um sistema, produto ou componente pode ser transferido de um hardware, software ou outro ambiente operacional ou de uso para outro.  |
+
+
+| Subcaracterística  |                      Métricas  de Qualidade de Software               |  Peso  |
+|--------------------|-----------------------------------------------------------------------|--------|
+| Adequação | É adequado as necessidades do usuário? | Alto
+| Acurácia | Faz o que foi proposto de forma correta?  | Alto |
+| Interoperabilidade | É capaz de interagir com os sistemas especificados? | Alto |
+| Conformidade | Está de acordo com as normas, leis, relacionadas a funcionalidade?| Alto |
+| Conformidade | Está de acordo com as normas, leis, relacionadas a confiabilidade? | Alto |
+| Conformidade | Está de acordo com as normas, leis, relacionadas a usabilidade? | Alto |
+| Conformidade | Está de acordo com as normas, leis, relacionadas à eficiência? | Alto |
+| Conformidade | Está de acordo com as normas, leis, relacionadas à manutenibilidade? | Alto |
+| Conformidade | Está de acordo com as normas, leis, relacionadas à Portabilidade? | Alto |
+| Segurança de acesso | Evita acesso não autorizado a programas e dados? | Alto |
+| Maturidade | Com que Frequência apresenta falhas? | Alto |
+| Tolerância a falhas | Ocorrendo falhas, como ele reage? | Alto |
+| Recuperabilidade | É capaz de recuperar dados após uma falha? | Alto |
+| Adaptabilidade | O software é capaz de executar todas as suas funções em diferentes dispositivos?  | Alto |
+| Inteligibilidade | É fácil entender os conceitos utilizados? | Alto |
+| Apreensibilidade | É fácil aprender a usar? | Alto |
+| Operacionalidade | É fácil operar e controlar? | Alto |
+| Atratividade | É atrativo ao usuário? | Alto |
+| Comportamento em relação ao tempo | Qual o tempo de resposta e processamento? | Alto |
+| Comportamento em relação aos recursos | Qual recurso usa? Durante quanto tempo? | Alto |
+| Analisabilidade | É fácil encontrar uma falha? Quando ocorre? | Alto |
+| Modificabilidade | É fácil modificar e remover defeitos? | Alto |
+| Estabilidade | Existe riscos de efeitos inesperados quando se faz alterações? | Alto |
+| Testabilidade | É fácil testa o software modificado? | Alto |
+| Adaptabilidade | É fácil adaptar a ambientes diferentes? | Alto |
+| Capacidade para instalar | É fácil para fazer instalação? | Alto |
+| Capacidade para substituir| É fácil usar para substituir outro?| Alto |
+| Coexistência | Pode coexistir com outros produtos independentes compartilhando recursos? | Alto |
+
