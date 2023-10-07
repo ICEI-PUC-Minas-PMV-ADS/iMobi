@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  user-ms:
+    build:
+      context: ./UserMS
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    depends_on:
+      - user-db
+    environment:
+      ConnectionStrings_DefaultConnection: "mongodb://user-db:27017"
+  user-db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+    networks:
+      - ms-network
+  api-gateway:
+    build:
+      context: ./Gateway
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - user-ms
+    environment:
+      OCELOT_CONFIG_FILE: "./Gateway/ocelot.json"
+    networks:
+      - ms-network
+
+networks:
+  ms-network:
+
+
+volumes:
+  mongodata: {}
