@@ -22,6 +22,14 @@ public class PropriedadeController : ControllerBase
         return Ok(propriedade);
     }
 
+    [Route("[action]/{finalidade}", Name ="GetPropriedadesByFinalidade")]
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Propriedade>>> GetPropriedadesByFinalidade(string finalidade)
+    {
+        var propriedades = await _repository.GetPropriedadesByFinalidade(finalidade);
+        return Ok(propriedades);
+    }
+
     [HttpPost]
     public async Task<ActionResult<Propriedade>> CreatePropriedade([FromBody] PropriedadeInputModel propriedadeInputModel)
     {

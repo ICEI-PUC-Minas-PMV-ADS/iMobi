@@ -6,4 +6,5 @@ public interface IPropriedadeRepository
 {
     Task CreatePropriedade(Propriedade propriedade);
     Task<IEnumerable<Propriedade>> GetPropriedades();
+    Task<IEnumerable<Propriedade>> GetPropriedadesByFinalidade(string finalidade);
 }

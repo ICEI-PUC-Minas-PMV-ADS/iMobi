@@ -59,6 +59,7 @@ public class Propriedade
 
 public enum FinalidadeEnum
 {
+    Nd,
     Venda,
     Aluguel
 }
