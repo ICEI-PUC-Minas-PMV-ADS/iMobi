@@ -1,8 +1,13 @@
-﻿namespace IMobi.Imovel.Api.Models;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
+
+namespace IMobi.Imovel.Api.Models;
 
 public class Categoria
 {
-    public int Id { get; set; }
+    [BsonId]
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string Id { get; set; }
     public string Nome { get; set; }
     public string Icone { get; set; }
 }

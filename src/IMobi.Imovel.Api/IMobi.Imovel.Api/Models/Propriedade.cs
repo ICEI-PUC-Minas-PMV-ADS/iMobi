@@ -1,8 +1,13 @@
-﻿namespace IMobi.Imovel.Api.Models;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace IMobi.Imovel.Api.Models;
 
 public class Propriedade
 {
-    public int Id { get; set; }
+    [BsonId]
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string Id { get; set; }
     public FinalidadeEnum Finalidade { get; set; }
     public StatusEnum Status { get; set; }
     public int AreaPrivativa { get; set; }

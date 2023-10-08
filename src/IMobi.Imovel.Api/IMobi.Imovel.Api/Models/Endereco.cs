@@ -1,8 +1,13 @@
-﻿namespace IMobi.Imovel.Api.Models;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
+
+namespace IMobi.Imovel.Api.Models;
 
 public class Endereco
 {
-    public int Id { get; set; }
+    [BsonId]
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string Id { get; set; }
     public EstadoEnum Estado { get; set; }
     public string Cidade { get; set; }
     public string Bairro { get; set; }
