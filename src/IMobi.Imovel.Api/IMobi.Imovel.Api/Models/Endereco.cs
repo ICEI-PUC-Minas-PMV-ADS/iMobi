@@ -5,9 +5,6 @@ namespace IMobi.Imovel.Api.Models;
 
 public class Endereco
 {
-    [BsonId]
-    [BsonRepresentation(BsonType.ObjectId)]
-    public string Id { get; set; }
     public EstadoEnum Estado { get; set; }
     public string Cidade { get; set; }
     public string Bairro { get; set; }

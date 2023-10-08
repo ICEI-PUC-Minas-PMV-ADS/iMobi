@@ -1,4 +1,5 @@
-﻿using IMobi.Imovel.Api.Models;
+﻿using IMobi.Imovel.Api.InputModels;
+using IMobi.Imovel.Api.Models;
 using IMobi.Imovel.Api.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -22,9 +23,11 @@ public class PropriedadeController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Propriedade>> CreatePropriedade([FromBody] Propriedade propriedade)
+    public async Task<ActionResult<Propriedade>> CreatePropriedade([FromBody] PropriedadeInputModel propriedadeInputModel)
     {
-        await _repository.CreatePropriedade(propriedade);
-        return Ok(propriedade);
+        Propriedade propriedade = new();
+        var entity = propriedade.InputModelToEntity(propriedadeInputModel);
+        await _repository.CreatePropriedade(entity);
+        return Ok(entity);
     }
 }
