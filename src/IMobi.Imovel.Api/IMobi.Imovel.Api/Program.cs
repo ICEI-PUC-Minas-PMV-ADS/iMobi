@@ -1,5 +1,6 @@
 using IMobi.Imovel.Api.Data;
 using IMobi.Imovel.Api.Repositories;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IIMobiDbContext, IMobiDbContext>();
 builder.Services.AddScoped<IPropriedadeRepository, PropriedadeRepository>();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(x =>
+{
+    x.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
 
 builder.Services.AddSwaggerGen(option =>
 {
