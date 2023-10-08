@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMobi.Imovel.Api", "IMobi.Imovel.Api\IMobi.Imovel.Api.csproj", "{39785B78-3E75-448A-A71B-F8E8620DB867}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMobi.Imovel.Api", "IMobi.Imovel.Api\IMobi.Imovel.Api.csproj", "{39785B78-3E75-448A-A71B-F8E8620DB867}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F5049042-2E7D-4CAF-8E72-9898C50BE05E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{39785B78-3E75-448A-A71B-F8E8620DB867}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39785B78-3E75-448A-A71B-F8E8620DB867}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39785B78-3E75-448A-A71B-F8E8620DB867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5049042-2E7D-4CAF-8E72-9898C50BE05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5049042-2E7D-4CAF-8E72-9898C50BE05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5049042-2E7D-4CAF-8E72-9898C50BE05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5049042-2E7D-4CAF-8E72-9898C50BE05E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

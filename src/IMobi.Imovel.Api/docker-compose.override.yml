@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  propriedadedb:
+    container_name : propriedadedb
+    restart : always
+    ports:
+      - "27017:27017" 
+    volumes:
+      - mongo_data:/data/db 
+
+  imobiapi:
+    container_name : imobi.imovel.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "DatabaseSettings:ConnectionString=mongodb://propriedadedb:27017"
+    depends_on:
+      - propriedadedb
+    ports:
+      - "8000:80"
