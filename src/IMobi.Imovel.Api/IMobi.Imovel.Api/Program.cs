@@ -1,9 +1,11 @@
 using IMobi.Imovel.Api.Data;
+using IMobi.Imovel.Api.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<IIMobiDbContext, IMobiDbContext>();
+builder.Services.AddScoped<IPropriedadeRepository, PropriedadeRepository>();
 
 builder.Services.AddControllers();
 
