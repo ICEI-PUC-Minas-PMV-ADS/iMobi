@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  propriedadedb:
+    image : mongo
+
+  imobiapi:
+    image: ${DOCKER_REGISTRY-}imobiapi
+    build:
+      context: .
+      dockerfile: IMobi.Imovel.Api/Dockerfile
+
+volumes:
+  mongo_data:   
