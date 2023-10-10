@@ -1,6 +1,7 @@
 version: '3.8'
 services:
   user-ms:
+    container_name: user-ms
     build:
       context: ./UserMS
       dockerfile: Dockerfile
@@ -11,14 +12,36 @@ services:
     environment:
       ConnectionStrings_DefaultConnection: "mongodb://user-db:27017"
   user-db:
+    container_name: user-db
     image: mongo:latest
     ports:
       - "27017:27017"
     volumes:
-      - mongodata:/data/db
+      - mongodata-user:/data/db
+    networks:
+      - ms-network
+  imovel-ms:
+    container_name: imovel-ms
+    build:
+      context: ./IMobi.Imovel.Api
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5002"
+    depends_on:
+      - imovel-db
+    environment:
+      ConnectionStrings_DefaultConnection: "mongodb://imovel-db:27018"
+  imovel-db:
+    container_name: imovel-db
+    image: mongo:latest
+    ports:
+      - "27018:27018"
+    volumes:
+      - mongodata-imovel:/data/db
     networks:
       - ms-network
   api-gateway:
+    container_name: api-gateway
     build:
       context: ./Gateway
       dockerfile: Dockerfile
@@ -26,6 +49,7 @@ services:
       - "3000:3000"
     depends_on:
       - user-ms
+      - imovel-ms
     environment:
       OCELOT_CONFIG_FILE: "./Gateway/ocelot.json"
     networks:
@@ -36,4 +60,5 @@ networks:
 
 
 volumes:
-  mongodata: {}
+  mongodata-imovel: {}
+  mongodata-user: {}
