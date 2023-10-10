@@ -15,6 +15,38 @@
                 "PUT",
                 "GET"
             ]
+        },
+        {
+            "DownstreamPathTemplate": "/WeatherForecast",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5002
+                }
+            ],
+            "UpstreamPathTemplate": "/api/WeatherForecast",
+            "UpstreamHttpMethod": [
+                "POST",
+                "PUT",
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/WeatherForecast",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5003
+                }
+            ],
+            "UpstreamPathTemplate": "/api/WeatherForecast",
+            "UpstreamHttpMethod": [
+                "POST",
+                "PUT",
+                "GET"
+            ]
         }
     ],
     "GlobalConfiguration": {
