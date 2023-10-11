@@ -1,13 +1,14 @@
 namespace UserMS.Models;
-public class User{
-    public int id { get; set;}
-    public string nome { get; set;}
-    public string email { get; set;}
-    public string senha { get; set;}
-    public string telefone { get; set;}
-    public string cpf { get; set;}
-    public string creci { get; set;}
-    public DateTime createdAt { get; set;}
-    public DateTime updatedAt{ get; set;}
+public class User
+{
+    public int Id { get; set; }
+    public string Nome { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string Senha { get; set; } = string.Empty;
+    public string Telefone { get; set; } = string.Empty;
+    public string Cpf { get; set; } = string.Empty;
+    public string Creci { get; set; } = string.Empty;
+    public DateTime CreatedAt { get; set; }
+    public DateTime UpdatedAt { get; set; }
 
 }

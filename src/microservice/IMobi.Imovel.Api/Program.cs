@@ -47,10 +47,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else
+{
+    // Configure HTTPS redirection para outros ambientes (produção, teste, etc.)
+    app.UseHttpsRedirection();
+}
 
 // Configure the HTTP request pipeline.
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

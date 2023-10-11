@@ -1,7 +1,7 @@
 {
     "Routes": [
         {
-            "DownstreamPathTemplate": "/WeatherForecast",
+            "DownstreamPathTemplate": "/weatherforecast",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
@@ -9,7 +9,7 @@
                     "Port": 5001
                 }
             ],
-            "UpstreamPathTemplate": "/api/WeatherForecast",
+            "UpstreamPathTemplate": "/gateway/weatherforecast",
             "UpstreamHttpMethod": [
                 "POST",
                 "PUT",
@@ -17,7 +17,7 @@
             ]
         },
         {
-            "DownstreamPathTemplate": "/WeatherForecast",
+            "DownstreamPathTemplate": "/api/Propriedade",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
@@ -25,7 +25,7 @@
                     "Port": 5002
                 }
             ],
-            "UpstreamPathTemplate": "/api/WeatherForecast",
+            "UpstreamPathTemplate": "/gateway/propriedade",
             "UpstreamHttpMethod": [
                 "POST",
                 "PUT",
@@ -33,7 +33,21 @@
             ]
         },
         {
-            "DownstreamPathTemplate": "/WeatherForecast",
+            "DownstreamPathTemplate": "/api/propriedade/GetPropriedadesByFinalidade/{finalidade}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5002
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/propriedade/GetPropriedadesByFinalidade/{finalidade}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/weatherforecast",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
@@ -41,7 +55,7 @@
                     "Port": 5003
                 }
             ],
-            "UpstreamPathTemplate": "/api/WeatherForecast",
+            "UpstreamPathTemplate": "/gateway/imagens/weatherforecast",
             "UpstreamHttpMethod": [
                 "POST",
                 "PUT",

@@ -18,8 +18,6 @@ services:
       - "27017:27017"
     volumes:
       - mongodata-user:/data/db
-    networks:
-      - ms-network
   imovel-ms:
     container_name: imovel-ms
     build:
@@ -38,8 +36,6 @@ services:
       - "27018:27018"
     volumes:
       - mongodata-imovel:/data/db
-    networks:
-      - ms-network
   api-gateway:
     container_name: api-gateway
     build:
@@ -52,12 +48,6 @@ services:
       - imovel-ms
     environment:
       OCELOT_CONFIG_FILE: "./Gateway/ocelot.json"
-    networks:
-      - ms-network
-
-networks:
-  ms-network:
-
 
 volumes:
   mongodata-imovel: {}

@@ -28,10 +28,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else
+{
+    // Configure HTTPS redirection para outros ambientes (produção, teste, etc.)
+    app.UseHttpsRedirection();
+}
 
 app.UseCors("CORSPolicy");
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

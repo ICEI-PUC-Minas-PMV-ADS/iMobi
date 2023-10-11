@@ -2,6 +2,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build-env
 WORKDIR /App
 
+EXPOSE 3000
 # Copy the project file and restore as distinct layers
 COPY Gateway.csproj ./
 RUN dotnet restore
@@ -18,6 +19,10 @@ WORKDIR /App
 
 # Copy the published application from the build-env stage
 COPY --from=build-env /App/out .
+
+
+# Set the ASPNETCORE_URLS environment variable to listen on port 5001
+ENV ASPNETCORE_URLS http://localhost:3000
 
 # Set the entry point
 ENTRYPOINT ["dotnet", "Gateway.dll"]
