@@ -1,0 +1,92 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/auth/login",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5000
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/auth/login",
+            "UpstreamHttpMethod": [
+                "POST"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/usuario/create",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5000
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/usuario/create",
+            "UpstreamHttpMethod": [
+                "POST"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/propriedade",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/propriedade",
+            "UpstreamHttpMethod": [
+                "POST",
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/propriedade/getpropriedadesbyfinalidade/{finalidade}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/propriedade/getpropriedadesbyfinalidade/{finalidade}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/propriedade/getbyuserid/{userId}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/propriedade/getbyuserid/{userId}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5002
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:3000"
+    }
+}
