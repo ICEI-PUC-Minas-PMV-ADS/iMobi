@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMobi.User.Api", "IMobi.Use
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMobi.Images.Api", "IMobi.Images.Api\IMobi.Images.Api.csproj", "{C22CD285-3720-4446-81B3-802CE5B080EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMobi.Gateway.Api", "IMobi.Gateway.Api\IMobi.Gateway.Api.csproj", "{2E067377-7911-468B-A2EF-8E6ADE430BCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C22CD285-3720-4446-81B3-802CE5B080EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C22CD285-3720-4446-81B3-802CE5B080EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C22CD285-3720-4446-81B3-802CE5B080EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E067377-7911-468B-A2EF-8E6ADE430BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E067377-7911-468B-A2EF-8E6ADE430BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E067377-7911-468B-A2EF-8E6ADE430BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E067377-7911-468B-A2EF-8E6ADE430BCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

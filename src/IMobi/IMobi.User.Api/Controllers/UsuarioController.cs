@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace IMobi.User.Api.Controllers
 {
-    [Route("api/usuarios")]
+    [Route("api/usuario")]
     [ApiController]
     public class UsuarioController : ControllerBase
     {
@@ -16,7 +16,7 @@ namespace IMobi.User.Api.Controllers
             _usuarioSrevice = usuarioSrevice;
         }
 
-        [HttpPost]
+        [HttpPost("create")]
         public async Task<IActionResult> Create([FromBody] CreateUsuarioDto usuarioDto)
         {
             try
