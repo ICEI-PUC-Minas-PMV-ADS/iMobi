@@ -20,7 +20,7 @@ public class PropriedadeRepository : IPropriedadeRepository
     {
         FinalidadeEnum finalidadeType = new();
         if (finalidade == FinalidadeEnum.Venda.ToString())
-             finalidadeType = FinalidadeEnum.Venda;
+            finalidadeType = FinalidadeEnum.Venda;
         else if (finalidade == FinalidadeEnum.Aluguel.ToString())
             finalidadeType = FinalidadeEnum.Aluguel;
         FilterDefinition<Propriedade> filter = Builders<Propriedade>.Filter
@@ -33,5 +33,11 @@ public class PropriedadeRepository : IPropriedadeRepository
     public async Task<IEnumerable<Propriedade>> GetPropriedades()
     {
         return await _context.Propriedades.Find(p => true).ToListAsync();
+    }
+
+    public async Task<IEnumerable<Propriedade>> GetByUserId(string userId)
+    {
+        var filter = Builders<Propriedade>.Filter.Eq(p => p.UserId, userId);
+        return await _context.Propriedades.Find(filter).ToListAsync();
     }
 }
