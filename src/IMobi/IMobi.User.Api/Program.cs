@@ -1,7 +1,10 @@
+using System.Text;
 using IMobi.User.Api.Configurations;
 using IMobi.User.Api.Data;
 using IMobi.User.Api.Repositories;
 using IMobi.User.Api.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +13,21 @@ builder.Services.Configure<MongoDbSettings>(
     builder.Configuration.GetSection("DatabaseSettings"));
 
 builder.Services.AddAuthorization();
-builder.Services.AddAuthentication("Bearer").AddJwtBearer();
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidIssuer = "http://localhost:5000",
+        ValidAudience = "http://localhost:3000",
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("55d0c36a01ce0acf3ca2bbd40188c0ab67d8aa9b87d0351ebbabbceaaa10a5f9"))
+    };
+});
 
 builder.Services.AddScoped<IIMobiDbContext, IMobiDbContext>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();

@@ -1,5 +1,8 @@
 using IMobi.Imovel.Api.Data;
 using IMobi.Imovel.Api.Repositories;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +14,22 @@ builder.Services.AddScoped<IPropriedadeRepository, PropriedadeRepository>();
 builder.Services.AddControllers().AddJsonOptions(x =>
 {
     x.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidIssuer = "http://localhost:5000",
+        ValidAudience = "http://localhost:3000",
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("55d0c36a01ce0acf3ca2bbd40188c0ab67d8aa9b87d0351ebbabbceaaa10a5f9"))
+    };
 });
 
 builder.Services.AddSwaggerGen(option =>
@@ -51,6 +70,8 @@ if (app.Environment.IsDevelopment())
 // Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

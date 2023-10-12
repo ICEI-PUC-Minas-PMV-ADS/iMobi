@@ -1,6 +1,7 @@
 ﻿using IMobi.Imovel.Api.InputModels;
 using IMobi.Imovel.Api.Models;
 using IMobi.Imovel.Api.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +17,7 @@ public class PropriedadeController : ControllerBase
     }
 
     [HttpGet]
+    [Authorize]
     public async Task<ActionResult<IEnumerable<Propriedade>>> GetPropriedades()
     {
         var propriedade = await _repository.GetPropriedades();

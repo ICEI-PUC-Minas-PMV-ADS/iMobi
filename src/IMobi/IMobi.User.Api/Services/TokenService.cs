@@ -22,6 +22,8 @@ public class TokenService
             Subject = GenerateClaims(usuario),
             SigningCredentials = credentials,
             Expires = DateTime.UtcNow.AddHours(9),
+            Audience = "http://localhost:3000",
+            Issuer = "http://localhost:5000"
         };
 
         var token = handler.CreateToken(tokenDescriptor);
