@@ -14,6 +14,8 @@ builder.Services.AddAuthentication("Bearer").AddJwtBearer();
 
 builder.Services.AddScoped<IIMobiDbContext, IMobiDbContext>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<AuthService>();
 builder.Services.AddTransient<TokenService>();
 
 builder.Services.AddControllers();

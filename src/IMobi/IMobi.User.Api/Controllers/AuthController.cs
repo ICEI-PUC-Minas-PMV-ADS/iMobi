@@ -10,12 +10,12 @@ namespace IMobi.User.Api.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly IUsuarioRepository _usuarioRepository;
+        private readonly AuthService _authService;
         private readonly TokenService _tokenService;
 
-        public AuthController(IUsuarioRepository usuarioRepository, TokenService tokenService)
+        public AuthController(AuthService authService, TokenService tokenService)
         {
-            _usuarioRepository = usuarioRepository;
+            _authService = authService;
             _tokenService = tokenService;
         }
 
@@ -24,7 +24,7 @@ namespace IMobi.User.Api.Controllers
         {
             try
             {
-                var usuario = await _usuarioRepository.Authenticate(loginDto.Email, loginDto.Password);
+                var usuario = await _authService.Authenticate(loginDto.Email, loginDto.Password);
 
                 if (usuario == null)
                 {
@@ -33,7 +33,7 @@ namespace IMobi.User.Api.Controllers
 
                 var token = _tokenService.Generate(usuario);
 
-                return Ok(new { Token = token, usuario.Nome, usuario.Email, usuario.Creci, usuario.Role });
+                return Ok(new { token, usuario.Id, usuario.Nome, usuario.Email, usuario.Creci, usuario.Role });
             }
             catch (Exception ex)
             {

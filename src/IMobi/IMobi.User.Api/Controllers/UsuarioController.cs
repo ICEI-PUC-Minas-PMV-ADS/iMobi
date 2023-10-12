@@ -1,10 +1,7 @@
 using IMobi.User.Api.Dtos;
 using IMobi.User.Api.Models;
-using IMobi.User.Api.Repositories;
+using IMobi.User.Api.Services;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace IMobi.User.Api.Controllers
 {
@@ -12,11 +9,11 @@ namespace IMobi.User.Api.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private readonly IUsuarioRepository _usuarioRepository;
+        private readonly UsuarioService _usuarioSrevice;
 
-        public UsuarioController(IUsuarioRepository usuarioRepository)
+        public UsuarioController(UsuarioService usuarioSrevice)
         {
-            _usuarioRepository = usuarioRepository;
+            _usuarioSrevice = usuarioSrevice;
         }
 
         [HttpPost]
@@ -34,7 +31,7 @@ namespace IMobi.User.Api.Controllers
                     Role = usuarioDto.Role,
                 };
 
-                await _usuarioRepository.Create(usuario);
+                await _usuarioSrevice.Create(usuario);
 
                 return Ok("Usuário criado com sucesso");
             }

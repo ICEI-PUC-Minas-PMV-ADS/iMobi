@@ -16,8 +16,6 @@ namespace IMobi.User.Api.Repositories
 
         public async Task Create(Usuario usuario)
         {
-            usuario.Password = BCrypt.Net.BCrypt.HashPassword(usuario.Password);
-
             await _context.Usuario.InsertOneAsync(usuario);
         }
 
@@ -31,10 +29,14 @@ namespace IMobi.User.Api.Repositories
             return await _context.Usuario.Find(u => u.Id == id).FirstOrDefaultAsync();
         }
 
-        public async Task<Usuario> Authenticate(string email, string password)
+        public async Task<Usuario> FindByEmail(string email)
         {
-            // Implemente a lógica para buscar um usuário com base no email e senha.
-            return await _context.Usuario.Find(u => u.Email == email && u.Password == password).FirstOrDefaultAsync();
+            return await _context.Usuario.Find(u => u.Email == email).FirstOrDefaultAsync();
+        }
+
+        public async Task<Usuario> FindByCpfCnpj(string cpfcnpj)
+        {
+            return await _context.Usuario.Find(u => u.CpfCnpj == cpfcnpj).FirstOrDefaultAsync();
         }
 
         public async Task Update(string id, Usuario usuario)
