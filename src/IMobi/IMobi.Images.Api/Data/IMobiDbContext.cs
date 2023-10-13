@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace IMobi.User.Api.Data
 {
-    public class IMobiDbContext
+    public class IMobiDbContext : IIMobiDbContext
     {
         public IMobiDbContext(IConfiguration configuration)
         {
