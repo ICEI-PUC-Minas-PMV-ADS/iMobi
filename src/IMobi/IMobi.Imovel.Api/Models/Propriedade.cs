@@ -9,6 +9,9 @@ public class Propriedade
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string Id { get; set; }
+
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string UserId { get; set; }
     public FinalidadeEnum Finalidade { get; set; }
     public StatusEnum Status { get; set; }
     public int AreaPrivativa { get; set; }
@@ -30,6 +33,7 @@ public class Propriedade
     {
         var entity = new Propriedade()
         {
+            UserId = model.UserId,
             Finalidade = model.Finalidade,
             Status = model.Status,
             AreaPrivativa = model.AreaPrivativa,

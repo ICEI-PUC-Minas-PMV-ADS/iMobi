@@ -5,6 +5,7 @@ namespace IMobi.Imovel.Api.InputModels;
 public class PropriedadeInputModel
 {
     public string Id { get; set; }
+    public string UserId { get; set; }
     public FinalidadeEnum Finalidade { get; set; }
     public StatusEnum Status { get; set; }
     public int AreaPrivativa { get; set; }
