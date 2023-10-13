@@ -2,7 +2,9 @@ using IMobi.Images.Api.Dtos;
 using IMobi.Images.Api.Models;
 using IMobi.Images.Api.Repositories;
 using IMobi.User.Api.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Driver;
 
 namespace IMobi.Images.Api.Controllers;
 
@@ -10,6 +12,7 @@ namespace IMobi.Images.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize]
 public class ImageController : ControllerBase
 {
     private IWebHostEnvironment _environment;
@@ -64,6 +67,28 @@ public class ImageController : ControllerBase
         catch (Exception ex)
         {
             return BadRequest($"Erro ao salvar os dados da imagem no Banco de Dados: {ex.Message}");
+        }
+    }
+
+    [HttpGet("getByPropriedadeId/{propriedadeId}")]
+    public async Task<IActionResult?> GetImagesByPropriedadeId(string propriedadeId)
+    {
+        try
+        {
+            var image = await _context.Imagens.Find(u => u.PropriedadeId == propriedadeId).ToListAsync();
+
+            if (image != null)
+            {
+                return Ok(image);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        catch (Exception ex)
+        {
+            return BadRequest($"Erro ao recuperar a imagem: {ex.Message}");
         }
     }
 

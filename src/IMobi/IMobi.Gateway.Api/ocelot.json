@@ -72,7 +72,7 @@
             ]
         },
         {
-            "DownstreamPathTemplate": "/",
+            "DownstreamPathTemplate": "/api/image/add",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
@@ -80,7 +80,35 @@
                     "Port": 5002
                 }
             ],
-            "UpstreamPathTemplate": "/gateway",
+            "UpstreamPathTemplate": "/gateway/image/add",
+            "UpstreamHttpMethod": [
+                "POST"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/image/getbypropriedadeid/{propriedadeId}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5002
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/image/getbypropriedadeid/{propriedadeId}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/image",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5002
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/image",
             "UpstreamHttpMethod": [
                 "GET"
             ]
