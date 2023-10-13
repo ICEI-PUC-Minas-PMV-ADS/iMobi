@@ -45,7 +45,6 @@ public class Propriedade
             Preco = model.Preco,
             ValorCondominio = model.ValorCondominio,
             ValorAluguel = model.ValorAluguel,
-            CreatedAt = DateTime.Now,
             Endereco = new Endereco()
             {
                 Estado = model.Endereco.Estado,
@@ -59,24 +58,24 @@ public class Propriedade
 
         return entity;
     }
-}
 
-public enum FinalidadeEnum
-{
-    Nd,
-    Venda,
-    Aluguel
-}
+    public enum FinalidadeEnum
+    {
+        Nd,
+        Venda,
+        Aluguel
+    }
 
-public enum StatusEnum
-{
-    Lancamento,
-    Pronto,
-    EmConstrucao
-}
+    public enum StatusEnum
+    {
+        Lancamento,
+        Pronto,
+        EmConstrucao
+    }
 
-public enum GaragemEnum
-{
-    Sim,
-    Nao
+    public enum GaragemEnum
+    {
+        Sim,
+        Nao
+    }
 }

@@ -45,7 +45,18 @@ public class PropriedadeController : ControllerBase
     {
         Propriedade propriedade = new();
         var entity = propriedade.InputModelToEntity(propriedadeInputModel);
+        entity.CreatedAt = DateTime.Now;
         await _repository.CreatePropriedade(entity);
+        return Ok(entity);
+    }
+
+    [HttpPut]
+    public async Task<ActionResult<Propriedade>> UpdatePropriedade([FromBody] PropriedadeInputModel propriedadeInputModel)
+    {
+        Propriedade propriedade = new();
+        var entity = propriedade.InputModelToEntity(propriedadeInputModel);
+        entity.UpdatedAt = DateTime.Now;
+        await _repository.UpdatePropriedade(entity);
         return Ok(entity);
     }
 }

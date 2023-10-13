@@ -1,6 +1,7 @@
 ﻿using IMobi.Imovel.Api.Data;
 using IMobi.Imovel.Api.Models;
 using MongoDB.Driver;
+using static IMobi.Imovel.Api.Models.Propriedade;
 
 namespace IMobi.Imovel.Api.Repositories;
 
@@ -39,5 +40,10 @@ public class PropriedadeRepository : IPropriedadeRepository
     {
         var filter = Builders<Propriedade>.Filter.Eq(p => p.UserId, userId);
         return await _context.Propriedades.Find(filter).ToListAsync();
+    }
+
+    public async Task UpdatePropriedade(Propriedade propriedade)
+    {
+        await _context.Propriedades.ReplaceOneAsync(filter: g => g.Id == propriedade.Id, replacement: propriedade);
     }
 }
