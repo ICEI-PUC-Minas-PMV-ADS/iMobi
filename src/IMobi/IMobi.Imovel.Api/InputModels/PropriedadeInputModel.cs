@@ -1,4 +1,5 @@
 ﻿using IMobi.Imovel.Api.Models;
+using static IMobi.Imovel.Api.Models.Propriedade;
 
 namespace IMobi.Imovel.Api.InputModels;
 
