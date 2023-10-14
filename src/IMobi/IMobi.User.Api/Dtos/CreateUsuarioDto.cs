@@ -1,6 +1,6 @@
 namespace IMobi.User.Api.Dtos
 {
-    public class CreateUsuarioDto
+    public class CreateUsuarioDto : ICreateUsuarioDto
     {
         public string Nome { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
