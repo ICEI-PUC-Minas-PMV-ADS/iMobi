@@ -7,7 +7,7 @@ using IMobi.User.Api.Configurations;
 using System.Security.Claims;
 
 namespace IMobi.User.Api.Services;
-public class TokenService
+public class TokenService : ITokenService
 {
     public string Generate(Usuario usuario)
     {

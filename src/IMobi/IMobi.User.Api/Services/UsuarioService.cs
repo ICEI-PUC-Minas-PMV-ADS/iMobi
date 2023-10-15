@@ -3,7 +3,7 @@ using IMobi.User.Api.Repositories;
 
 namespace IMobi.User.Api.Services
 {
-    public class UsuarioService
+    public class UsuarioService : IUsuarioService
     {
         private readonly IUsuarioRepository _usuarioRepository;
 
