@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using IMobi.User.Api.Repositories;
 using IMobi.User.Api.Services;
 using IMobi.User.Api.Dtos;
 

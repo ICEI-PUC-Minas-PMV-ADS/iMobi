@@ -1,10 +1,9 @@
 using IMobi.User.Api.Models;
 using IMobi.User.Api.Repositories;
-using BCrypt.Net;
 
 namespace IMobi.User.Api.Services
 {
-    public class AuthService
+    public class AuthService : IAuthService
     {
         private readonly IUsuarioRepository _usuarioRepository;
 
