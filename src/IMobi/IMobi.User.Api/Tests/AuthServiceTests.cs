@@ -4,7 +4,7 @@ using IMobi.User.Api.Models;
 using IMobi.User.Api.Services;
 using IMobi.User.Api.Repositories;
 
-namespace IMobi.User.Api.Tests
+namespace IMobi.User.Api.Services.Tests
 {
     public class AuthServiceTests
     {
