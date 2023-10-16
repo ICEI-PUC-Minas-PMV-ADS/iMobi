@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace IMobi.Imovel.Api.Controllers;
 [Route("api/[controller]")]
 [ApiController]
+[Authorize]
 public class PropriedadeController : ControllerBase
 {
     private readonly IPropriedadeRepository _repository;
@@ -17,7 +18,6 @@ public class PropriedadeController : ControllerBase
     }
 
     [HttpGet]
-    [Authorize]
     public async Task<ActionResult<IEnumerable<Propriedade>>> GetPropriedades()
     {
         var propriedade = await _repository.GetPropriedades();
