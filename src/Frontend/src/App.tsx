@@ -2,6 +2,10 @@ import { Router } from "./router"
 
 export function App() {
   return (
-    <Router />
+    <>
+      <header>Header</header>
+      <Router />
+      <footer>Footer</footer>
+    </>
   )
 }
