@@ -1,41 +1,32 @@
-import { Routes, Route, BrowserRouter, Outlet, Navigate } from "react-router-dom";
-
-interface AuthGuardProps {
-    isPrivate: boolean;
-}
-
-function AuthGuard({ isPrivate }: AuthGuardProps) {
-    const signIn = false;
-
-    if (!signIn && isPrivate) {
-        return <Navigate to="/login" />
-    }
-
-    if (signIn && !isPrivate) {
-        return <Navigate to="/perfil" />
-    }
-
-    return <Outlet />
-}
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { AuthGuard } from "./AuthGuard";
+import { LoginPage } from "../view/pages/Login";
+import { CadastroPage } from "../view/pages/Cadastro";
+import { HomePage } from "../view/pages/Home";
+import { PerfilPage } from "../view/pages/Perfil";
+import { CadastroImovelPage } from "../view/pages/CadastroImovel";
+import { AuthLayout } from "../view/layouts/AuthLayout";
 
 export function Router() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route element={<AuthGuard isPrivate={false} />}>
-                    <Route path="/login" element={<h1>Login</h1>} />
-                    <Route path="/cadastro" element={<h1>Cadastre-se</h1>} />
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<AuthGuard isPrivate={false} />}>
+          <Route element={<AuthLayout />}>
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/cadastro" element={<CadastroPage />} />
+          </Route>
 
-                    <Route path="/" element={<h1>Home</h1>} />
-                </Route>
+          <Route path="/" element={<HomePage />} />
+        </Route>
 
-                {/* Protected Routes */}
+        {/* Protected Routes */}
 
-                <Route element={<AuthGuard isPrivate={true} />}>
-                    <Route path="/perfil" element={<h1>Usuario/Perfil</h1>} />
-                    <Route path="/imovel/cadastro" element={<h1>Cadastrar um imovel</h1>} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
-    )
+        <Route element={<AuthGuard isPrivate={true} />}>
+          <Route path="/perfil" element={<PerfilPage />} />
+          <Route path="/imovel/cadastro" element={<CadastroImovelPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }
