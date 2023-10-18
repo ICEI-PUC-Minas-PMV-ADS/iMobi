@@ -21,6 +21,7 @@ export function CadastroPage() {
       </div>
 
       <form className="mt-[16px] flex flex-col gap-4">
+        <Input name="name" type="text" placeholder="Nome" />
         <Input name="email" type="email" placeholder="Email" />
         <Input name="password" type="password" placeholder="Senha" />
         <Input name="cpfcnpj" type="text" placeholder="CPF/CNPJ" />
