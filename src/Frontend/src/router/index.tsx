@@ -6,6 +6,7 @@ import { HomePage } from "../view/pages/Home";
 import { PerfilPage } from "../view/pages/Perfil";
 import { CadastroImovelPage } from "../view/pages/CadastroImovel";
 import { AuthLayout } from "../view/layouts/AuthLayout";
+import { RecuperarSenhaPage } from "../view/pages/EsqSenha";
 
 export function Router() {
   return (
@@ -15,6 +16,7 @@ export function Router() {
           <Route element={<AuthLayout />}>
             <Route path="/login" element={<LoginPage />} />
             <Route path="/cadastro" element={<CadastroPage />} />
+            <Route path="/esqSenha" element={<RecuperarSenhaPage />} />
           </Route>
 
           <Route path="/" element={<HomePage />} />
