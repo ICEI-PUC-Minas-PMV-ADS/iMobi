@@ -6,6 +6,7 @@ import { useMutation } from "@tanstack/react-query";
 import { toast } from "react-hot-toast";
 
 import { LoginParams } from "../../../app/services/authService/login";
+import { useAuth } from "../../../app/hooks/useAuth";
 
 const schema = z.object({
   email: z.string().email('Informe um e-mail válido'),
@@ -29,11 +30,15 @@ export function useLoginController() {
     },
   });
 
+  const { login } = useAuth();
+
   const handleSubmit = hookFormHandleSubmit(async (data) => {
     try {
-      await mutateAsync(data);
+      const { token } = await mutateAsync(data);
+
+      login(token);
     } catch {
-      toast('Verifique seus dados. Conta não encontrada');
+      toast.error('Credenciais inválidas.');
     }
   });
 
