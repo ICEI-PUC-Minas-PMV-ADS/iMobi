@@ -1,14 +1,10 @@
-import { useState } from "react";
-
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import { Switch } from "../../components/Switch";
 import { useCadastroController } from "./useCadastroController";
 
 export function CadastroPage() {
-  const { handleSubmit, register, errors } = useCadastroController();
-
-  const [isChecked, setIsChecked] = useState(false);
+  const { handleSubmit, register, errors, isChecked, handleSwitchChange, isPending } = useCadastroController();
 
   return (
     <>
@@ -20,7 +16,9 @@ export function CadastroPage() {
 
       <div>
         <small>Você é corretor de imóveis?</small>
-        <Switch isChecked={isChecked} setIsChecked={setIsChecked} />
+        <Switch
+          onChange={handleSwitchChange}
+          isChecked={isChecked} />
       </div>
 
       <form onSubmit={handleSubmit} className="mt-[16px] flex flex-col gap-4">
@@ -54,7 +52,7 @@ export function CadastroPage() {
             placeholder="CRECI"
             {...register("creci")} />
         )}
-        <Button type="submit">Cadastre-se</Button>
+        <Button isPending={isPending} type="submit">Cadastre-se</Button>
       </form>
     </>
   )

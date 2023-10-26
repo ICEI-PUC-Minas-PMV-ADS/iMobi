@@ -37,8 +37,8 @@ export function useLoginController() {
       const { token } = await mutateAsync(data);
 
       login(token);
-    } catch {
-      toast.error('Credenciais inválidas.');
+    } catch (err: any) {
+      toast.error(`${err?.response.data}`);
     }
   });
 
