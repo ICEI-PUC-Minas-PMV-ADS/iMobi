@@ -3,9 +3,7 @@ import { Input } from "../../components/Input";
 import { useLoginController } from "./useLoginController";
 
 export function LoginPage() {
-  const { handleSubmit, register, errors } = useLoginController();
-
-  console.log(errors)
+  const { handleSubmit, register, errors, isPending } = useLoginController();
 
   return (
     <>
@@ -32,8 +30,9 @@ export function LoginPage() {
           {...register('password')}
         />
 
-
-        <Button type="submit">Entrar</Button>
+        <Button
+          isPending={isPending}
+          type="submit">Entrar</Button>
       </form>
     </>
   )
