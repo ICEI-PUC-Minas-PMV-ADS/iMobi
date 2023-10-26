@@ -16,6 +16,13 @@ builder.Services.AddOcelot(builder.Configuration);
 
 var app = builder.Build();
 
+app.UseCors(c =>
+{
+    c.AllowAnyHeader();
+    c.AllowAnyMethod();
+    c.AllowAnyOrigin();
+});
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
