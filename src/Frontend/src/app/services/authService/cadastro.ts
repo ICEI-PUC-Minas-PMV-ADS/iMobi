@@ -5,7 +5,7 @@ export interface CadastroParams {
   email: string;
   password: string;
   cpfcnpj: string;
-  creci?: string;
+  creci?: string | null;
   role: string[];
 }
 

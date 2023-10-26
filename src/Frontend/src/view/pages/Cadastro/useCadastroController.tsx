@@ -12,7 +12,7 @@ const schema = z.object({
   email: z.string().email('Informe um e-mail válido'),
   password: z.string().min(8, "A senha deve conter pelo menos 8 dígitos."),
   cpfcnpj: z.string().min(11, "Insira um CPF/CNPJ válido"),
-  creci: z.string().min(4, "Insira um CRECI válido"),
+  creci: z.string().nullish(),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -43,9 +43,11 @@ export function useCadastroController() {
       ...data,
       role: isChecked ? ['user', 'corretor'] : ['user']
     };
+    console.log('clicou')
 
     try {
       await mutateAsync(formData);
+
       toast.success('Usuario criado com sucesso');
     } catch (err: any) {
       toast.error(`${err?.response.data}`);
