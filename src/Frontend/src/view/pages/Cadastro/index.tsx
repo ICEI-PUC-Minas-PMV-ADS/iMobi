@@ -3,8 +3,11 @@ import { useState } from "react";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import { Switch } from "../../components/Switch";
+import { useCadastroController } from "./useCadastroController";
 
 export function CadastroPage() {
+  const { handleSubmit, register, errors } = useCadastroController();
+
   const [isChecked, setIsChecked] = useState(false);
 
   return (
@@ -20,13 +23,36 @@ export function CadastroPage() {
         <Switch isChecked={isChecked} setIsChecked={setIsChecked} />
       </div>
 
-      <form className="mt-[16px] flex flex-col gap-4">
-        <Input name="name" type="text" placeholder="Nome" />
-        <Input name="email" type="email" placeholder="Email" />
-        <Input name="password" type="password" placeholder="Senha" />
-        <Input name="cpfcnpj" type="text" placeholder="CPF/CNPJ" />
+      <form onSubmit={handleSubmit} className="mt-[16px] flex flex-col gap-4">
+        <Input
+          error={errors.nome?.message}
+          type="text"
+          placeholder="Nome"
+          {...register("nome")}
+        />
+        <Input
+          error={errors.email?.message}
+          type="email"
+          placeholder="Email"
+          {...register("email")}
+        />
+        <Input
+          error={errors.password?.message}
+          type="password"
+          placeholder="Senha"
+          {...register("password")}
+        />
+        <Input
+          error={errors.cpfcnpj?.message}
+          type="text"
+          placeholder="CPF/CNPJ"
+          {...register("cpfcnpj")} />
         {!isChecked ? null : (
-          <Input name="creci" type="text" placeholder="CRECI" />
+          <Input
+            error={errors.creci?.message}
+            type="text"
+            placeholder="CRECI"
+            {...register("creci")} />
         )}
         <Button type="submit">Cadastre-se</Button>
       </form>

@@ -3,7 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from 'zod';
 
 const schema = z.object({
-  email: z.string().email('Informe um e-mail válido'),  
+  email: z.string().email('Informe um e-mail válido'),
 })
 
 type FormData = z.infer<typeof schema>;

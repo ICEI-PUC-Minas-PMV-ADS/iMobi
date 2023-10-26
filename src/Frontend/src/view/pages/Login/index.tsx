@@ -5,6 +5,8 @@ import { useLoginController } from "./useLoginController";
 export function LoginPage() {
   const { handleSubmit, register, errors } = useLoginController();
 
+  console.log(errors)
+
   return (
     <>
       <header>
@@ -18,17 +20,18 @@ export function LoginPage() {
         onSubmit={handleSubmit}
         className="mt-[35px] flex flex-col gap-4">
         <Input
+          error={errors.email?.message}
           type="email"
           placeholder="Email"
           {...register('email')} />
-        {errors.email && <small>{errors.email.message}</small>}
 
         <Input
+          error={errors.password?.message}
           type="password"
           placeholder="Senha"
           {...register('password')}
         />
-        {errors.password && <small>{errors.password.message}</small>}
+
 
         <Button type="submit">Entrar</Button>
       </form>
