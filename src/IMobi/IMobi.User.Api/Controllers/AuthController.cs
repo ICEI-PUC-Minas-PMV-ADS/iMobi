@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using IMobi.User.Api.Services;
 using IMobi.User.Api.Dtos;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace IMobi.User.Api.Controllers
@@ -38,6 +39,14 @@ namespace IMobi.User.Api.Controllers
             {
                 return BadRequest($"Erro durante a autenticação: {ex.Message}");
             }
+        }
+
+        [Authorize] // Requer autenticação via token JWT
+        [HttpGet("validate")]
+        public IActionResult ValidateToken()
+        {
+            // Se chegou aqui, o token é válido
+            return Ok("Token válido");
         }
     }
 }
