@@ -4,6 +4,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query';
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 import { AuthProvider } from "./app/contexts/AuthContext";
 
@@ -25,6 +26,8 @@ export function App() {
         <footer>Footer</footer>
         <Toaster />
       </AuthProvider>
+
+      <ReactQueryDevtools />
     </QueryClientProvider>
   )
 }
