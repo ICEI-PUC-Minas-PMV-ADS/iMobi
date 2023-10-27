@@ -7,10 +7,12 @@ import { PerfilPage } from "../view/pages/Perfil";
 import { CadastroImovelPage } from "../view/pages/CadastroImovel";
 import { AuthLayout } from "../view/layouts/AuthLayout";
 import { RecuperarSenhaPage } from "../view/pages/EsqSenha";
+import { Header } from "../view/components/Header";
 
 export function Router() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
 
@@ -29,6 +31,7 @@ export function Router() {
           <Route path="/imovel/cadastro" element={<CadastroImovelPage />} />
         </Route>
       </Routes>
+      <footer>Footer</footer>
     </BrowserRouter>
   )
 }

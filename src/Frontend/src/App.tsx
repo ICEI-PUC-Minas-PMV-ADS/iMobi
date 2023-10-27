@@ -21,9 +21,7 @@ export function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <header>Header</header>
         <Router />
-        <footer>Footer</footer>
         <Toaster />
       </AuthProvider>
 
