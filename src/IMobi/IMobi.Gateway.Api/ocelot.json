@@ -15,6 +15,20 @@
             ]
         },
         {
+            "DownstreamPathTemplate": "/api/auth/validate",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5000
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/auth/validate",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
             "DownstreamPathTemplate": "/api/usuario/create",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [

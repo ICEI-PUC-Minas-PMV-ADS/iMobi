@@ -3,18 +3,31 @@ import { Router } from "./router"
 import {
   QueryClient,
   QueryClientProvider,
-  useQuery,
 } from '@tanstack/react-query';
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
-const queryClient = new QueryClient();
+import { AuthProvider } from "./app/contexts/AuthContext";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: false,
+      refetchOnWindowFocus: false,
+    },
+  }
+});
 
 export function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <header>Header</header>
-      <Router />
-      <footer>Footer</footer>
-      <Toaster />
+      <AuthProvider>
+        <header>Header</header>
+        <Router />
+        <footer>Footer</footer>
+        <Toaster />
+      </AuthProvider>
+
+      <ReactQueryDevtools />
     </QueryClientProvider>
   )
 }

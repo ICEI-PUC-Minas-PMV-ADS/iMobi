@@ -12,14 +12,14 @@ export function Router() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<HomePage />} />
+
         <Route element={<AuthGuard isPrivate={false} />}>
           <Route element={<AuthLayout />}>
             <Route path="/login" element={<LoginPage />} />
             <Route path="/cadastro" element={<CadastroPage />} />
             <Route path="/esqSenha" element={<RecuperarSenhaPage />} />
           </Route>
-
-          <Route path="/" element={<HomePage />} />
         </Route>
 
         {/* Protected Routes */}

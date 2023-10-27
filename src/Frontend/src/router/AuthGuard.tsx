@@ -1,15 +1,20 @@
 import { Outlet, Navigate } from "react-router-dom";
+import { useAuth } from "../app/hooks/useAuth";
 
 interface AuthGuardProps {
-    isPrivate: boolean;
+  isPrivate: boolean;
 }
 
 export function AuthGuard({ isPrivate }: AuthGuardProps) {
-    const signIn = false;
+  const { signedIn } = useAuth();
 
-    if (!signIn && isPrivate) {
-        return <Navigate to="/login" replace />
-    }
+  if (!signedIn && isPrivate) {
+    return <Navigate to="/login" replace />
+  }
 
-    return <Outlet />
+  if (signedIn && !isPrivate) {
+    return <Navigate to="/perfil" />
+  }
+
+  return <Outlet />
 }
