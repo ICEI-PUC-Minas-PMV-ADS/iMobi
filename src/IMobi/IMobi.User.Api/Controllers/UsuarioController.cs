@@ -40,5 +40,27 @@ namespace IMobi.User.Api.Controllers
                 return BadRequest($"Erro ao criar o usuário: {ex.Message}");
             }
         }
+
+        [HttpGet("findById/{id}")]
+        public async Task<IActionResult> FindById(string id)
+        {
+            try
+            {
+                var usuario = await _usuarioSrevice.FindById(id);
+
+                if (usuario != null)
+                {
+                    return Ok(usuario);
+                }
+                else
+                {
+                    return NotFound("Usuário não encontrado");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro ao buscar o usuário: {ex.Message}");
+            }
+        }
     }
 }

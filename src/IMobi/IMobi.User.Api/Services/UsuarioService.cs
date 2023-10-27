@@ -1,3 +1,4 @@
+using IMobi.User.Api.Dtos;
 using IMobi.User.Api.Models;
 using IMobi.User.Api.Repositories;
 
@@ -32,6 +33,24 @@ namespace IMobi.User.Api.Services
             await _usuarioRepository.Create(usuario);
 
             return usuario;
+        }
+
+        public async Task<UsuarioDto> FindById(string id)
+        {
+            var usuario = await _usuarioRepository.FindById(id);
+
+            if (usuario == null)
+            {
+                throw new Exception("Usuário não encontrado");
+            }
+
+            return new UsuarioDto
+            {
+                Id = usuario.Id,
+                Nome = usuario.Nome,
+                Email = usuario.Email,
+                CpfCnpj = usuario.CpfCnpj
+            };
         }
     }
 }
