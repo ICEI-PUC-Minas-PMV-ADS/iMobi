@@ -15,6 +15,7 @@ export function Router() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/perfil/:userId" element={<PerfilPage />} />
 
         <Route element={<AuthGuard isPrivate={false} />}>
           <Route element={<AuthLayout />}>
@@ -23,11 +24,9 @@ export function Router() {
             <Route path="/esqSenha" element={<RecuperarSenhaPage />} />
           </Route>
         </Route>
-
         {/* Protected Routes */}
 
         <Route element={<AuthGuard isPrivate={true} />}>
-          <Route path="/perfil" element={<PerfilPage />} />
           <Route path="/imovel/cadastro" element={<CadastroImovelPage />} />
         </Route>
       </Routes>

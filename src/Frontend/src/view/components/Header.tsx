@@ -1,13 +1,26 @@
 import { useState } from "react";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../app/hooks/useAuth";
+import { localStorageKeys } from "../../app/config/localStorageKeys";
+import { useNavigate } from "react-router-dom";
 
 export function Header() {
   const [isMobileMenuVisible, setMobileMenuVisibility] = useState(false);
+  const { signedIn, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const userId = localStorage.getItem(localStorageKeys.USER_ID)
 
   const toggleMobileMenu = () => {
     setMobileMenuVisibility(!isMobileMenuVisible);
   };
+
+  const handleLogout = () => {
+    logout()
+
+    navigate('login')
+  }
 
   return (
     <header className="container mx-auto">
@@ -28,9 +41,21 @@ export function Header() {
             <Link className=" hover:text-cyan-500 duration-500" to="/feed">Feed</Link>
           </li>
 
-          <Link to="/login">
-            <Button>Entrar</Button>
-          </Link>
+          {signedIn && (
+            <li className="md:mx-3  mx-4 my-4 md:my-0">
+              <Link className=" hover:text-cyan-500 duration-500" to={`/perfil/${userId}`}>Perfil</Link>
+            </li>
+          )}
+
+          {!signedIn && (
+            <Link to="/login">
+              <Button>Entrar</Button>
+            </Link>
+          )}
+
+          {signedIn && (
+            <Button onClick={handleLogout}>Sair</Button>
+          )}
         </ul>
       </nav>
     </header>
