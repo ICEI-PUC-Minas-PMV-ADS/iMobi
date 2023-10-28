@@ -15,8 +15,8 @@ export function CadastroPage() {
       </header>
 
       <div>
-        <small>Você é corretor de imóveis?</small>
         <Switch
+          small="Você é corretor de imóveis?"
           onChange={handleSwitchChange}
           isChecked={isChecked} />
       </div>

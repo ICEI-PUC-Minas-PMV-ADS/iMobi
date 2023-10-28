@@ -35,6 +35,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const logout = useCallback(() => {
     localStorage.removeItem(localStorageKeys.TOKEN);
+    localStorage.removeItem(localStorageKeys.USER_ID);
+    localStorage.removeItem(localStorageKeys.EMAIL);
+    localStorage.removeItem(localStorageKeys.NAME);
 
     setSignedIn(false)
   }, []);
@@ -47,12 +50,18 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
   }, [isError, logout])
 
-  if (isFetching) {
-    return <PageLoader />
-  }
 
   return (
-    <AuthContext.Provider value={{ signedIn: isSuccess && signedIn, login, logout }}>
+    <AuthContext.Provider
+      value={{
+        signedIn: isSuccess && signedIn,
+        login,
+        logout
+      }}
+    >
+
+      <PageLoader isLoading={isFetching} />
+
       {children}
     </AuthContext.Provider>
   )
