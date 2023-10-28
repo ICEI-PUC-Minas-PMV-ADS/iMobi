@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import { Finalidade } from "../../../app/enums/Finalidade";
 import { useImoveisByUserId } from "../../../app/hooks/useImoveisByUserId";
 import { useUser } from "../../../app/hooks/useUser";
 import avatar from '../../../assets/avatar.svg'
@@ -14,7 +13,8 @@ export function PerfilPage() {
 
   const { userId: paramsId } = useParams();
   const storagedId = localStorage.getItem(localStorageKeys.USER_ID);
-  const isUserProfile = paramsId === storagedId
+
+  const isUserProfile = paramsId === storagedId;
 
   if (isFetchingImoveis && isFetchingUser) {
     return <PageLoader isLoading={isFetchingImoveis && isFetchingUser} />
