@@ -35,6 +35,19 @@ namespace IMobi.User.Api.Services
             return usuario;
         }
 
+        public async Task<Usuario> FindByEmail(string usuario)
+        {
+
+            var user = await _usuarioRepository.FindByEmail(usuario);
+
+            if (user == null)
+            {
+                throw new Exception("Usuário não encontrado.");
+            }
+
+            return user;
+        }
+
         public async Task<UsuarioDto> FindById(string id)
         {
             var usuario = await _usuarioRepository.FindById(id);
