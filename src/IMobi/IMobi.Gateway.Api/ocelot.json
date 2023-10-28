@@ -57,6 +57,20 @@
             ]
         },
         {
+            "DownstreamPathTemplate": "/api/usuario/findbyemail/{email}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5000
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/usuario/findbyemail/{email}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
             "DownstreamPathTemplate": "/api/propriedade",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
