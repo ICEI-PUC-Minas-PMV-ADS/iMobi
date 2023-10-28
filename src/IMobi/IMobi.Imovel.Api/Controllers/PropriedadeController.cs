@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace IMobi.Imovel.Api.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-[Authorize]
 public class PropriedadeController : ControllerBase
 {
     private readonly IPropriedadeRepository _repository;
@@ -40,6 +39,7 @@ public class PropriedadeController : ControllerBase
         return Ok(propriedades);
     }
 
+    [Authorize]
     [HttpPost]
     public async Task<ActionResult<Propriedade>> CreatePropriedade([FromBody] PropriedadeInputModel propriedadeInputModel)
     {
@@ -50,6 +50,7 @@ public class PropriedadeController : ControllerBase
         return Ok(entity);
     }
 
+    [Authorize]
     [HttpPut]
     public async Task<ActionResult<Propriedade>> UpdatePropriedade([FromBody] PropriedadeInputModel propriedadeInputModel)
     {

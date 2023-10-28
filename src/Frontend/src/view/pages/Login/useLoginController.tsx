@@ -1,12 +1,11 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from 'zod';
-import { authService } from "../../../app/services/authService";
-import { useMutation } from "@tanstack/react-query";
 import { toast } from "react-hot-toast";
 
-import { LoginParams } from "../../../app/services/authService/login";
 import { useAuth } from "../../../app/hooks/useAuth";
+import { useUser } from "../../../app/hooks/useUser";
+import { localStorageKeys } from "../../../app/config/localStorageKeys";
 
 const schema = z.object({
   email: z.string().email('Informe um e-mail válido'),
@@ -24,17 +23,16 @@ export function useLoginController() {
     resolver: zodResolver(schema),
   });
 
-  const { isPending, mutateAsync } = useMutation({
-    mutationFn: async (data: LoginParams) => {
-      return authService.login(data);
-    },
-  });
-
+  const { isPending, mutateAsync } = useUser();
   const { login } = useAuth();
 
   const handleSubmit = hookFormHandleSubmit(async (data) => {
     try {
-      const { token } = await mutateAsync(data);
+      const { token, id, nome, email } = await mutateAsync(data);
+
+      localStorage.setItem(localStorageKeys.USER_ID, id);
+      localStorage.setItem(localStorageKeys.EMAIL, email);
+      localStorage.setItem(localStorageKeys.NAME, nome);
 
       login(token);
     } catch (err: any) {
