@@ -62,5 +62,27 @@ namespace IMobi.User.Api.Controllers
                 return BadRequest($"Erro ao buscar o usuário: {ex.Message}");
             }
         }
+
+        [HttpGet("findByEmail/{email}")]
+        public async Task<IActionResult> FindByEmail(string email)
+        {
+            try
+            {
+                var usuario = await _usuarioSrevice.FindByEmail(email);
+
+                if (usuario != null)
+                {
+                    return Ok(usuario);
+                }
+                else
+                {
+                    return NotFound("Usuário não encontrado");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro ao buscar o usuário: {ex.Message}");
+            }
+        }
     }
 }
