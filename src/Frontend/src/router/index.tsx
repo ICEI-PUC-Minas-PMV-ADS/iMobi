@@ -3,6 +3,7 @@ import { AuthGuard } from "./AuthGuard";
 import { LoginPage } from "../view/pages/Login";
 import { CadastroPage } from "../view/pages/Cadastro";
 import { HomePage } from "../view/pages/Home";
+import { FeedPage } from "../view/pages/Feed";
 import { PerfilPage } from "../view/pages/Perfil";
 import { CadastroImovelPage } from "../view/pages/CadastroImovel";
 import { AuthLayout } from "../view/layouts/AuthLayout";
@@ -16,6 +17,8 @@ export function Router() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/perfil/:userId" element={<PerfilPage />} />
+        <Route path="/feed" element={<FeedPage />} />
+
 
         <Route element={<AuthGuard isPrivate={false} />}>
           <Route element={<AuthLayout />}>
