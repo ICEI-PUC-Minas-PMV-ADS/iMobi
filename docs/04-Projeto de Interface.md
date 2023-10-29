@@ -25,7 +25,7 @@ Ao desenvolver nossos wireframes, elaboramos cuidadosamente as principais telas 
 ![alt text](img/INICIO.jpg)
 
 ### *Figura 1 
-- **Tela de login**
+- **Tela de estrutura padrão**
 
 Para a tela de início da aplicação, onde os usuários podem pesquisar endereços de imóveis, bem como selecionar alguns filtros. Aqui estão alguns:
 
@@ -42,6 +42,8 @@ Categorias Populares:
 
 -Explore por Categoria: Crie categorias como "Apartamentos", "Casas", "Condomínios", etc. para facilitar a navegação.
 
+
+
 ![alt text](img/LOGIN.jpg)
 
 ### *Figura 2 
@@ -49,6 +51,8 @@ Categorias Populares:
  **Tela de Cadastro**
 
 Temos uma tela dedicada ao cadastro do usuário na aplicação, que inclui campos essenciais como nome, e-mail, CPF e, quando aplicável, o CRECI, especialmente para corretores.
+
+
 
 ![alt text](img/ENTRAR.jpg)
 
@@ -59,14 +63,15 @@ Temos uma tela dedicada ao cadastro do usuário na aplicação, que inclui campo
 Efetuar a autenticação do usuário através do preenchimento dos campos email e senha. Caso seja o primeiro acesso, o usuário deverá realizar o cadastro por meio da aba "*Cadastrar*". Caso o usuário precise redefinir senha, ele pode acessar o link “*recuperar senha*”.
 
 
-![alt text](img/USUARIO.jpg)
 
+![alt text](img/USUARIO.jpg)
 
 ### *Figura 4 
 
 **Tela de usúario**
 
-Tela de usuario
+Na área dedicada ao usuário, é possível cadastrar e excluir imóveis, além de editar informações pessoais, proporcionando controle total sobre sua experiência na aplicação.
+
 
 
 ![alt text](img/w4.jpg)
