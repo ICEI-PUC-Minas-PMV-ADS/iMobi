@@ -6,10 +6,12 @@ import { Button } from "../../components/Button";
 import { ImmovelCard } from "../../components/ImovelCard";
 import { PageLoader } from "../../components/PageLoader";
 import { localStorageKeys } from "../../../app/config/localStorageKeys";
+import { useImagemByImovelId } from "../../../app/hooks/useImagemByImovelId";
 
 export function PerfilPage() {
   const { data, isFetching: isFetchingUser } = useUser();
   const { imoveis, isFetching: isFetchingImoveis } = useImoveisByUserId();
+  const { url } = useImagemByImovelId();
 
   const { userId: paramsId } = useParams();
   const storagedId = localStorage.getItem(localStorageKeys.USER_ID);
@@ -56,10 +58,7 @@ export function PerfilPage() {
                     📷 Galeria
                   </Button>
                 </Link>
-
-
               </div>
-
             )}
 
           </div>
@@ -69,11 +68,11 @@ export function PerfilPage() {
               <p className="container mx-auto">{data?.nome} não possui imóveis cadastrados.</p>
             )}
 
-            {imoveis.map((imovel) => {
+            {imoveis.map((imovel, index) => {
               return (
                 <li className="list-none" key={imovel.id}>
                   <ImmovelCard
-                    src=""
+                    src={url[index]}
                     cidade={imovel.endereco.cidade}
                     bairro={imovel.endereco.bairro}
                     detalhes={imovel.detalhes}
