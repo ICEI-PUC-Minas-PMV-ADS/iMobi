@@ -1,3 +1,3 @@
 export enum Status {
-  Lancamento, Pronto, EmConstrucao
+  Lancamento = "Lancamento", Pronto = "Pronto", EmConstrucao = "EmConstrucao"
 }
