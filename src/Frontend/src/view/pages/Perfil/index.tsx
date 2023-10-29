@@ -11,8 +11,6 @@ export function PerfilPage() {
   const { data, isFetching: isFetchingUser } = useUser();
   const { imoveis, isFetching: isFetchingImoveis } = useImoveisByUserId();
 
-  console.log(imoveis)
-
   const { userId: paramsId } = useParams();
   const storagedId = localStorage.getItem(localStorageKeys.USER_ID);
 
@@ -75,6 +73,7 @@ export function PerfilPage() {
               return (
                 <li className="list-none" key={imovel.id}>
                   <ImmovelCard
+                    src=""
                     cidade={imovel.endereco.cidade}
                     bairro={imovel.endereco.bairro}
                     detalhes={imovel.detalhes}

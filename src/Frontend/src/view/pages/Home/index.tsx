@@ -4,7 +4,7 @@ import { Switch } from "../../components/Switch";
 import { useHomeController } from "./useHomeController";
 
 export function HomePage() {
-  const { imoveis } = useHomeController();
+  const { imoveis, url } = useHomeController();
 
   const imoveisRecentes = imoveis.slice(0, 3);
 
@@ -20,7 +20,7 @@ export function HomePage() {
           </div>
           <div>
             <h1>Busque por Estado e Cidade</h1>
-              <CityAutocomplete />
+            <CityAutocomplete />
           </div>
         </form>
       </div>
@@ -31,14 +31,12 @@ export function HomePage() {
         </header>
         <div className="flex justify-center items-center">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 p-8 overflow-x-auto">
-            {imoveisRecentes.length <= 0 && <p>Não há imóveis recentes cadastrados.</p>}
-
             {
-              imoveisRecentes.map((imovel) => {
+              imoveisRecentes.map((imovel, index) => {
                 return (
                   <li className="list-none" key={imovel.id}>
                     <ImmovelCard
-                      // src={imagens}
+                      src={url[index]}
                       cidade={imovel.endereco.cidade}
                       bairro={imovel.endereco.bairro}
                       detalhes={imovel.detalhes}

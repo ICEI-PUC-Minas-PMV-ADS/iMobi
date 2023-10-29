@@ -3,15 +3,11 @@ import { useImoveis } from "../../../app/hooks/useImoveis";
 
 export function useHomeController() {
   const { imoveis, isFetching } = useImoveis();
+  const { url } = useImagemByImovelId();
 
-  const ids = imoveis.map((imovel) => {
-    return imovel.id
-  })
-
-  console.log('Imoveis IDS: ', ids)
   return {
     imoveis,
     isFetching,
-
+    url,
   }
 }

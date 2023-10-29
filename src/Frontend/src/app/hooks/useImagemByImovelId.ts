@@ -1,21 +1,40 @@
 import { useQuery } from "@tanstack/react-query";
 import { imagemService } from "../services/imagemService";
+import { useImoveis } from "./useImoveis";
 
-export function useImagemByImovelId(imovelId: string) {
+export function useImagemByImovelId() {
+  const { imoveis } = useImoveis();
 
-  const { data, isFetching } = useQuery({
-    queryKey: ['imagemByImovelId'],
-    queryFn: () => {
-      if (imovelId) {
-        return imagemService.getByImovelId(imovelId)
-      }
+  const imovelIds = imoveis.map((imovel) => imovel.id);
 
-      else return null
+  const { data: imagens, isFetching } = useQuery({
+    queryKey: imovelIds.map((id) => ['imagemByImovelId', id]),
+    queryFn: async () => {
+      const imageRequests = imovelIds.map((id) => {
+        return imagemService.getByImovelId(id);
+      });
+
+      const imageData = await Promise.all(imageRequests);
+
+      return imageData;
     },
   });
 
-  return {
-    imagens: data ?? [],
-    isFetching
+  const url: string[] = [];
+
+  if (imagens) {
+    imagens.forEach((imovelImagens) => {
+      if (imovelImagens.length > 0) {
+        url.push(imovelImagens[0].propriedadeImagem);
+      } else {
+        url.push('');
+      }
+    });
   }
+
+  return {
+    imagens,
+    url,
+    isFetching,
+  };
 }

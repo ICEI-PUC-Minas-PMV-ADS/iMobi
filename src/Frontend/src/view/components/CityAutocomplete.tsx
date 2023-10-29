@@ -69,11 +69,10 @@ const CityAutocomplete: React.FC = () => {
       <input
         type="text"
         placeholder="Digite o nome da cidade"
-        className={`w-full mt-2 p-2 border-gray-300 rounded-md ${
-          isCityInputDisabled
+        className={`w-full mt-2 p-2 border-gray-300 rounded-md ${isCityInputDisabled
             ? "bg-gray-100 cursor-not-allowed"
             : "bg-white focus:ring focus:ring-opacity-50 focus:ring-blue-400"
-        }`}
+          }`}
         value={inputValue}
         onChange={handleInputChange}
         disabled={isCityInputDisabled}
