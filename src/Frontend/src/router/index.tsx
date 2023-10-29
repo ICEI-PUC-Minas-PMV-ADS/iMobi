@@ -9,6 +9,7 @@ import { CadastroImovelPage } from "../view/pages/CadastroImovel";
 import { AuthLayout } from "../view/layouts/AuthLayout";
 import { RecuperarSenhaPage } from "../view/pages/EsqSenha";
 import { Header } from "../view/components/Header";
+import { Galeria } from "../view/pages/Galeria";
 
 export function Router() {
   return (
@@ -31,6 +32,7 @@ export function Router() {
 
         <Route element={<AuthGuard isPrivate={true} />}>
           <Route path="/imovel/cadastro" element={<CadastroImovelPage />} />
+          <Route path="/galeria" element={<Galeria />} />
         </Route>
       </Routes>
       <footer>Footer</footer>

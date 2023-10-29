@@ -35,11 +35,14 @@ export function HomePage() {
         </header>
         <div className="flex justify-center items-center">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 p-8 overflow-x-auto">
+            {imoveisRecentes.length <= 0 && <p>Não há imóveis recentes cadastrados.</p>}
+
             {
               imoveisRecentes.map((imovel) => {
                 return (
                   <li className="list-none" key={imovel.id}>
                     <ImmovelCard
+                      // src={imagens}
                       cidade={imovel.endereco.cidade}
                       bairro={imovel.endereco.bairro}
                       detalhes={imovel.detalhes}

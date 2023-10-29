@@ -1,4 +1,5 @@
 import { Finalidade } from "../../app/enums/Finalidade"
+import { useImagemByImovelId } from "../../app/hooks/useImagemByImovelId";
 
 interface ImovelProps {
   finalidade: Finalidade,
@@ -9,13 +10,15 @@ interface ImovelProps {
   valorAluguel: number,
   bairro: string,
   cidade: string;
+  src: string;
 }
 
-export function ImmovelCard({ areaTotal, detalhes, finalidade, quartos, suites, valorAluguel, bairro, cidade }: ImovelProps) {
+export function ImmovelCard({ areaTotal, detalhes, finalidade, quartos, suites, valorAluguel, bairro, cidade, src }: ImovelProps) {
+
   return (
     <div className="shadow rounded max-w-sm mb-8">
       <div className="overflow-hidden">
-        <img className="w-full rounded-t-lg" alt="Sala" src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1980&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+        <img className={src} />
       </div>
 
       <div className="p-4">

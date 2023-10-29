@@ -100,6 +100,15 @@ export function CadastroImovelPage() {
 
                   <div className="mt-2">
                     <Input
+                      error={errors.endereco?.numero?.message}
+                      type="number"
+                      placeholder="Número"
+                      {...register('endereco.numero')}
+                    />
+                  </div>
+
+                  <div className="mt-2">
+                    <Input
                       error={errors.endereco?.estado?.message}
                       type="text"
                       placeholder="Estado"
@@ -107,14 +116,15 @@ export function CadastroImovelPage() {
                     />
                   </div>
 
-                  <div className="mt-2">
-                    <Input
-                      error={errors.endereco?.cep?.message}
-                      type="text"
-                      placeholder="CEP"
-                      {...register('endereco.cep')}
-                    />
-                  </div>
+
+                </div>
+                <div className="mt-2">
+                  <Input
+                    error={errors.endereco?.cep?.message}
+                    type="text"
+                    placeholder="CEP"
+                    {...register('endereco.cep')}
+                  />
                 </div>
               </div>
 
