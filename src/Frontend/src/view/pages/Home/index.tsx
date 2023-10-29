@@ -1,6 +1,5 @@
-import { Button } from "../../components/Button";
+import CityAutocomplete from "../../components/CityAutocomplete";
 import { ImmovelCard } from "../../components/ImovelCard";
-import { Input } from "../../components/Input";
 import { Switch } from "../../components/Switch";
 import { useHomeController } from "./useHomeController";
 
@@ -19,13 +18,10 @@ export function HomePage() {
               isChecked={false}
               onChange={() => 'mudou'} />
           </div>
-          <Input
-            error=""
-            type="email"
-            placeholder="Busque por cidade"
-            name="cidade"
-          />
-          <Button className="w-full">Buscar imóveis</Button>
+          <div>
+            <h1>Busque por Estado e Cidade</h1>
+              <CityAutocomplete />
+          </div>
         </form>
       </div>
 
