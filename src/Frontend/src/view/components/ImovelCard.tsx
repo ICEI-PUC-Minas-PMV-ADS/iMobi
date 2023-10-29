@@ -1,5 +1,4 @@
 import { Finalidade } from "../../app/enums/Finalidade"
-import { useImagemByImovelId } from "../../app/hooks/useImagemByImovelId";
 
 interface ImovelProps {
   finalidade: Finalidade,
@@ -18,7 +17,7 @@ export function ImmovelCard({ areaTotal, detalhes, finalidade, quartos, suites, 
   return (
     <div className="shadow rounded max-w-sm mb-8">
       <div className="overflow-hidden">
-        <img className={src} />
+        <img className="w-full rounded-t-lg" src={src} />
       </div>
 
       <div className="p-4">
