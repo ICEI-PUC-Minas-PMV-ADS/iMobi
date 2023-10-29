@@ -11,6 +11,8 @@ export function PerfilPage() {
   const { data, isFetching: isFetchingUser } = useUser();
   const { imoveis, isFetching: isFetchingImoveis } = useImoveisByUserId();
 
+  console.log(imoveis)
+
   const { userId: paramsId } = useParams();
   const storagedId = localStorage.getItem(localStorageKeys.USER_ID);
 
@@ -44,11 +46,21 @@ export function PerfilPage() {
             </div>
 
             {isUserProfile && (
-              <Link to="/imovel/cadastro">
-                <Button className="bg-transparent text-green-800 outline hover:bg-green-500 hover:text-white transition-all">
-                  🏢 Novo imóvel
-                </Button>
-              </Link>
+              <div className="flex justify-between w-[300px]">
+                <Link to="/imovel/cadastro">
+                  <Button className="bg-transparent text-green-800 outline hover:bg-green-500 hover:text-white transition-all">
+                    🏢 Novo imóvel
+                  </Button>
+                </Link>
+
+                <Link to="/galeria">
+                  <Button className="bg-transparent text-purple-800 outline hover:bg-purple-500 hover:text-white transition-all">
+                    📷 Galeria
+                  </Button>
+                </Link>
+
+
+              </div>
 
             )}
 
