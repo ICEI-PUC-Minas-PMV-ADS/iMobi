@@ -4,4 +4,4 @@ import { cadastro } from "./cadastro"
 export const authService = {
   login,
   cadastro,
-}
+};
