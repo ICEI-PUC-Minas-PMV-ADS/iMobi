@@ -1,34 +1,20 @@
+import { Endereco } from "../../entities/Endereco";
+import { Finalidade } from "../../enums/Finalidade";
+import { Status } from "../../enums/Status";
 import { httpClient } from "../httpClient";
 
-enum Finalidade {
-  Nd, Venda, Aluguel
-}
-
-enum Status {
-  Lancamento, Pronto, EmConstrucao
-}
-
-interface Endereco {
-  estado: string;
-  cidade: string;
-  bairro: string;
-  rua: string;
-  cep: string
-}
-
 export interface ImovelParams {
-  userId: string,
   finalidade: Finalidade,
   status: Status,
-  areaPrivativa: number,
-  areaTotal: number,
-  quartos: number,
-  suites: number,
+  areaPrivativa: string,
+  areaTotal: string,
+  quartos: string,
+  suites: string,
   garagem: string,
   detalhes: string,
-  preco: number,
-  valorCondominio: number,
-  valorAluguel: number,
+  preco: string,
+  valorCondominio: string,
+  valorAluguel: string,
   endereco: Endereco
 }
 

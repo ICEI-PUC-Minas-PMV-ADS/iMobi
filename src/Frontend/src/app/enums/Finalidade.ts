@@ -1,3 +1,5 @@
 export enum Finalidade {
-  Nd, Venda, Aluguel
+  Venda = 'Venda',
+  Aluguel = 'Aluguel',
+  Nd = 'Nd',
 }

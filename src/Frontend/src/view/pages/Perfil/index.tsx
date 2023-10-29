@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useImoveisByUserId } from "../../../app/hooks/useImoveisByUserId";
 import { useUser } from "../../../app/hooks/useUser";
 import avatar from '../../../assets/avatar.svg'
@@ -44,9 +44,12 @@ export function PerfilPage() {
             </div>
 
             {isUserProfile && (
-              <Button className="bg-transparent text-green-800 outline hover:bg-green-500 hover:text-white transition-all">
-                🏢 Novo imovel
-              </Button>
+              <Link to="/imovel/cadastro">
+                <Button className="bg-transparent text-green-800 outline hover:bg-green-500 hover:text-white transition-all">
+                  🏢 Novo imóvel
+                </Button>
+              </Link>
+
             )}
 
           </div>
