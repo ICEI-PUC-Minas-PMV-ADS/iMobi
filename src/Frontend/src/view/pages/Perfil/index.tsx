@@ -39,7 +39,7 @@ export function PerfilPage() {
 
       <div className="flex justify-center items-center mt-10 p-4 md:p-0 ">
         <div>
-          <div className="flex align-middle justify-between mb-10">
+          <div className="flex align-middle justify-between mb-10 p-8 lg:p-0">
             <div>
 
               <small className="text-gray-500">Imóveis de {data?.nome}</small>
@@ -63,7 +63,7 @@ export function PerfilPage() {
 
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 p-8 md:p-0">
             {imoveis.length <= 0 && (
               <p className="container mx-auto">{data?.nome} não possui imóveis cadastrados.</p>
             )}

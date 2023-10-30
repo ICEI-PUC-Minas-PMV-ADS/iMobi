@@ -15,6 +15,7 @@ export function HomePage() {
   return (
     <div className="container mx-auto">
       <div className="p-4 md:p-0 w-full lg:w-1/3 md:w-1/2 container mx-auto">
+        <h1 className="text-center mb-10 font-bold text-xl">🔍 Comece a sua busca agora mesmo</h1>
         <form>
           <CityAutocomplete />
           <Button className="w-full">Buscar imóveis</Button>
@@ -23,7 +24,7 @@ export function HomePage() {
 
       <div className="mt-10">
         <header>
-          <h1 className="font-bold text-center text-xl">Confira os imóveis mais recentes</h1>
+          <h1 className="font-bold text-center text-xl">🏢 Confira os imóveis mais recentes</h1>
         </header>
         <div className="flex justify-center items-center">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 p-8 overflow-x-auto">

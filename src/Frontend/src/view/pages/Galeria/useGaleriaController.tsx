@@ -5,6 +5,8 @@ import { useImagem } from '../../../app/hooks/useImagem';
 import useImagePreview from '../../../app/hooks/useImagePreview';
 import { useImoveisByStoredUser } from '../../../app/hooks/useImoveisByStoredUser';
 import { useImagemByImovelId } from '../../../app/hooks/useImagemByImovelId';
+import { ImagemResponse } from '../../../app/services/imagemService/getByImovelId';
+import { useState } from 'react';
 
 const MAX_FILE_SIZE = 500000;
 const ACCEPTED_IMAGE_TYPES = ["image/jpeg", "image/jpg", "image/png", "image/webp"];
@@ -28,9 +30,15 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 export function useGaleriaController() {
+  const [selectedPropertyImages, setSelectedPropertyImages] = useState<ImagemResponse>([]);
   const { imoveis, isFetching } = useImoveisByStoredUser();
   const { imagens } = useImagemByImovelId();
   const { isPending, mutateAsync } = useImagem();
+
+  const handlePropertySelection = (propertyId: string) => {
+    const imagesForProperty = getImagesForSelectedProperty(propertyId);
+    setSelectedPropertyImages(imagesForProperty);
+  };
 
   const {
     handleSubmit: hookFormHandleSubmit,
@@ -87,11 +95,12 @@ export function useGaleriaController() {
     }
   };
 
-
   return {
     register,
     handleSubmit,
     getImagesForSelectedProperty,
+    handlePropertySelection,
+    selectedPropertyImages,
     isPending,
     isFetching,
     imoveis,
