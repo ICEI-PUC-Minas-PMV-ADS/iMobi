@@ -1,9 +1,10 @@
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-import { useImoveisByUserId } from '../../../app/hooks/useImoveisByUserId';
+import { useImoveisByUserParams } from '../../../app/hooks/useImoveisByUserParams';
 import toast from 'react-hot-toast';
 import { useImagem } from '../../../app/hooks/useImagem';
 import useImagePreview from '../../../app/hooks/useImagePreview';
+import { useImoveisByStoredUser } from '../../../app/hooks/useImoveisByStoredUser';
 
 const MAX_FILE_SIZE = 500000;
 const ACCEPTED_IMAGE_TYPES = ["image/jpeg", "image/jpg", "image/png", "image/webp"];
@@ -27,7 +28,7 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 export function useGaleriaController() {
-  const { imoveis, isFetching } = useImoveisByUserId();
+  const { imoveis, isFetching } = useImoveisByStoredUser();
   const { isPending, mutateAsync } = useImagem();
 
   const {

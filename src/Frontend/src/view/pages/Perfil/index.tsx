@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { useImoveisByUserId } from "../../../app/hooks/useImoveisByUserId";
+import { useImoveisByUserParams } from "../../../app/hooks/useImoveisByUserParams";
 import { useUserByParams } from "../../../app/hooks/useUserByParams";
 import avatar from '../../../assets/avatar.svg'
 import { Button } from "../../components/Button";
@@ -10,7 +10,7 @@ import { useImagemByImovelId } from "../../../app/hooks/useImagemByImovelId";
 
 export function PerfilPage() {
   const { data, isFetching: isFetchingUser } = useUserByParams();
-  const { imoveis, isFetching: isFetchingImoveis } = useImoveisByUserId();
+  const { imoveis, isFetching: isFetchingImoveis } = useImoveisByUserParams();
   const { url } = useImagemByImovelId();
 
   const { userId: paramsId } = useParams();
