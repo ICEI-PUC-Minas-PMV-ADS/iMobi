@@ -4,9 +4,7 @@ import { Select } from '../../components/Select';
 import { useGaleriaController } from './useGaleriaController';
 
 export function Galeria() {
-  const { register, errors, handleSubmit, imoveisOptions, filePreview } = useGaleriaController();
-
-  // console.log(arquivoImagem);
+  const { register, errors, handleSubmit, imoveisOptions, filePreview, isPending } = useGaleriaController();
 
   return (
     <div className='container mx-auto'>
@@ -43,7 +41,7 @@ export function Galeria() {
               />
             </div>
 
-            <Button className='w-full'>Enviar</Button>
+            <Button isPending={isPending} className='w-full'>Enviar</Button>
           </form>
         </div>
 

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Select } from "./Select";
+import { Input } from "./Input";
+import { estados } from "../../app/utils/estados";
 
 interface City {
   nome: string;
@@ -55,29 +58,27 @@ const CityAutocomplete: React.FC = () => {
   };
 
   return (
-    <div className="w-64 mx-auto mt-10">
-      <select
-        className="block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-400"
+    <div>
+      <Select
         onChange={handleStateChange}
-      >
-        <option value="all">Selecione um estado</option>
-        <option value="PB">Paraíba</option>
-        <option value="SP">São Paulo</option>
-        <option value="RJ">Rio de Janeiro</option>
-        {/* Adicione mais estados conforme necessário */}
-      </select>
-      <input
-        type="text"
-        placeholder="Digite o nome da cidade"
-        className={`w-full mt-2 p-2 border-gray-300 rounded-md ${isCityInputDisabled
-          ? "bg-gray-100 cursor-not-allowed"
-          : "bg-white focus:ring focus:ring-opacity-50 focus:ring-blue-400"
-          }`}
-        value={inputValue}
-        onChange={handleInputChange}
-        disabled={isCityInputDisabled}
+        options={estados}
+        name="estado"
+        error=""
       />
-      <ul className="mt-2">
+      <div className="mt-4">
+        <Input
+          type="text"
+          name="Cidade"
+          placeholder="Cidade"
+          error=""
+          value={inputValue}
+          onChange={handleInputChange}
+          disabled={isCityInputDisabled}
+        />
+      </div>
+
+
+      <ul className="mt-2 bg-slate-200">
         {suggestions.map((city) => (
           <li
             key={city.nome}

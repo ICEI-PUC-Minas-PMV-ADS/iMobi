@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { useImoveisByUserId } from "../../../app/hooks/useImoveisByUserId";
-import { useUser } from "../../../app/hooks/useUser";
+import { useUserByParams } from "../../../app/hooks/useUserByParams";
 import avatar from '../../../assets/avatar.svg'
 import { Button } from "../../components/Button";
 import { ImmovelCard } from "../../components/ImovelCard";
@@ -9,7 +9,7 @@ import { localStorageKeys } from "../../../app/config/localStorageKeys";
 import { useImagemByImovelId } from "../../../app/hooks/useImagemByImovelId";
 
 export function PerfilPage() {
-  const { data, isFetching: isFetchingUser } = useUser();
+  const { data, isFetching: isFetchingUser } = useUserByParams();
   const { imoveis, isFetching: isFetchingImoveis } = useImoveisByUserId();
   const { url } = useImagemByImovelId();
 

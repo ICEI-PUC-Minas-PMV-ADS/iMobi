@@ -1,23 +1,20 @@
 import { useQuery } from "@tanstack/react-query";
-import { imovelService } from "../services/imovelService";
+import { userService } from "../services/userService";
 import { useParams } from "react-router-dom";
 
-export function useImoveisByUserId() {
+export function useUserByParams() {
   const { userId } = useParams();
 
   const { data, isFetching } = useQuery({
-    queryKey: ['imoveisByUserId'],
+    queryKey: ['user'],
     queryFn: () => {
-
-      if (userId) {
-        return imovelService.getByUserId(userId)
-      }
+      if (userId) return userService.findById(userId)
       else return null
     },
   });
 
   return {
-    imoveis: data ?? [],
+    data,
     isFetching
   }
 }

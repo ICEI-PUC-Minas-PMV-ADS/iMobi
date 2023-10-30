@@ -3,7 +3,6 @@ import { z } from 'zod';
 import { useImoveisByUserId } from '../../../app/hooks/useImoveisByUserId';
 import toast from 'react-hot-toast';
 import { useImagem } from '../../../app/hooks/useImagem';
-import { useState } from 'react';
 import useImagePreview from '../../../app/hooks/useImagePreview';
 
 const MAX_FILE_SIZE = 500000;

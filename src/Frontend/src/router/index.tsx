@@ -10,6 +10,7 @@ import { AuthLayout } from "../view/layouts/AuthLayout";
 import { RecuperarSenhaPage } from "../view/pages/EsqSenha";
 import { Header } from "../view/components/Header";
 import { Galeria } from "../view/pages/Galeria";
+import Footer from "../view/components/Footer";
 
 export function Router() {
   return (
@@ -35,7 +36,7 @@ export function Router() {
           <Route path="/galeria" element={<Galeria />} />
         </Route>
       </Routes>
-      <footer>Footer</footer>
+      <Footer />
     </BrowserRouter>
   )
 }

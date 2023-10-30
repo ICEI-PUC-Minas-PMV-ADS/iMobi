@@ -3,11 +3,10 @@ import { authService } from "../services/authService";
 import { LoginParams } from "../services/authService/login";
 import { userService } from "../services/userService";
 
-import { useParams } from "react-router-dom";
+import { localStorageKeys } from "../config/localStorageKeys";
 
-export function useUser() {
-  // const userId = localStorage.getItem(localStorageKeys.USER_ID);
-  const { userId } = useParams();
+export function useStoredUser() {
+  const userId = localStorage.getItem(localStorageKeys.USER_ID);
 
   const { isPending, mutateAsync } = useMutation({
     mutationFn: async (data: LoginParams) => {
@@ -24,9 +23,9 @@ export function useUser() {
   });
 
   return {
-    isPending,
-    mutateAsync,
     data,
-    isFetching
+    isFetching,
+    isPending,
+    mutateAsync
   }
 }
