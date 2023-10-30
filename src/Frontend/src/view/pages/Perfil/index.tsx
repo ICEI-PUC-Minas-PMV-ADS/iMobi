@@ -11,7 +11,7 @@ import { useImagemByImovelId } from "../../../app/hooks/useImagemByImovelId";
 export function PerfilPage() {
   const { data, isFetching: isFetchingUser } = useUserByParams();
   const { imoveis, isFetching: isFetchingImoveis } = useImoveisByUserParams();
-  const { url } = useImagemByImovelId();
+  const { url, isLoadingImagens } = useImagemByImovelId();
 
   const { userId: paramsId } = useParams();
   const storagedId = localStorage.getItem(localStorageKeys.USER_ID);
@@ -72,6 +72,7 @@ export function PerfilPage() {
               return (
                 <li className="list-none" key={imovel.id}>
                   <ImmovelCard
+                    isLoading={isLoadingImagens}
                     src={url[index]}
                     cidade={imovel.endereco.cidade}
                     bairro={imovel.endereco.bairro}
@@ -84,7 +85,7 @@ export function PerfilPage() {
                   />
                 </li>
               )
-            })}
+            }).reverse()}
           </div>
         </div>
       </div>

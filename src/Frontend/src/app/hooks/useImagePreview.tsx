@@ -9,7 +9,6 @@ export default function useImagePreview(file: FileList | null) {
       setImgSrc(newUrl);
 
       return () => {
-
         URL.revokeObjectURL(newUrl);
       };
     }

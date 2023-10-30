@@ -1,10 +1,22 @@
+import { useState } from 'react';
 import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
 import { Select } from '../../components/Select';
 import { useGaleriaController } from './useGaleriaController';
+import { ImagemResponse } from '../../../app/services/imagemService/getByImovelId';
 
 export function Galeria() {
-  const { register, errors, handleSubmit, imoveisOptions, filePreview, isPending } = useGaleriaController();
+  const { register, errors, handleSubmit, getImagesForSelectedProperty, imoveisOptions, filePreview, isPending } = useGaleriaController();
+
+  const [selectedPropertyImages, setSelectedPropertyImages] = useState<ImagemResponse>([]);
+
+  const handlePropertySelection = (propertyId: string) => {
+    const imagesForProperty = getImagesForSelectedProperty(propertyId);
+    setSelectedPropertyImages(imagesForProperty);
+  };
+
+  console.log('Imagens selecionadas: ', selectedPropertyImages.length > 0 ? selectedPropertyImages[0].propriedadeImagem : 'No images selected')
+
 
   return (
     <div className='container mx-auto'>
@@ -18,7 +30,9 @@ export function Galeria() {
                 placeholder='Selecione um imóvel'
                 error={errors.propriedadeId?.message}
                 options={imoveisOptions}
-                {...register('propriedadeId')}
+                {...register('propriedadeId', {
+                  onChange: (e) => handlePropertySelection(e.target.value)
+                })}
               />
             </div>
 
@@ -55,6 +69,19 @@ export function Galeria() {
           ) : null}
         </div>
 
+      </div>
+
+      <div className='mt-4'>
+        <h1 className='font-medium'>Imagens do empreendimento</h1>
+        <div className='flex gap-4 mt-4 bg-slate-50 p-4 rounded shadow w-full overflow-hidden'>
+          {selectedPropertyImages.map((imagem, index) => {
+            return (
+              <div className='overflow-hidden  shadow rounded'>
+                <img className='h-[150px]' src={imagem.propriedadeImagem} key={index} alt={`Image ${index}`} />
+              </div>
+            )
+          })}
+        </div>
       </div>
 
     </div>

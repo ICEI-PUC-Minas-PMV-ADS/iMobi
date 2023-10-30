@@ -1,23 +1,28 @@
-import { Finalidade } from "../../app/enums/Finalidade"
+import { Finalidade } from "../../app/enums/Finalidade";
 
 interface ImovelProps {
-  finalidade: Finalidade,
-  areaTotal: number,
-  quartos: number,
-  suites: number,
-  detalhes: string,
-  valorAluguel: number,
-  bairro: string,
+  finalidade: Finalidade;
+  areaTotal: number;
+  quartos: number;
+  suites: number;
+  detalhes: string;
+  valorAluguel: number;
+  bairro: string;
   cidade: string;
   src: string;
+  isLoading?: boolean; // Nova prop para indicar se a imagem está carregando
 }
 
-export function ImmovelCard({ areaTotal, detalhes, finalidade, quartos, suites, valorAluguel, bairro, cidade, src }: ImovelProps) {
+export function ImmovelCard({ areaTotal, detalhes, finalidade, quartos, suites, valorAluguel, bairro, cidade, src, isLoading }: ImovelProps) {
 
   return (
     <div className="shadow rounded max-w-sm mb-8">
-      <div className="overflow-hidden">
-        <img className="w-full rounded-t-lg" src={src} />
+      <div className="overflow-hidden h-[300px] relative">
+        {isLoading ? (
+          <div className="animate-pulse bg-gray-300 w-[400px] h-full "></div>
+        ) : (
+          <img className="w-full rounded-t-lg" src={src} alt="Imagem do imóvel" />
+        )}
       </div>
 
       <div className="p-4">

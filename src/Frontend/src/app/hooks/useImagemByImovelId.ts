@@ -3,11 +3,11 @@ import { imagemService } from "../services/imagemService";
 import { useImoveis } from "./useImoveis";
 
 export function useImagemByImovelId() {
-  const { imoveis } = useImoveis();
+  const { imoveis, isFetching } = useImoveis();
 
   const imovelIds = imoveis.map((imovel) => imovel.id);
 
-  const { data: imagens, isFetching } = useQuery({
+  const { data: imagens, isFetching: isLoadingImagens } = useQuery({
     queryKey: imovelIds.map((id) => ['imagemByImovelId', id]),
     queryFn: async () => {
       const imageRequests = imovelIds.map((id) => {
@@ -36,5 +36,6 @@ export function useImagemByImovelId() {
     imagens,
     url,
     isFetching,
+    isLoadingImagens,
   };
 }

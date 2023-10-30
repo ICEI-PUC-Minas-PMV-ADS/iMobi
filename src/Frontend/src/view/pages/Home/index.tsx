@@ -6,9 +6,7 @@ import { PageLoader } from "../../components/PageLoader";
 import { useHomeController } from "./useHomeController";
 
 export function HomePage() {
-  const { imoveis, url, isFetching } = useHomeController();
-
-  const imoveisRecentes = imoveis.slice(0, 3);
+  const { imoveis, url, isFetching, isLoadingImagens } = useHomeController();
 
   if (isFetching) {
     return <PageLoader isLoading={isFetching} />
@@ -29,13 +27,14 @@ export function HomePage() {
         </header>
         <div className="flex justify-center items-center">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 p-8 overflow-x-auto">
-            {imoveisRecentes.length <= 0 && <p>Não há imóveis recentes cadastrados.</p>}
+            {imoveis.length <= 0 && <p>Não há imóveis recentes cadastrados.</p>}
 
             {
-              imoveisRecentes.map((imovel, index) => {
+              imoveis.map((imovel, index) => {
                 return (
                   <li className="list-none" key={imovel.id}>
                     <ImmovelCard
+                      isLoading={isLoadingImagens}
                       src={url[index]}
                       cidade={imovel.endereco.cidade}
                       bairro={imovel.endereco.bairro}
@@ -48,7 +47,7 @@ export function HomePage() {
                     />
                   </li>
                 )
-              })
+              }).reverse().slice(0, 3)
             }
           </div>
         </div>
