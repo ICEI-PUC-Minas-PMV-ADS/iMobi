@@ -12,7 +12,7 @@ namespace IMobi.Images.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-[Authorize]
+
 public class ImageController : ControllerBase
 {
     private IWebHostEnvironment _environment;
@@ -26,6 +26,7 @@ public class ImageController : ControllerBase
         _environment = environment;
     }
 
+    [Authorize]
     [HttpPost("add")]
     public async Task<IActionResult?> Add([FromForm] ImageDto imageDto)
     {
