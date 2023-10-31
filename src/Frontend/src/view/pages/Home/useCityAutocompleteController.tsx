@@ -4,7 +4,10 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { z } from "zod";
-
+import { Imovel } from "../../../app/entities/Imovel";
+import { useNavigate } from "react-router-dom";
+import { ImovelResponse } from "../../../app/services/imovelService/getAll";
+import { httpClient } from "../../../app/services/httpClient";
 
 interface City {
   nome: string;
@@ -19,6 +22,8 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 export function useCityAutocompleteController() {
+  const navigate = useNavigate();
+
   const {
     handleSubmit: hookFormHandleSubmit,
     register,
@@ -31,6 +36,8 @@ export function useCityAutocompleteController() {
 
   const [suggestions, setSuggestions] = useState<City[]>([]);
   const [isCityInputDisabled, setIsCityInputDisabled] = useState(true);
+  const [imoveis, setImoveis] = useState<Imovel[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchCities = async (value: string, state: string) => {
     try {
@@ -60,8 +67,6 @@ export function useCityAutocompleteController() {
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
-    console.log(value)
-    setValue('cidade', value);
     const estado = getValues().estado
     if (value && estado) {
       fetchCities(value, estado);
@@ -73,23 +78,40 @@ export function useCityAutocompleteController() {
     setSuggestions([]);
   }
 
+
   const handleSubmit = hookFormHandleSubmit(async (data) => {
     try {
-      console.log(data)
-    } catch (err) {
-      toast.error('Erro ao buscar imagens')
+      const { cidade } = data;
+      setIsLoading(true)
+      const { data: imoveis } = await httpClient.get<ImovelResponse[]>(`/propriedade/getpropriedadebycidade/${cidade}`);
+
+      setImoveis(imoveis)
+
+      navigate('/feed', {
+        state: {
+          imoveis: imoveis
+        }
+      })
+
+      setIsLoading(false)
+    } catch (err: any) {
+      toast.error(`${err?.response.data}`);
+      setIsLoading(false)
     }
-  })
+  });
 
   return {
     register,
-    handleSubmit,
     errors,
     suggestions,
     isCityInputDisabled,
     handleStateChange,
     handleInputChange,
     handleSuggestionClick,
+    imoveis,
+    getValues,
+    handleSubmit,
+    isLoading
   }
 
 }

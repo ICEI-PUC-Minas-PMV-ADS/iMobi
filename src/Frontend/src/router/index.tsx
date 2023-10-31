@@ -20,7 +20,7 @@ export function Router() {
         <Route path="/" element={<HomePage />} />
         <Route path="/perfil/:userId" element={<PerfilPage />} />
         <Route path="/feed" element={<FeedPage />} />
-        <Route path="/imovel/:imovelId" element={<h1>Imovel Id</h1>} />
+        <Route path="/imoveis" element={<FeedPage />} />
 
 
         <Route element={<AuthGuard isPrivate={false} />}>

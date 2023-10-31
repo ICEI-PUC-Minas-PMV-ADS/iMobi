@@ -1,15 +1,16 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
 import { Select } from "./Select";
 import { Input } from "./Input";
 import { estados } from "../../app/utils/estados";
-import { useCityAutocompleteController } from "../../app/hooks/useCityAutocompleteController";
+import { useCityAutocompleteController } from "../pages/Home/useCityAutocompleteController";
+import { Button } from "./Button";
+
 
 const CityAutocomplete: React.FC = () => {
-  const { register, errors, handleInputChange, handleStateChange, handleSuggestionClick, suggestions, isCityInputDisabled } = useCityAutocompleteController();
+  const { register, errors, handleInputChange, handleStateChange, handleSuggestionClick, suggestions, isCityInputDisabled, handleSubmit, isLoading } = useCityAutocompleteController();
 
   return (
-    <div>
+    <form onSubmit={handleSubmit}>
       <Select
         options={estados}
         error={errors.estado?.message}
@@ -26,7 +27,6 @@ const CityAutocomplete: React.FC = () => {
             onChange: (e) => handleInputChange(e)
           })}
           disabled={isCityInputDisabled}
-
         />
       </div>
 
@@ -41,8 +41,12 @@ const CityAutocomplete: React.FC = () => {
           </li>
         ))}
       </ul>
-    </div>
+
+      <Button isPending={isLoading} className="w-full">Buscar imóveis</Button>
+    </form>
   );
 };
 
 export default CityAutocomplete;
+
+

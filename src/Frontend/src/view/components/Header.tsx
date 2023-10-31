@@ -23,7 +23,7 @@ export function Header() {
   }
 
   return (
-    <div className="bg-slate-100 relative mb-10 relative z-[2]">
+    <div className="bg-slate-100 relative mb-10 z-[2]">
       <header className="container mx-auto">
         <nav className="z-50 py-5 md:flex md:items-center md:justify-between ">
           <div className="flex justify-between items-center">

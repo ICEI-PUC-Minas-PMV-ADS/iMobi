@@ -1,4 +1,3 @@
-import { Button } from "../../components/Button";
 import CityAutocomplete from "../../components/CityAutocomplete";
 import { ImmovelCard } from "../../components/ImovelCard";
 import { PageLoader } from "../../components/PageLoader";
@@ -16,10 +15,7 @@ export function HomePage() {
     <div className="container mx-auto">
       <div className="p-4 md:p-0 w-full lg:w-1/3 md:w-1/2 container mx-auto">
         <h1 className="text-center mb-10 font-bold text-xl">🔍 Comece a sua busca agora mesmo</h1>
-        <form>
-          <CityAutocomplete />
-          <Button className="w-full">Buscar imóveis</Button>
-        </form>
+        <CityAutocomplete />
       </div>
 
       <div className="mt-10">
