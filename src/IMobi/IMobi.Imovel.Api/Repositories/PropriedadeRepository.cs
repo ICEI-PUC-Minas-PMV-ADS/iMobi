@@ -46,4 +46,12 @@ public class PropriedadeRepository : IPropriedadeRepository
     {
         await _context.Propriedades.ReplaceOneAsync(filter: g => g.Id == propriedade.Id, replacement: propriedade);
     }
+
+    public async Task<IEnumerable<Propriedade>> GetPropriedadesByCidade(string cidade)
+    {
+        FilterDefinition<Propriedade> filter = Builders<Propriedade>.Filter.Eq(p => p.Endereco.Cidade, cidade);
+
+        return await _context.Propriedades.Find(filter).ToListAsync();
+    }
+
 }

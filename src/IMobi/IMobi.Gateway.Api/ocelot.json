@@ -114,6 +114,20 @@
             ]
         },
         {
+            "DownstreamPathTemplate": "/api/propriedade/getpropriedadebycidade/{cidade}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/propriedade/getpropriedadebycidade/{cidade}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
             "DownstreamPathTemplate": "/api/image/add",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [

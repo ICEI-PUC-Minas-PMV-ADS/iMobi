@@ -9,4 +9,6 @@ public interface IPropriedadeRepository
     Task<IEnumerable<Propriedade>> GetPropriedadesByFinalidade(string finalidade);
     Task<IEnumerable<Propriedade>> GetByUserId(string userId);
     Task UpdatePropriedade(Propriedade propriedade);
+
+    Task<IEnumerable<Propriedade>> GetPropriedadesByCidade(string cidade);
 }

@@ -60,4 +60,19 @@ public class PropriedadeController : ControllerBase
         await _repository.UpdatePropriedade(entity);
         return Ok(entity);
     }
+
+    [HttpGet]
+    [Route("getPropriedadeByCidade/{cidade}")]
+    public async Task<ActionResult<IEnumerable<Propriedade>>> GetPropriedadesByCidade(string cidade)
+    {
+        var propriedades = await _repository.GetPropriedadesByCidade(cidade);
+
+        if (propriedades == null || !propriedades.Any())
+        {
+            return NotFound("Nenhuma propriedade encontrada para a cidade especificada.");
+        }
+
+        return Ok(propriedades);
+    }
+
 }
