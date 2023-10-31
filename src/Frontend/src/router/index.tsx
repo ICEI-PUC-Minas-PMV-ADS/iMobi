@@ -19,7 +19,7 @@ export function Router() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/perfil/:userId" element={<PerfilPage />} />
-        <Route path="/feed" element={<FeedPage />} />
+        <Route path="/feed/:cidade" element={<FeedPage />} />
         <Route path="/imoveis" element={<FeedPage />} />
 
 

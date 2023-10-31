@@ -68,17 +68,19 @@ export function Galeria() {
       </div>
 
       <div className='mt-4'>
-        {selectedPropertyImages && <h1 className='font-medium text-xl mb-4 pl-8 md:p-0 '>Imagens do empreendimento</h1>}
-
-        <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 p-8 md:p-0'>
-          {selectedPropertyImages.map((imagem, index) => {
-            return (
-              <div className='overflow-hidden w-[300px] h-[300px] relative rounded'>
-                <img className='rounded shadow w-full md:w-auto' src={imagem.propriedadeImagem} key={index} alt={`Image ${index}`} />
-              </div>
-            )
-          })}
+        {selectedPropertyImages && <h1 className='font-medium text-xl mb-4 md:p-0 text-center md:text-left'>Imagens do empreendimento</h1>}
+        <div className='flex justify-center items-center '>
+          <div className='grid md:grid-cols-4 gap-4 grid-cols-1'>
+            {selectedPropertyImages.map((imagem, index) => {
+              return (
+                <li key={imagem.id} className='list-none  relative rounded mb-4 lg:mb-0 p-4 lg:p-0'>
+                  <img className='rounded shadow md:w-auto' src={imagem.propriedadeImagem} key={index} alt={`Image ${index}`} />
+                </li>
+              )
+            })}
+          </div>
         </div>
+
       </div>
 
     </div>

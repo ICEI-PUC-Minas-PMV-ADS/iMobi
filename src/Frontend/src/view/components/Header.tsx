@@ -38,9 +38,6 @@ export function Header() {
             <li className="mx-4 my-4 md:my-0">
               <Link className=" hover:text-cyan-500 duration-500" to="/">Home</Link>
             </li>
-            <li className="md:mx-3  mx-4 my-4 md:my-0">
-              <Link className=" hover:text-cyan-500 duration-500" to="/feed">Feed</Link>
-            </li>
 
             {signedIn && (
               <li className="md:mx-3  mx-4 my-4 md:my-0">

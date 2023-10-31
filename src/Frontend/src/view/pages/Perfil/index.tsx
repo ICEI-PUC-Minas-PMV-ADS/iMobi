@@ -11,7 +11,7 @@ import { useImagemByImovelId } from "../../../app/hooks/useImagemByImovelId";
 export function PerfilPage() {
   const { data, isFetching: isFetchingUser } = useUserByParams();
   const { imoveis, isFetching: isFetchingImoveis } = useImoveisByUserParams();
-  const { url, isLoadingImagens } = useImagemByImovelId();
+  const { urlByImovelId, isLoadingImagens } = useImagemByImovelId();
 
   const { userId: paramsId } = useParams();
   const storagedId = localStorage.getItem(localStorageKeys.USER_ID);
@@ -68,12 +68,12 @@ export function PerfilPage() {
               <p className="container mx-auto">{data?.nome} não possui imóveis cadastrados.</p>
             )}
 
-            {imoveis.map((imovel, index) => {
+            {imoveis.map((imovel) => {
               return (
                 <li className="list-none" key={imovel.id}>
                   <ImmovelCard
                     isLoading={isLoadingImagens}
-                    src={url[index]}
+                    src={urlByImovelId[imovel.id]}
                     cidade={imovel.endereco.cidade}
                     bairro={imovel.endereco.bairro}
                     detalhes={imovel.detalhes}

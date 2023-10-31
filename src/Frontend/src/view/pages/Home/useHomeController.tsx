@@ -3,12 +3,12 @@ import { useImoveis } from "../../../app/hooks/useImoveis";
 
 export function useHomeController() {
   const { imoveis, isFetching, } = useImoveis();
-  const { url, isLoadingImagens } = useImagemByImovelId();
+  const { urlByImovelId, isLoadingImagens } = useImagemByImovelId();
 
   return {
     imoveis,
     isFetching,
-    url,
+    urlByImovelId,
     isLoadingImagens
   }
 }

@@ -83,11 +83,12 @@ export function useCityAutocompleteController() {
     try {
       const { cidade } = data;
       setIsLoading(true)
+
       const { data: imoveis } = await httpClient.get<ImovelResponse[]>(`/propriedade/getpropriedadebycidade/${cidade}`);
 
       setImoveis(imoveis)
 
-      navigate('/feed', {
+      navigate(`/feed/${cidade}`, {
         state: {
           imoveis: imoveis
         }
