@@ -73,7 +73,7 @@ export function Galeria() {
           <div className='grid md:grid-cols-4 gap-4 grid-cols-1'>
             {selectedPropertyImages.map((imagem, index) => {
               return (
-                <li key={imagem.id} className='list-none  relative rounded mb-4 lg:mb-0 p-4 lg:p-0'>
+                <li key={imagem.id} className='list-none md:h-[250px] overflow-hidden relative rounded mb-4 lg:mb-0 p-4 lg:p-0'>
                   <img className='rounded shadow md:w-auto' src={imagem.propriedadeImagem} key={index} alt={`Image ${index}`} />
                 </li>
               )

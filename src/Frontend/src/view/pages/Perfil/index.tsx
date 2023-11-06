@@ -8,19 +8,19 @@ import { PageLoader } from "../../components/PageLoader";
 import { localStorageKeys } from "../../../app/config/localStorageKeys";
 import { useImagemByImovelId } from "../../../app/hooks/useImagemByImovelId";
 
+import { useNavigate } from "react-router-dom";
+
 export function PerfilPage() {
-  const { data, isFetching: isFetchingUser } = useUserByParams();
-  const { imoveis, isFetching: isFetchingImoveis } = useImoveisByUserParams();
+  const { data } = useUserByParams();
+  const { imoveis } = useImoveisByUserParams();
   const { urlByImovelId, isLoadingImagens } = useImagemByImovelId();
+
+  const navigate = useNavigate();
 
   const { userId: paramsId } = useParams();
   const storagedId = localStorage.getItem(localStorageKeys.USER_ID);
 
   const isUserProfile = paramsId === storagedId;
-
-  if (isFetchingImoveis && isFetchingUser) {
-    return <PageLoader isLoading={isFetchingImoveis && isFetchingUser} />
-  }
 
   return (
     <>
@@ -72,6 +72,7 @@ export function PerfilPage() {
               return (
                 <li className="list-none" key={imovel.id}>
                   <ImmovelCard
+                    onClick={() => navigate(`/imoveis/${imovel.id}`)}
                     isLoading={isLoadingImagens}
                     src={urlByImovelId[imovel.id]}
                     cidade={imovel.endereco.cidade}

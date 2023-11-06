@@ -7,7 +7,7 @@ import { Button } from "./Button";
 
 
 const CityAutocomplete: React.FC = () => {
-  const { register, errors, handleInputChange, handleStateChange, handleSuggestionClick, suggestions, isCityInputDisabled, handleSubmit, isLoading } = useCityAutocompleteController();
+  const { register, errors, handleInputChange, handleStateChange, handleSuggestionClick, suggestions, handleSubmit, isLoading } = useCityAutocompleteController();
 
   return (
     <form onSubmit={handleSubmit}>
@@ -26,7 +26,6 @@ const CityAutocomplete: React.FC = () => {
           {...register('cidade', {
             onChange: (e) => handleInputChange(e)
           })}
-          disabled={isCityInputDisabled}
         />
       </div>
 

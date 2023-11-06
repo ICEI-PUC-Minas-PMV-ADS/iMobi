@@ -35,7 +35,7 @@ export function useCityAutocompleteController() {
   })
 
   const [suggestions, setSuggestions] = useState<City[]>([]);
-  const [isCityInputDisabled, setIsCityInputDisabled] = useState(true);
+  // const [isCityInputDisabled, setIsCityInputDisabled] = useState(true);
   const [imoveis, setImoveis] = useState<Imovel[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -58,8 +58,8 @@ export function useCityAutocompleteController() {
 
   const handleStateChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const state = event.target.value;
-    setValue('estado', state); // Define o valor do estado no formulário
-    setIsCityInputDisabled(state === "all");
+    setValue('estado', state);
+
     if (state === "all") {
       setSuggestions([]);
     }
@@ -84,7 +84,7 @@ export function useCityAutocompleteController() {
       const { cidade } = data;
       setIsLoading(true)
 
-      const { data: imoveis } = await httpClient.get<ImovelResponse[]>(`/propriedade/getpropriedadebycidade/${cidade}`);
+      const { data: imoveis } = await httpClient.get<ImovelResponse[]>(`/propriedade/getbycidade/${cidade}`);
 
       setImoveis(imoveis)
 
@@ -105,7 +105,6 @@ export function useCityAutocompleteController() {
     register,
     errors,
     suggestions,
-    isCityInputDisabled,
     handleStateChange,
     handleInputChange,
     handleSuggestionClick,

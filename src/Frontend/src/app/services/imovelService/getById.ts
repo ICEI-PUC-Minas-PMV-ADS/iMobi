@@ -33,8 +33,8 @@ export interface ImovelResponse {
   endereco: Endereco
 }
 
-export async function getByCidade(cidade: string) {
-  const { data } = await httpClient.get<ImovelResponse[]>(`/propriedade/getbycidade/${cidade}`);
+export async function getById(id: string) {
+  const { data } = await httpClient.get<ImovelResponse>(`/propriedade/getbyid/${id}`);
 
   return data;
 }
