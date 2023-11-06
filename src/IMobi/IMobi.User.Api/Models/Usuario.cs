@@ -26,4 +26,5 @@ public class Usuario
     [BsonElement("role")]
     public required string[] Role { get; set; }
 
+
 }

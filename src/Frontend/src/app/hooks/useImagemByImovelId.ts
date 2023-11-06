@@ -3,11 +3,11 @@ import { imagemService } from "../services/imagemService";
 import { useImoveis } from "./useImoveis";
 
 export function useImagemByImovelId() {
-  const { imoveis } = useImoveis();
+  const { imoveis, isFetching } = useImoveis();
 
   const imovelIds = imoveis.map((imovel) => imovel.id);
 
-  const { data: imagens, isFetching } = useQuery({
+  const { data: imagens, isFetching: isLoadingImagens } = useQuery({
     queryKey: imovelIds.map((id) => ['imagemByImovelId', id]),
     queryFn: async () => {
       const imageRequests = imovelIds.map((id) => {
@@ -20,21 +20,22 @@ export function useImagemByImovelId() {
     },
   });
 
-  const url: string[] = [];
+  const urlByImovelId: { [key: string]: string } = {};
 
   if (imagens) {
-    imagens.forEach((imovelImagens) => {
+    imagens.forEach((imovelImagens, index) => {
       if (imovelImagens.length > 0) {
-        url.push(imovelImagens[0].propriedadeImagem);
+        urlByImovelId[imovelIds[index]] = imovelImagens[0].propriedadeImagem;
       } else {
-        url.push('');
+        urlByImovelId[imovelIds[index]] = '';
       }
     });
   }
 
   return {
     imagens,
-    url,
+    urlByImovelId,
     isFetching,
+    isLoadingImagens,
   };
 }

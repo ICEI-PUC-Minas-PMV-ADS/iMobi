@@ -1,4 +1,5 @@
-﻿using IMobi.Imovel.Api.Data;
+﻿using System.Net.Mime;
+using IMobi.Imovel.Api.Data;
 using IMobi.Imovel.Api.Models;
 using MongoDB.Driver;
 using static IMobi.Imovel.Api.Models.Propriedade;
@@ -46,4 +47,19 @@ public class PropriedadeRepository : IPropriedadeRepository
     {
         await _context.Propriedades.ReplaceOneAsync(filter: g => g.Id == propriedade.Id, replacement: propriedade);
     }
+
+    public async Task<IEnumerable<Propriedade>> GetPropriedadesByCidade(string cidade)
+    {
+        FilterDefinition<Propriedade> filter = Builders<Propriedade>.Filter.Eq(p => p.Endereco.Cidade, cidade);
+
+        return await _context.Propriedades.Find(filter).ToListAsync();
+    }
+
+    public async Task<Propriedade> GetPropriedadeById(string id)
+    {
+        FilterDefinition<Propriedade> filter = Builders<Propriedade>.Filter.Eq(p => p.Id, id);
+
+        return await _context.Propriedades.Find(filter).FirstAsync();
+    }
+
 }

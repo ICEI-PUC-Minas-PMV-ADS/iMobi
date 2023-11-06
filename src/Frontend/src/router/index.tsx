@@ -10,6 +10,8 @@ import { AuthLayout } from "../view/layouts/AuthLayout";
 import { RecuperarSenhaPage } from "../view/pages/EsqSenha";
 import { Header } from "../view/components/Header";
 import { Galeria } from "../view/pages/Galeria";
+import Footer from "../view/components/Footer";
+import { Imovel } from "../view/pages/Imovel";
 
 export function Router() {
   return (
@@ -18,7 +20,9 @@ export function Router() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/perfil/:userId" element={<PerfilPage />} />
-        <Route path="/feed" element={<FeedPage />} />
+        <Route path="/feed/:cidade" element={<FeedPage />} />
+        <Route path="/imoveis" element={<FeedPage />} />
+        <Route path="/imoveis/:imovelId" element={<Imovel />} />
 
 
         <Route element={<AuthGuard isPrivate={false} />}>
@@ -35,7 +39,7 @@ export function Router() {
           <Route path="/galeria" element={<Galeria />} />
         </Route>
       </Routes>
-      <footer>Footer</footer>
+      <Footer />
     </BrowserRouter>
   )
 }

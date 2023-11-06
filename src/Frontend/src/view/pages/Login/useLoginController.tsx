@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { toast } from "react-hot-toast";
 
 import { useAuth } from "../../../app/hooks/useAuth";
-import { useUser } from "../../../app/hooks/useUser";
+import { useStoredUser } from "../../../app/hooks/useStoredUser";
 import { localStorageKeys } from "../../../app/config/localStorageKeys";
 
 const schema = z.object({
@@ -23,7 +23,7 @@ export function useLoginController() {
     resolver: zodResolver(schema),
   });
 
-  const { isPending, mutateAsync } = useUser();
+  const { isPending, mutateAsync } = useStoredUser();
   const { login } = useAuth();
 
   const handleSubmit = hookFormHandleSubmit(async (data) => {

@@ -25,7 +25,7 @@ public class PropriedadeController : ControllerBase
 
     [Route("[action]/{finalidade}", Name = "GetPropriedadesByFinalidade")]
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Propriedade>>> GetPropriedadesByFinalidade(string finalidade)
+    public async Task<ActionResult<IEnumerable<Propriedade>>> GetByFinalidade(string finalidade)
     {
         var propriedades = await _repository.GetPropriedadesByFinalidade(finalidade);
         return Ok(propriedades);
@@ -60,4 +60,33 @@ public class PropriedadeController : ControllerBase
         await _repository.UpdatePropriedade(entity);
         return Ok(entity);
     }
+
+    [HttpGet]
+    [Route("getByCidade/{cidade}")]
+    public async Task<ActionResult<IEnumerable<Propriedade>>> GetPropriedadesByCidade(string cidade)
+    {
+        var propriedades = await _repository.GetPropriedadesByCidade(cidade);
+
+        if (propriedades == null || !propriedades.Any())
+        {
+            return NotFound("Nenhuma propriedade encontrada para a cidade especificada.");
+        }
+
+        return Ok(propriedades);
+    }
+
+    [HttpGet]
+    [Route("getById/{id}")]
+    public async Task<ActionResult<IEnumerable<Propriedade>>> GetById(string id)
+    {
+        var propriedade = await _repository.GetPropriedadeById(id);
+
+        if (propriedade == null)
+        {
+            return NotFound("Propriedade não encontrada");
+        }
+
+        return Ok(propriedade);
+    }
+
 }
