@@ -86,7 +86,7 @@
             ]
         },
         {
-            "DownstreamPathTemplate": "/api/propriedade/getpropriedadesbyfinalidade/{finalidade}",
+            "DownstreamPathTemplate": "/api/propriedade/getbyfinalidade/{finalidade}",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
@@ -94,7 +94,7 @@
                     "Port": 5001
                 }
             ],
-            "UpstreamPathTemplate": "/gateway/propriedade/getpropriedadesbyfinalidade/{finalidade}",
+            "UpstreamPathTemplate": "/gateway/propriedade/getbyfinalidade/{finalidade}",
             "UpstreamHttpMethod": [
                 "GET"
             ]
@@ -114,7 +114,7 @@
             ]
         },
         {
-            "DownstreamPathTemplate": "/api/propriedade/getpropriedadebycidade/{cidade}",
+            "DownstreamPathTemplate": "/api/propriedade/getbycidade/{cidade}",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
@@ -122,7 +122,21 @@
                     "Port": 5001
                 }
             ],
-            "UpstreamPathTemplate": "/gateway/propriedade/getpropriedadebycidade/{cidade}",
+            "UpstreamPathTemplate": "/gateway/propriedade/getbycidade/{cidade}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/propriedade/getbyid/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/propriedade/getbyid/{id}",
             "UpstreamHttpMethod": [
                 "GET"
             ]

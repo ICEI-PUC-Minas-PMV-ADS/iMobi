@@ -11,4 +11,5 @@ public interface IPropriedadeRepository
     Task UpdatePropriedade(Propriedade propriedade);
 
     Task<IEnumerable<Propriedade>> GetPropriedadesByCidade(string cidade);
+    Task<Propriedade> GetPropriedadeById(string id);
 }
