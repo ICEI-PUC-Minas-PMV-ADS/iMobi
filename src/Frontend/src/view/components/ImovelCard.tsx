@@ -25,7 +25,7 @@ export function ImmovelCard({ areaTotal, detalhes, finalidade, quartos, suites, 
         {isLoading ? (
           <div className="animate-pulse bg-gray-300 w-[384px] h-full rounded-t-lg"></div>
         ) : (
-          <img className="w-full rounded-t-lg" src={src} alt="Imagem do imóvel" />
+          <img loading="lazy" className="w-full rounded-t-lg" src={src} alt="Imagem do imóvel" />
         )}
       </div>
 

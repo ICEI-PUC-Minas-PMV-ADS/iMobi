@@ -1,4 +1,3 @@
-import { Transition } from "@headlessui/react";
 import { Spinner } from "./Spinner";
 
 interface PageLoaderProps {
@@ -9,7 +8,7 @@ export function PageLoader({ isLoading }: PageLoaderProps) {
   return (
     <>
       {isLoading && (
-        <div className="bg-gray-50 fixed top-0 left-0 w-full h-full flex justify-center items-center">
+        <div className="bg-gray-50 fixed top-0 left-0 w-full h-full flex justify-center items-center flex-1">
           <Spinner />
         </div>
       )}

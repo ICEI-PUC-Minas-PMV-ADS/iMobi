@@ -1,7 +1,7 @@
 export function Footer() {
   return (
-    <footer className="">
-      <h1>footer</h1>
+    <footer className="bg-gray-200 p-10">
+      <h1 className="text-center text-md font-bold"> iMobi</h1>
     </footer>
   );
 };

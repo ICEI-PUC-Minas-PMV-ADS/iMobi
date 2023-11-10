@@ -22,6 +22,10 @@ export function PerfilPage() {
 
   const isUserProfile = paramsId === storagedId;
 
+  if (isLoadingImagens) {
+    return <PageLoader isLoading={isLoadingImagens} />
+  }
+
   return (
     <>
       <header className="flex justify-center items-center">
