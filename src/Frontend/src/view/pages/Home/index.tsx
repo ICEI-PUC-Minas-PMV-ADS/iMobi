@@ -1,12 +1,17 @@
 import CityAutocomplete from "../../components/CityAutocomplete";
 import { ImmovelCard } from "../../components/ImovelCard";
+import { PageLoader } from "../../components/PageLoader";
 import { useHomeController } from "./useHomeController";
 import { useNavigate } from "react-router-dom";
 
 
 export function HomePage() {
-  const { imoveis, urlByImovelId, isLoadingImagens } = useHomeController();
+  const { imoveis, urlByImovelId, isLoadingImagens, isFetching } = useHomeController();
   const navigate = useNavigate();
+
+  if (isFetching) {
+    return <PageLoader isLoading={isFetching} />
+  }
 
   return (
     <div className="container mx-auto">

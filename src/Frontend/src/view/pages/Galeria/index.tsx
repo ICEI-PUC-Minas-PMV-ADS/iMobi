@@ -12,6 +12,7 @@ export function Galeria() {
     imoveisOptions,
     filePreview,
     isPending,
+    isFetching,
     errors } = useGaleriaController();
 
   return (
@@ -71,6 +72,8 @@ export function Galeria() {
         {selectedPropertyImages && <h1 className='font-medium text-xl mb-4 md:p-0 text-center md:text-left'>Imagens do empreendimento</h1>}
         <div className='flex justify-center items-center '>
           <div className='grid md:grid-cols-4 gap-4 grid-cols-1'>
+
+
             {selectedPropertyImages.map((imagem, index) => {
               return (
                 <li key={imagem.id} className='list-none md:h-[250px] overflow-hidden relative rounded mb-4 lg:mb-0 p-4 lg:p-0'>
@@ -80,7 +83,6 @@ export function Galeria() {
             })}
           </div>
         </div>
-
       </div>
 
     </div>

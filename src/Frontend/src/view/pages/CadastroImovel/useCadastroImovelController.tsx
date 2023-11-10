@@ -63,7 +63,6 @@ const schema = z.object({
   endereco: enderecoSchema,
 });
 
-
 type FormData = z.infer<typeof schema>;
 
 export function useCadastroImovelController() {
@@ -88,8 +87,6 @@ export function useCadastroImovelController() {
         ...data,
         userId: userId,
       };
-
-      console.log('payload: ', formData)
 
       await mutateAsync(formData);
 
