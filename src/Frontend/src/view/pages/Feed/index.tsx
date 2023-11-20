@@ -1,94 +1,62 @@
-import { Fragment, useState } from 'react'
-import { Listbox, Transition } from '@headlessui/react'
-import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
+import { useParams } from "react-router-dom";
+import { Imovel } from "../../../app/entities/Imovel";
+import { useImagemByImovelId } from "../../../app/hooks/useImagemByImovelId";
+import { useImoveisByCidade } from "../../../app/hooks/useImoveisByCidade";
+import { Button } from "../../components/Button";
 
-const people = [
-  {
-    id: 1,
-    name: 'Wade Cooper',
-    avatar:
-      'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    id: 2,
-    name: 'Arlene Mccoy',
-    avatar:
-      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  }
-]
+import { useNavigate } from "react-router-dom";
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
-}
 
-export  function FeedPage() {
-  const [selected, setSelected] = useState(people[3])
+export function FeedPage() {
+  const cidade: string | undefined = useParams().cidade ?? '';
+
+  const { urlByImovelId, isLoadingImagens } = useImagemByImovelId();
+
+  const { imoveis } = useImoveisByCidade(cidade)
+
+  const navigate = useNavigate();
 
   return (
-    <Listbox value={selected} onChange={setSelected}>
-      {({ open }) => (
-        <>
-          <Listbox.Label className="block text-sm font-medium leading-6 text-gray-900">Assigned to</Listbox.Label>
-          <div className="relative mt-2">
-            <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6">
-              <span className="flex items-center">
-                <img src={selected.avatar} alt="" className="h-5 w-5 flex-shrink-0 rounded-full" />
-                <span className="ml-3 block truncate">{selected.name}</span>
-              </span>
-              <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
-                <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-              </span>
-            </Listbox.Button>
+    <div className="flex justify-center items-center container mx-auto ">
+      <div className="w-[800px]" >
+        <h1 className="mb-10 text-center text-2xl font-bold">Os melhores imóveis em {cidade}</h1>
 
-            <Transition
-              show={open}
-              as={Fragment}
-              leave="transition ease-in duration-100"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
-            >
-              <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-                {people.map((person) => (
-                  <Listbox.Option
-                    key={person.id}
-                    className={({ active }) =>
-                      classNames(
-                        active ? 'bg-indigo-600 text-white' : 'text-gray-900',
-                        'relative cursor-default select-none py-2 pl-3 pr-9'
-                      )
-                    }
-                    value={person}
-                  >
-                    {({ selected, active }) => (
-                      <>
-                        <div className="flex items-center">
-                          <img src={person.avatar} alt="" className="h-5 w-5 flex-shrink-0 rounded-full" />
-                          <span
-                            className={classNames(selected ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
-                          >
-                            {person.name}
-                          </span>
-                        </div>
+        {imoveis.map((imovel: Imovel) => {
+          return (
+            <div key={imovel.id} onClick={() => navigate(`/imoveis/${imovel.id}`)} className="cursor-pointer hover:opacity-80 transition-all ease-in p-4 md:p-0">
+              <div className="shadow md:w-[800px] mx-w-sm mb-8 md:flex md:h-[266px] md:rounded rounded-b-lg">
+                <div className="overflow-hidden md:w-1/2 relative">
+                  {isLoadingImagens ? (
+                    <div className="animate-pulse bg-gray-300 h-full rounded-t-lg md:rounded-l-lg"></div>
+                  ) : (
+                    <img className=" w-full rounded-t-lg md:rounded-l-lg" src={urlByImovelId[imovel.id]} alt="Imagem do imóvel" />
+                  )}
+                </div>
 
-                        {selected ? (
-                          <span
-                            className={classNames(
-                              active ? 'text-white' : 'text-indigo-600',
-                              'absolute inset-y-0 right-0 flex items-center pr-4'
-                            )}
-                          >
-                            <CheckIcon className="h-5 w-5" aria-hidden="true" />
-                          </span>
-                        ) : null}
-                      </>
-                    )}
-                  </Listbox.Option>
-                ))}
-              </Listbox.Options>
-            </Transition>
-          </div>
-        </>
-      )}
-    </Listbox>
+                <div className="p-8 md:w-1/2 grid grid-rows-4">
+                  <div className="mb-4 md:mb-0 items-center">
+                    <h1 className="font-bold text-xl">{imovel.endereco.bairro}, {cidade}</h1>
+                    <p className="text-sm text-gray-600">{imovel.detalhes}</p>
+                  </div>
+
+                  <div className="flex justify-between mb-4 md:mb-0 items-center">
+                    <h2 className="font-bold">R${imovel.valorAluguel},00</h2>
+                    <p>{imovel.finalidade}</p>
+                  </div>
+
+                  <div className="flex justify-between font-bold mb-4 md:mb-0 items-center">
+                    <p className="text-xs">{imovel.areaTotal}m2</p>
+                    <p className="text-xs">{imovel.quartos} quartos</p>
+                    <p className="text-xs">{imovel.suites} suítes</p>
+                  </div>
+
+                  <Button className="bg-green-500 hover:bg-transparent hover:text-green-500 hover:outline transition-all ease-in">Falar com corretor</Button>
+                </div>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </div>
   )
 }

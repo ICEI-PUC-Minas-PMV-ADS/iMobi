@@ -1,23 +1,29 @@
 import { Link, useParams } from "react-router-dom";
-import { useImoveisByUserId } from "../../../app/hooks/useImoveisByUserId";
-import { useUser } from "../../../app/hooks/useUser";
+import { useImoveisByUserParams } from "../../../app/hooks/useImoveisByUserParams";
+import { useUserByParams } from "../../../app/hooks/useUserByParams";
 import avatar from '../../../assets/avatar.svg'
 import { Button } from "../../components/Button";
 import { ImmovelCard } from "../../components/ImovelCard";
 import { PageLoader } from "../../components/PageLoader";
 import { localStorageKeys } from "../../../app/config/localStorageKeys";
+import { useImagemByImovelId } from "../../../app/hooks/useImagemByImovelId";
+
+import { useNavigate } from "react-router-dom";
 
 export function PerfilPage() {
-  const { data, isFetching: isFetchingUser } = useUser();
-  const { imoveis, isFetching: isFetchingImoveis } = useImoveisByUserId();
+  const { data } = useUserByParams();
+  const { imoveis } = useImoveisByUserParams();
+  const { urlByImovelId, isLoadingImagens } = useImagemByImovelId();
+
+  const navigate = useNavigate();
 
   const { userId: paramsId } = useParams();
   const storagedId = localStorage.getItem(localStorageKeys.USER_ID);
 
   const isUserProfile = paramsId === storagedId;
 
-  if (isFetchingImoveis && isFetchingUser) {
-    return <PageLoader isLoading={isFetchingImoveis && isFetchingUser} />
+  if (isLoadingImagens) {
+    return <PageLoader isLoading={isLoadingImagens} />
   }
 
   return (
@@ -37,24 +43,31 @@ export function PerfilPage() {
 
       <div className="flex justify-center items-center mt-10 p-4 md:p-0 ">
         <div>
-          <div className="flex align-middle justify-between mb-10">
+          <div className="flex align-middle justify-between mb-10 p-8 lg:p-0">
             <div>
 
               <small className="text-gray-500">Imóveis de {data?.nome}</small>
             </div>
 
             {isUserProfile && (
-              <Link to="/imovel/cadastro">
-                <Button className="bg-transparent text-green-800 outline hover:bg-green-500 hover:text-white transition-all">
-                  🏢 Novo imóvel
-                </Button>
-              </Link>
+              <div className="flex justify-between w-[300px]">
+                <Link to="/imovel/cadastro">
+                  <Button className="bg-transparent text-green-800 outline hover:bg-green-500 hover:text-white transition-all">
+                    🏢 Novo imóvel
+                  </Button>
+                </Link>
 
+                <Link to="/galeria">
+                  <Button className="bg-transparent text-purple-800 outline hover:bg-purple-500 hover:text-white transition-all">
+                    📷 Galeria
+                  </Button>
+                </Link>
+              </div>
             )}
 
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 p-8 md:p-0">
             {imoveis.length <= 0 && (
               <p className="container mx-auto">{data?.nome} não possui imóveis cadastrados.</p>
             )}
@@ -63,6 +76,9 @@ export function PerfilPage() {
               return (
                 <li className="list-none" key={imovel.id}>
                   <ImmovelCard
+                    onClick={() => navigate(`/imoveis/${imovel.id}`)}
+                    isLoading={isLoadingImagens}
+                    src={urlByImovelId[imovel.id]}
                     cidade={imovel.endereco.cidade}
                     bairro={imovel.endereco.bairro}
                     detalhes={imovel.detalhes}
@@ -74,7 +90,7 @@ export function PerfilPage() {
                   />
                 </li>
               )
-            })}
+            }).reverse()}
           </div>
         </div>
       </div>

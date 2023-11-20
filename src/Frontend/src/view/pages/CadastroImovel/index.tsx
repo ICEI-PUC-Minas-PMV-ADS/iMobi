@@ -6,6 +6,7 @@ import { useCadastroImovelController } from "./useCadastroImovelController";
 import { Finalidade } from "../../../app/enums/Finalidade";
 import { Status } from "../../../app/enums/Status";
 import { Input } from "../../components/Input";
+import { localStorageKeys } from "../../../app/config/localStorageKeys";
 
 export function CadastroImovelPage() {
   const {
@@ -15,7 +16,7 @@ export function CadastroImovelPage() {
     isPending
   } = useCadastroImovelController();
 
-  console.log(errors);
+  const userId = localStorage.getItem(localStorageKeys.USER_ID);
 
   const finalidadeOptions = [
     { value: '', label: "Selecione uma finalidade" },
@@ -32,7 +33,7 @@ export function CadastroImovelPage() {
   ];
 
   return (
-    <div className="flex justify-center  w-full h-screen">
+    <div className="flex justify-center  w-full">
       <div className=" p-4 w-full max-w-[600px] rounded-lg">
         <div className="container mx-auto">
           <header>
@@ -100,6 +101,15 @@ export function CadastroImovelPage() {
 
                   <div className="mt-2">
                     <Input
+                      error={errors.endereco?.numero?.message}
+                      type="number"
+                      placeholder="Número"
+                      {...register('endereco.numero')}
+                    />
+                  </div>
+
+                  <div className="mt-2">
+                    <Input
                       error={errors.endereco?.estado?.message}
                       type="text"
                       placeholder="Estado"
@@ -107,14 +117,15 @@ export function CadastroImovelPage() {
                     />
                   </div>
 
-                  <div className="mt-2">
-                    <Input
-                      error={errors.endereco?.cep?.message}
-                      type="text"
-                      placeholder="CEP"
-                      {...register('endereco.cep')}
-                    />
-                  </div>
+
+                </div>
+                <div className="mt-2">
+                  <Input
+                    error={errors.endereco?.cep?.message}
+                    type="text"
+                    placeholder="CEP"
+                    {...register('endereco.cep')}
+                  />
                 </div>
               </div>
 
@@ -213,14 +224,12 @@ export function CadastroImovelPage() {
           </form>
 
           <div className="text-center mt-4">
-            <Link to="/perfil/" className="text-blue-500 underline hover:text-blue-400 transition-all duration-300">
-              <small>Outra ação relacionada a imóveis.</small>
+            <Link to={`/perfil/${userId}`} className="text-blue-500 underline hover:text-blue-400 transition-all duration-300">
+              <small>Voltar para o perfil</small>
             </Link>
           </div>
         </div>
       </div>
     </div>
-
-
   );
 }

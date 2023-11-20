@@ -3,7 +3,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from 'zod';
 import { toast } from "react-hot-toast";
 import { useImoveis } from "../../../app/hooks/useImoveis";
-import { useState } from "react";
 import { Finalidade } from "../../../app/enums/Finalidade";
 import { Status } from "../../../app/enums/Status";
 import { localStorageKeys } from "../../../app/config/localStorageKeys";
@@ -14,6 +13,10 @@ const enderecoSchema = z.object({
   rua: z.string().min(1, "Informe a rua"),
   cep: z.string().min(1, "Informe o CEP"),
   estado: z.string().min(1, "Informe o estado"),
+  numero: z.string().refine((val) => {
+    const num = parseInt(val, 10);
+    return !Number.isNaN(num) && num >= 0;
+  }, { message: 'Informe um número maior que 0' })
 });
 
 const schema = z.object({
@@ -30,7 +33,7 @@ const schema = z.object({
   areaPrivativa: z.string().refine((val) => {
     const num = parseInt(val, 10);
     return !Number.isNaN(num) && num >= 0;
-  }),
+  }, { message: 'Informe um número maior que 0' }),
   areaTotal: z.string().refine((val) => {
     const num = parseInt(val, 10);
     return !Number.isNaN(num) && num >= 0;
@@ -60,17 +63,9 @@ const schema = z.object({
   endereco: enderecoSchema,
 });
 
-
 type FormData = z.infer<typeof schema>;
 
 export function useCadastroImovelController() {
-  const [selectedImage, setSelectedImage] = useState<File | null>(null);
-
-  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setSelectedImage(e.target.files[0]);
-    }
-  };
 
   const {
     handleSubmit: hookFormHandleSubmit,
@@ -93,8 +88,6 @@ export function useCadastroImovelController() {
         userId: userId,
       };
 
-      console.log('payload: ', formData)
-
       await mutateAsync(formData);
 
       toast.success("Imóvel cadastrado com sucesso!");
@@ -103,5 +96,5 @@ export function useCadastroImovelController() {
     }
   });
 
-  return { handleSubmit, register, errors, isPending, selectedImage, handleImageChange };
+  return { handleSubmit, register, errors, isPending };
 }
