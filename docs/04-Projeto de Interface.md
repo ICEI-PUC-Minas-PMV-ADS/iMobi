@@ -22,6 +22,9 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
  São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  Ao desenvolver nossos wireframes, elaboramos cuidadosamente as principais telas que compõem a experiência do usuário. Este conjunto abrange desde as fases iniciais, como cadastro e login, até as interações diárias, representadas pela página inicial, o perfil do usuário e o feed contendo os imóveis em anúncio. Essa estruturação visa proporcionar uma jornada fluida e intuitiva, garantindo uma navegação eficiente e agradável aos usuários que exploram nossa plataforma.
 
+
+ ### Web
+
 ![Tela início](img/w1.jpg)
 
 ### *Figura 1 
@@ -72,6 +75,15 @@ Na área dedicada ao usuário, é possível cadastrar e excluir imóveis, além 
 
 **Tela de feed**
 Na tela de feed, os imóveis são apresentados de acordo com o filtro aplicado, proporcionando uma visualização personalizada e alinhada às preferências definidas.
+
+### Mobile
+
+![alt text](img/imagem1.jpg)
+
+### *Figura 1 
+- **Tela de estrutura padrão**
+
+Para a tela de início da aplicação, onde os usuários podem informar a cidade e o Estado de interesse para buscar imóveis. Além disso, eles podem visualizar imóveis divulgados no canto inferior da tela. 
 
 
 > **Links Úteis**:
