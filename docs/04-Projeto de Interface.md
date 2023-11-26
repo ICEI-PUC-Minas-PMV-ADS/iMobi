@@ -83,7 +83,7 @@ Na tela de feed, os imóveis são apresentados de acordo com o filtro aplicado, 
 ### *Figura 1 
 - **Tela de estrutura padrão**
 
-Para a tela de início da aplicação, onde os usuários podem informar a cidade e o Estado de interesse para buscar imóveis. Além disso, eles podem visualizar imóveis divulgados no canto inferior da tela. 
+Para a tela de início da aplicação, onde os usuários podem informar a cidade e o Estado de interesse para buscar imóveis. Além disso, eles podem visualizar imóveis divulgados no canto inferior da tela; e acessar o Menu no canto direito superior da tela para ter acesso as opções: Home, Perfil e Sair.
 
 
 > **Links Úteis**:
