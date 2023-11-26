@@ -85,6 +85,33 @@ Na tela de feed, os imóveis são apresentados de acordo com o filtro aplicado, 
 
 Para a tela de início da aplicação, onde os usuários podem informar a cidade e o Estado de interesse para buscar imóveis. Além disso, eles podem visualizar imóveis divulgados no canto inferior da tela; e acessar o Menu no canto direito superior da tela para ter acesso as opções: Home, Perfil e Sair.
 
+![alt text](img/login.jpg)
+
+### *Figura 2 
+- **Tela de login**
+
+Efetuar a autenticação do usuário através do preenchimento dos campos email e senha. Caso seja o primeiro acesso, o usuário deverá realizar o cadastro por meio da aba "Cadastre-se". Caso o usuário precise redefinir senha, ele pode acessar o link “esqueci minha senha”.
+
+![alt text](img/corretor.jpg)
+
+### *Figura 3 
+- **Tela de Usuário Logado**
+
+Nesta tela, o usuário logado (corretor de imóveis) pode cadastrar novo imóvel, acessar as imagens de imóveis salvas na galeria, e visualizar os imóveis já cadastrados.
+
+![alt text](img/cadastro1.jpg)
+
+![alt text](img/cadastro2.jpg)
+
+### *Figura 4 
+- **Tela de Cadastrar Imóveis**
+
+  O usuário logado (corretor) pode cadastrar um imóvel, inserindo várias informações sobre o imóvel, como: finalidade, endereço, n° de quartos, n° de garagens, área total, valores, etc.
+
+![alt text](img/anuncios.jpg)
+### *Figura 5 
+- **Tela de Imóveis Cadastrados**
+  Nesta tela, o usuário pode visualizar os imóveis disponíveis e cadastrados em determindado local de acordo com a busca anteriormente realizada pelo usuário. Também pode acessar o contato do corretor ao acessar o link "falar com corretor".
 
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
