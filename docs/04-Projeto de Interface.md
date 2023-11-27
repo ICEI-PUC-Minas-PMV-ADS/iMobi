@@ -1,4 +1,3 @@
-
 # Projeto de Interface
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
@@ -20,9 +19,12 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 ## Wireframes
 
-Ao desenvolver nossos wireframes, elaboramos cuidadosamente as principais telas que compõem a experiência do usuário. Este conjunto abrange desde as fases iniciais, como cadastro e login, até as interações diárias, representadas pela página inicial, o perfil do usuário e o feed contendo os imóveis em anúncio. Essa estruturação visa proporcionar uma jornada fluida e intuitiva, garantindo uma navegação eficiente e agradável aos usuários que exploram nossa plataforma.
+ São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+ Ao desenvolver nossos wireframes, elaboramos cuidadosamente as principais telas que compõem a experiência do usuário. Este conjunto abrange desde as fases iniciais, como cadastro e login, até as interações diárias, representadas pela página inicial, o perfil do usuário e o feed contendo os imóveis em anúncio. Essa estruturação visa proporcionar uma jornada fluida e intuitiva, garantindo uma navegação eficiente e agradável aos usuários que exploram nossa plataforma.
 
-![alt text](img/INICIO.jpg)
+ ### Web
+
+![Tela início](img/w1.jpg)
 
 ### *Figura 1 
 - **Tela de estrutura padrão**
@@ -42,9 +44,7 @@ Categorias Populares:
 
 -Explore por Categoria: Crie categorias como "Apartamentos", "Casas", "Condomínios", etc. para facilitar a navegação.
 
-
-
-![alt text](img/LOGIN.jpg)
+![Tela cadastro](img/w5.jpg)
 
 ### *Figura 2 
 
@@ -52,9 +52,7 @@ Categorias Populares:
 
 Temos uma tela dedicada ao cadastro do usuário na aplicação, que inclui campos essenciais como nome, e-mail, CPF e, quando aplicável, o CRECI, especialmente para corretores.
 
-
-
-![alt text](img/ENTRAR.jpg)
+![Tela login](img/w2.jpg)
 
 ### *Figura 3 
 
@@ -62,9 +60,7 @@ Temos uma tela dedicada ao cadastro do usuário na aplicação, que inclui campo
 
 Efetuar a autenticação do usuário através do preenchimento dos campos email e senha. Caso seja o primeiro acesso, o usuário deverá realizar o cadastro por meio da aba "*Cadastrar*". Caso o usuário precise redefinir senha, ele pode acessar o link “*recuperar senha*”.
 
-
-
-![alt text](img/USUARIO.jpg)
+![Tela usúario logado](img/w3.jpg)
 
 ### *Figura 4 
 
@@ -72,18 +68,50 @@ Efetuar a autenticação do usuário através do preenchimento dos campos email 
 
 Na área dedicada ao usuário, é possível cadastrar e excluir imóveis, além de editar informações pessoais, proporcionando controle total sobre sua experiência na aplicação.
 
-
-
-![alt text](img/w4.jpg)
+![Feed anúncios](img/w4.jpg)
 
 ### *Figura 5
 
 **Tela de feed**
 Na tela de feed, os imóveis são apresentados de acordo com o filtro aplicado, proporcionando uma visualização personalizada e alinhada às preferências definidas.
 
+### Mobile
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
+![alt text](img/imagem1.jpg)
+
+### *Figura 1 
+- **Tela de estrutura padrão**
+
+Para a tela de início da aplicação, onde os usuários podem informar a cidade e o Estado de interesse para buscar imóveis. Além disso, eles podem visualizar imóveis divulgados no canto inferior da tela; e acessar o Menu no canto direito superior da tela para ter acesso as opções: Home, Perfil e Sair.
+
+![alt text](img/login.jpg)
+
+### *Figura 2 
+- **Tela de login**
+
+Efetuar a autenticação do usuário através do preenchimento dos campos email e senha. Caso seja o primeiro acesso, o usuário deverá realizar o cadastro por meio da aba "Cadastre-se". Caso o usuário precise redefinir senha, ele pode acessar o link “esqueci minha senha”.
+
+![alt text](img/corretor.jpg)
+
+### *Figura 3 
+- **Tela de Usuário Logado**
+
+Nesta tela, o usuário logado (corretor de imóveis) pode cadastrar novo imóvel, acessar as imagens de imóveis salvas na galeria, e visualizar os imóveis já cadastrados.
+
+![alt text](img/cadastro1.jpg)
+
+![alt text](img/cadastro2.jpg)
+
+### *Figura 4 
+- **Tela de Cadastrar Imóveis**
+
+  O usuário logado (corretor) pode cadastrar um imóvel, inserindo várias informações sobre o imóvel, como: finalidade, endereço, n° de quartos, n° de garagens, área total, valores, etc.
+
+![alt text](img/anuncios.jpg)
+### *Figura 5 
+- **Tela de Imóveis Cadastrados**
+  Nesta tela, o usuário pode visualizar os imóveis disponíveis e cadastrados em determindado local de acordo com a busca anteriormente realizada pelo usuário. Também pode acessar o contato do corretor ao acessar o link "falar com corretor".
+
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 > - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
