@@ -92,17 +92,30 @@ Apresente aqui uma descrição da sua proposta abordando seus limites e suas lig
 
 A proposta desenvolvida pretende oferecer um espaço para que o corretor divulgue seu trabalho e seu histórico de atendimento com comentários de clientes; e também visa facilitar a procura do imóvel ideial pelo cliente, além de oferecer a chance do mesmo alugar ou comprar um imóvel a distância. As possíveis melhorias são economizar o tempo do cliente e do corretor para fechar um negócio, evitando encontros presenciais, deslocamentos até a imobiliária; e agregar imóveis oferecidos por diferentes corretores e imobiliárias em uma mesma plataforma online.
 
-### Processo 1 – NOME DO PROCESSO
+### Processo 1 – Corretora
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN.
+No processo 01 descrevemos as etapas utilizadas pela corretora.
 
-![Processo 1](img/02-bpmn-proc1.png)
+01-Início do Processo: O processo começa com o cadasro na plataforma.
 
-### Processo 2 – NOME DO PROCESSO
+02-Cadastro de Corretores: Corretores, com ou sem experiência, se registram na plataforma.
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
+03-Cadastro de Imóveis: Corretores cadastram os imóveis para venda ou locação, incluindo detalhes como preço, tipo, localização, imagens, etc.
 
-![Processo 2](img/02-bpmn-proc2.png)
+![Processo 1](img/UML-corretora.jpeg)
+
+### Processo 2 – Cliente
+
+No processo 02 descrevemos as etapas utilizadas pela corretora.
+
+01-Busca de Imóveis: Clientes utilizam a plataforma para buscar imóveis de acordo com suas preferências.
+
+02-Comunicação Cliente-Corretor: Quando um cliente encontra um imóvel de interesse, ele inicia uma comunicação direta com o corretor responsável.
+
+03-Conclusão do Negócio: Quando um acordo é alcançado, o imóvel é vendido ou alugado.
+
+
+![Processo 2](img/UML-cliente.jpeg)
 
 ## Indicadores de Desempenho
 
@@ -176,20 +189,20 @@ De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar 
 
 Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
 
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
-
 O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
 
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+![Cronograma](img/tela1.png)
+![Tarefas1](img/tela2.png)
+![Tarefas2](img/tela3.png)
 
 ## Gerenciamento de Equipe
 
 O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados.
 
-![Simple Project Timeline](img/02-project-timeline.png)
+![Simple Project Timeline](img/gerenciamento_equipe.png)
 
 ## Gestão de Orçamento
 
 O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
 
-![Orçamento](img/02-orcamento.png)
+![Orçamento](img/custo.png)
