@@ -10,5 +10,6 @@ public interface IUsuarioRepository
     Task<Usuario> FindByEmail(string email);
     Task<Usuario> FindByCpfCnpj(string cpfcnpj);
     Task Update(string id, Usuario usuario);
+    Task UpdateByEmail(string email, Usuario usuario);
     Task Delete(string id);
 }

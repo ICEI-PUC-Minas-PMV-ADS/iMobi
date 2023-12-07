@@ -48,6 +48,26 @@ namespace IMobi.User.Api.Services
             return user;
         }
 
+
+
+        public async Task<bool> UpdatePassword(string email, string newPassword)
+        {
+            var usuario = await _usuarioRepository.FindByEmail(email);
+
+            if (usuario != null)
+            {
+                // Atualiza apenas a senha
+                usuario.Password = BCrypt.Net.BCrypt.HashPassword(newPassword);
+
+                await _usuarioRepository.UpdateByEmail(email, usuario);
+
+                return true;
+            }
+
+            return false;
+        }
+        
+
         public async Task<UsuarioDto> FindById(string id)
         {
             var usuario = await _usuarioRepository.FindById(id);

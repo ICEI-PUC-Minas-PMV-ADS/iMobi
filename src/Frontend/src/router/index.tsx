@@ -12,6 +12,7 @@ import { Header } from "../view/components/Header";
 import { Galeria } from "../view/pages/Galeria";
 import Footer from "../view/components/Footer";
 import { Imovel } from "../view/pages/Imovel";
+import { NovaSenha } from "../view/pages/EsqSenha/novaSenha";
 
 export function Router() {
   return (
@@ -30,6 +31,7 @@ export function Router() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/cadastro" element={<CadastroPage />} />
             <Route path="/esqSenha" element={<RecuperarSenhaPage />} />
+            <Route path="/novaSenha" element={<NovaSenha />} />
           </Route>
         </Route>
         {/* Protected Routes */}
