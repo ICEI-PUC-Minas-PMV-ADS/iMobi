@@ -49,6 +49,18 @@ namespace IMobi.User.Api.Repositories
             await _context.Usuario.UpdateOneAsync(filter, update);
         }
 
+        public async Task UpdateByEmail(string email, Usuario usuario)
+        {
+            var filter = Builders<Usuario>.Filter.Eq(u => u.Email, email);
+            var update = Builders<Usuario>.Update
+                .Set(u => u.Email, usuario.Email)
+                .Set(u => u.Password, usuario.Password);
+
+            await _context.Usuario.UpdateOneAsync(filter, update);
+        }
+
+
+
         public async Task Delete(string id)
         {
             var filter = Builders<Usuario>.Filter.Eq(u => u.Id, id);

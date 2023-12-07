@@ -41,6 +41,29 @@ namespace IMobi.User.Api.Controllers
             }
         }
 
+        [HttpPut("updatePassword/{email}")]
+        public async Task<IActionResult> UpdatePassword(string email, [FromBody] UpdatePasswordDto updatePasswordDto)
+        {
+            try
+            {
+                var updated = await _usuarioSrevice.UpdatePassword(email, updatePasswordDto.NewPassword);
+
+                if (updated)
+                {
+                    return Ok("Senha atualizada com sucesso");
+                }
+                else
+                {
+                    return NotFound("Usuário não encontrado ou senha não pode ser atualizada");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro ao atualizar a senha: {ex.Message}");
+            }
+        }
+
+
         [HttpGet("findById/{id}")]
         public async Task<IActionResult> FindById(string id)
         {

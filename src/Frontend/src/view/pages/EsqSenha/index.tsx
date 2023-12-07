@@ -5,10 +5,6 @@ import { useEsqSenhaController } from "./useEsqSenhaController";
 export function RecuperarSenhaPage() {
   const { handleSubmit, register, errors } = useEsqSenhaController();
 
-  const handleFormSubmit = (data: any) => {
-    handleSubmit(data);
-  };
-
   return (
     <div className="container mx-auto mt-8 flex flex-col items-center justify-center h-screen">
       <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -21,7 +17,7 @@ export function RecuperarSenhaPage() {
           </p>
         </header>
 
-        <form className="flex flex-col gap-4" onSubmit={handleFormSubmit}>
+        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <Input
             error="Informe o email"
             type="email"
