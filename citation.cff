@@ -1,0 +1,29 @@
+message: Please cite this software using these metadata.
+title: iMobi
+authors:
+  - family-names: Roberto Olympio Ferreira
+    given-names: Bruno
+  - family-names: Henrique Monteiro Cal
+    given-names: Guilherme
+  - family-names: Augusto Ferreira de Lira
+    given-names: Gustavo
+  - family-names: Raquel Ramos Berger
+    given-names: Lucia
+  - family-names: Alves de Souza
+    given-names: Rafael
+  - family-names: Jordão de Noronha Picado
+    given-names: Rafael
+  - family-names: do Carmo Alves
+    given-names: Warlen
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vilela Cardoso
+    given-names: Leonardo
+keywords:
+  - Gestão
+  - Imobiliária
+  - Venda
+  - Compra
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/iMobi.git
+version: 1.0.0
+date-released: 2023-12-07
